@@ -1,0 +1,39 @@
+import YM.AnalyticBridge.COUPLING_SHAPE_ESTIMATE.Infinitesimal
+import YM.AnalyticNext.CONNECTED_ACTIVITY_JETS_E6.Armada
+import YM.Further.STRONG_STARTUP_CREDIT.Launch
+import YM.Further.THRESHOLD_SOURCE_RESTART.Capital
+import YM.PhysicalNext.FLAT_PUSH_RESPONSE.GaussianTarget
+import YM.PhysicalNext.ORDERED_AFFINE_2B.SymSeason
+import YM.PhysicalNext.RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP.Sward.Hood
+import YM.PhysicalNext.RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP.Turn.Wheels
+import YM.PhysicalNext.UNMASKED_THROUGH_LAUNCH.Dome
+import YM.Planned.ATOM_GUARDED_LAYOUT.Orbit
+import YM.Planned.RECIPE_STARTUP_PORT.Horizon
+set_option autoImplicit false
+noncomputable section
+namespace YM.PhysicalNext.Repeat.Height
+open Function Filter Lattice RG Pressure Pressure.Tube Tree Wilson Finset MeasureTheory
+open ConnectedActivityE6 Shell Coat SliceRows Control Pulse Mask Raw Matter Pond
+open Push Push.AbsoluteSums Gas Ursell Trees Multiple Letter OmitClusters RG Shoot Precision SectorMeasure Oriented Reserves
+open AnalyticBridge VerifiedReset Collection Quotes UVNext Next.Scheduling
+open Extra.Iteration   
+open ConnectedActivityE6.Blaze Blaze.March Captain Silica
+open scoped Topology InnerProductSpace Matrix.Norms.Frobenius ContDiff BigOperators Classical
+variable {G : Gauge} {c f : Side} {S : StepData c f} {L : Side} {P : Teller G} {T : Tube G S}
+    {Q : YM.ConnectedActivityE6.Target G P} {W : ℝ} {o : ConnectedActivityE6.Target.Order G W}
+    {R : RG.Rep G f} {μ q C' d v Y A b r B s α a δ e i : ℝ} {k j n ℓ : ℕ} {F : Tree.Forest S.ratio}
+    {χ : Chi} {H : Cash W s μ L Q o α T R}
+section second
+variable (H)
+def breadth (t : H.fragrances) := ∑ i, ((t.2 i).val).card
+def overlap (t : H.fragrances) := ∑ i, Cash.numP (t.2 i).val
+def veteran (t : H.fragrances) := 3 ≤ breadth H t ∨ 1 ≤ overlap H t
+variable {H}
+variable (N : Captain H j C' d v Y A b r B q k χ) {D : ℝ} (hd : 1 ≤ D)
+
+
+variable (n : ℕ) (ht : Armada Q L μ a s i B j k)
+include N ht hd
+
+end second
+end YM.PhysicalNext.Repeat.Height

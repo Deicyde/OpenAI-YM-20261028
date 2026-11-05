@@ -1,0 +1,5 @@
+Stock Lake on an extracted source-only ZIP, with pinned dependencies supplied from the installed cache.
+Challenge transitive modules 8642 YM implementation modules 0
+Solution transitive modules 18105 YM implementation modules 9456
+ConcreteSU2 transitive modules 18107 YM implementation modules 9457
+ARCHIVE_LAKE_IMPORT_GRAPH_PASS

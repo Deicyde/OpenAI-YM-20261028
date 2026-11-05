@@ -1,0 +1,6 @@
+Compared all 9458 YM sources with the inputs to the selected compiled modules.
+saved compilation input 1091
+pinned module manifest 8202
+compilation record 165
+Matching stored compiled-object digests checked: 8367
+SOURCE_INPUT_MATCH_PASS

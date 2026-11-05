@@ -1,0 +1,152 @@
+import YM.RG05Readout.Offsets.Cell
+import YM.PhysicalNext.RG_NEXT_COMPLETE_REPEATABLE_NONLINEAR_STEP.Circlet.Rebel
+import YM.UVExtension.Orchard.Shears
+/-!
+# Support-localized cap bound on the off-center primary *regular* footprint.
+
+Budget transfer after localization at the actual root, on the tube
+used by the UV path. Adapted from `Circlet.tallyS`, calling `Peak.tinyBill`
+with these coordinates (pay d's sale from actual budget). Uses `Vintage`
+exports of baseline, no choice of other history action.
+-/
+set_option autoImplicit false
+noncomputable section
+namespace YM.PhysicalNext.Repeat.Circlet
+open Function Filter Set Lattice RG Pressure Pressure.Tube Tree Wilson Finset MeasureTheory
+open ConnectedActivityE6 Shell Coat SliceRows Pulse Mask Raw Matter Pond
+open Push Push.AbsoluteSums Gas Ursell Trees Multiple Letter OmitClusters RG Shoot Precision SectorMeasure Oriented Reserves
+open AnalyticBridge VerifiedReset Collection Quotes UVNext Next.Scheduling Org
+open Extra.Iteration Greenbelt Match Song Refrain
+open ConnectedActivityE6.Blaze Blaze.March Captain Silica Height Brim Time Supply Input Testing PriceCompiler Opera
+open JointLoad JointLoad.Heir JointLoad.Heir.Suite JointLoad.Psalm Clockwork Roof Daisy Charity Rain Roost Lotus Blush Mallow
+open UVNext.CouplingReset Animals Marlin Progress.DirectedRecipe Ovens Ovens.Pipes
+open Extra.Histories Extra.Histories.Doors Next.Foundations YM.Planned.GuardedAtom Labels Peak Mercury Graces
+open Planned.PrimaryIntegral295 WaterLevels
+open scoped Topology InnerProductSpace Matrix.Norms.Frobenius ContDiff BigOperators Classical
+variable {G : Gauge}{M : Metals G}{D:Rolls M.p}{A:Alloy M D}{Q:ℕ→ℕ→ Teller G}{C: Programs M.p}
+   {r p:ℕ→ℕ} {R:ℕ→ℕ→Record}{B:Factor A}{V:Vintage.YM.Org.Bolt A}
+local notation "cc"=> A.B.a
+variable {m N n d:ℕ} (hm:m<N)
+local notation "J"=> A.B.a.clock.J (m+1)
+local notation "T"=> A.B.a.clock.J m
+local notation "B₁"=> A.B.a.budget m
+local notation "B₂"=> A.B.a.budget (m+1)
+local notation "X"=> A.B.a.clock.op m n
+local notation "V0"=> ships A.B N m n
+local notation "L"=> D.L J
+local notation "y"=> A.B.a.clock.hatBeta m
+local notation "v"=> R J T
+local notation "u"=> C J T
+local notation "vT"=> M.p.profile J
+local notation "vB"=> M.p.profile T
+local notation "r'"=> B.span J T
+set_option quotPrecheck false
+variable (hP:Circlet.Pitch M.p M.K Q C r) (hp: Pads D R Q M.K C A.delay) (hc: Decked C D R B.span B.shape A.delay) (hb:goodD M.p (A.B.a.clock.J (m+1)) (A.B.a.clock.J m) d)(hV:Vintage.YM.PhysicalNext.Repeat.Graces.Nest B V) (hC:Mallow.Arrives B.shape A.delay)
+local notation "F"=> (Labels.frames G).level d
+local notation "n₀"=> A.B.a.S.side m n
+local notation "n₁"=> A.B.a.S.side (m+1) n
+variable {K:In A.B.a m n} {x t:ℝ} (H: Spring B N m n x t K)(z: Icc x t)
+local notation "Z"=> houseS H z
+local notation "K!"=> K z.val
+variable {τ:ℝ} (hz:Push.Local.Readable (hol G) (localSection G d) (K z).p (A.B.a.S.side (m+1) n) τ) (h!:HasSlots (K z|>.p) (K z|>.activities))
+open RG05Cell
+variable (b' : Site (A.B.a.S.side (m+1) n))
+-- wrap etc. earn with fixed Glider.
+local notation "β" => (K z.val).beta
+local notation "Ω"=> tab G b' d
+local notation "w"=> B.span J T
+local notation "Xp"=> (localSection G d).footprint b'
+local notation "Yp"=> (plate Z Ω).support
+include h!
+lemma holes: Walled X Xp Yp y w:=by
+   have he:= billboard Z (B.pledging.agenda J T (step_paid A.B.a m)|>.2.2) Ω
+   convert he using 1; rw [RG05Cell.signed (K z) b' h!]
+lemma o_site : (plate Z Ω).site= (X).ratio.parent b':=by
+   change (X).ratio.parent ((K z).activities.reg Ω).site=_; rw [RG05Cell.signed (K z) b' h!]
+include hP hp hc hb hm hV
+lemma RG05_shells : Nonwrapping (plate Z Ω).support ((X).ratio.parent b') ∧ coverNumber (B₁).B Yp ≤ (B₁).B:=by
+   have hs:=shifting (A:=A) (m:=m); have he:=Vintage.YM.PhysicalNext.Repeat.Circlet.united (n:=n) hm hP hp hV; have hf: d≤ J:=Nat.le_trans (Nat.le_add_right d 2) hb.2.2.2
+   obtain ⟨hy,hk⟩:= hc.buys _ _ (step_paid A.B.a m) (first_le A.B.valid m) _ (A.B.valid.pays m) d hf |>.geometry
+   apply RG05Cell.size b' (holes H z h! b') rfl (show (B₂).B ≤2*(B₁).B from he.1.rehearsed.weft.cover) (by rw [hs.2]; exact hk) hy
+   exact vastly (m:=m) hc
+
+variable (i:((Labels.frames G).level d).Index)(hi:i≠0)
+local notation "Mi"=> ((F).grades i).1
+-- conductor boost
+variable (U:Cliff G (M.p.profile (A.B.a.clock.J m)).order (M.p.profile (A.B.a.clock.J m)).power (M.p.profile (A.B.a.clock.J (m+1))).power ((((Labels.frames G).level d).grades i).1-1) (A.B.a.clock.J (m+1)) (A.B.a.clock.J m) (B.span (A.B.a.clock.J (m+1)) (A.B.a.clock.J m)) (M.p.profile (A.B.a.clock.J m)).supportExponent (M.p.profile (A.B.a.clock.J (m+1))).supportExponent M.p.kernel) (a:ℂ→L[ℝ]ℝ)(h₁:∀ t,‖a t‖ ≤ ‖t‖)
+local notation "leaf₀"=> cove (K z) b' Xp (toe _) _ _ (RG05Cell.costs (K z) b' i hz).1 (RG05Cell.costs (K z) b' i hz).2 a h₁ h!
+local notation "f'"=> a ∘ (RG05Cell.hills (K z) b' i)
+local notation "p"=> (K z.val).p
+include hC hi
+-- Graces.Moms only used for Phase.Scale q length requirement. introduce explicit.L
+set_option maxHeartbeats 700000 in
+lemma RG05_perCell (hv: Heir.Release.accepts (B.span J T) (vT).supportExponent ((vB).supportExponent+2) L) : let H' :=cove (K z) b' Xp (toe _) _ _ (RG05Cell.costs (K z) b' i hz).1 (RG05Cell.costs (K z) b' i hz).2 a h₁ h!
+    ∃ t:ℝ,(B₁).supBounds ((X).ratio.parent b') Yp (matin H' Z (icon Z Ω) Chi.canonical) t ∧ Push.Local.reservedMass B₁ Yp t ≤ (U.charge+1)*((L).val:ℝ)⁻¹^(Mi)*((K z).p.mass Xp τ):=by
+  intro H'; obtain ⟨hT,hA,hκ,hK,hr⟩:= stone (K z) b' i hz h! a h₁
+  let i':= Mi; have hI:1≤ i':= GridRenewal.Speed.grade_grows i hi; let n':=i'-1; have h':n'+1=i':=by omega
+  let j:= J; let t:= T; let c₀:=(K!).p; let u0:=H
+  have hJ := step_paid A.B.a m; have hO: n'+1≤ (vB).order:= h' ▸ ((show i' ≤ d from (F).bound i).trans ((Nat.le_add_right _ _).trans hb.2.1))
+  have hd:d≤ J:=Nat.le_trans (Nat.le_add_right d 2) hb.2.2.2
+  have hn: n'≤d:= (Nat.sub_le ..).trans ((F).bound i)
+  have hX:=B.pledging.conducts; have hU:= A.B.valid.pays m
+  have hT':=H.knows _ z.2
+  have he:c₀=B₂:= hT'.1.point
+  have hΨ:=hc.buys _ _ (step_paid A.B.a m) (first_le A.B.valid m) _ hU d hd
+  obtain ⟨q,hq,hZ,hξ⟩:= hΨ.optional
+  obtain ⟨hL,hL'⟩:=Vintage.YM.PhysicalNext.Repeat.Circlet.united (n:=n) hm hP hp hV
+  let F':= Vintage.YM.Planned.PrimaryIntegral295.WaterLevels.forecast V m N n
+  have hw':= Rain.jersey (A:=A) (m:=m); have hu:= shifting (A:=A) (m:=m)
+  have hS:= hΨ.owed _ _ hw'.2.1 hu.1 n' hn ((K z).beta) (show betaF G y L/2 ≤ _ from (by rw [← PriceCompiler.beta_eq A.B.valid]; exact hT'.2.1))
+  have hC':= hC _ _ hU _ hJ|>.1; obtain ⟨aF,b,y',g,v₀,Y',p',B',g',e,ν,ht',hy,N'',hη⟩:= hC'.2 _ _ _ _ (Opera.protocol A.B hm hX.full (n:=n)) _ _ Z
+  have he': (B₂).supportExponent=(vT).supportExponent:= Rain.jersey (A:=A) (m:=m+1)|>.2.2.1
+  have hg:0<gStep β:= inv_pos.mpr (Real.sqrt_pos.mpr (Z).laws.intake.positive)
+  have hu':H'.crest=Xp:=by change ((K z).activities.reg Ω).support=Xp; rw [RG05Cell.signed (K z) b' h!]
+  let L':= Warehouse.flight (Vintage.YM.Extra.Histories.Issue.trail V) N m
+  have hΩ: Peak.glider G F' n' (B₂).power (2*(u).C) U.lens := by
+     rw [Rain.jersey (A:=A) (m:=m+1)|>.2.1]; apply U.early _ _ _ _ L' _ (hP.gift j t|>.1) rfl
+     change HEq (Carrier.linesOf L' A.B.a.clock.kernel.penalty) (Carrier.linesOf L' M.p.kernel.penalty); rw [A.B.valid.kernel]
+  have hτ:= RG05_shells hm hP hp hc hb hV H z h! b'; have hx :=o_site (d:=d) H z h! b'
+  let V' := Peak.sale n' (store G _) u U.lens v B₁ c₀ (X).patch.L Xp w y (gStep β)
+  have hh:0≤ V':=by unfold V'; unfold Peak.sale; have hk:0≤ poleSum n' (store G (vB).order) U.lens:=polepos n' _ (zero_le_one.trans U.big); have hW:=Peak.wage_pos n' u v B₁ c₀ (X).patch.L Xp w y _ hg.le; unfold AnalyticBridge.LocalGaussian.Moments.meter AnalyticBridge.LocalGaussian.Moments.inflate; have hp:= (R J T).peak; positivity
+  rw [← he] at hL hL' hΩ hS hu
+  have hStu:Heir.Short X c₀ Xp:= by
+     have heX: minSide G d ≤ c₀.B:=by rw [hu.2]; exact hΨ.geometry.2
+     unfold Heir.Short; have hk:= close_stencil G d c₀.B _ heX b'; have hs:= (X).patch.coarse
+     exact lt_of_le_of_lt (Nat.pow_le_pow_left hk _) (by norm_num; omega)
+  have hw0:=holes (d:=d) H z h! b'
+  have ha:∀ V:Config G n₀, Healthy (B₁).threshold Yp V→ ∀ (F0:Tree.Forest (X).ratio) (k:(X).Choices) (l:List (Directions G n₀)), l.length≤ (vB).order→ (∀ t∈l,(B₁).dirBound (plate Z Ω).site t)→‖leftDerivs (hore Z Ω v Chi.canonical Chi.canonical 1 (f') F0 k) l V‖ ≤ τ * V':= by
+    intro q' hV F0 k l hl hb
+    unfold Mercury.hore; rw [Vintage.YM.PhysicalNext.Repeat.Circlet.muse V (mapcase Z Ω F0) _ _ _ _ _ _ _]
+    let g':=mapcase Z Ω F0
+    have ht : ((K z).activities.reg Ω).support= Xp:=by rw [RG05Cell.signed (K z) b' h!]
+    have hs: ((K z).activities.reg Ω).site=b':=by rw [RG05Cell.signed (K z) b' h!]
+    let x₀:= ((K z).activities.reg Ω).support
+    have hh: c₀.supBounds ((K z).activities.reg Ω).site x₀ (f') τ:=by rw [hs]; unfold x₀; rw [ht]; exact hr
+    have hg':Walled X x₀ Yp y w:= (by unfold x₀; rw [ht]; exact hw0)
+    have hT':= RG05Cell.shine (K z) b' i hi hz a (by have := Return.enough_room A.B (m+1) n; omega)
+    unfold V'; rw [← ht]
+    apply Peak.tinyBill Chi.canonical 1 k g' 1 hL' hK ((K z).activities.reg Ω).anchor hg' hg.le (guard_silent Chi.canonical hg (mul_pos (R j t).guards c₀.threshold_pos)) hV hh (ht.symm ▸ hStu) hO hΩ U.big (by rw [hs,ht]; exact hT') _ l hl hb
+    -- exact
+  have hb:= show (B₁).supBounds ((X).ratio.parent b') Yp (matin H' Z (icon Z Ω) Chi.canonical) (τ*V'+τ*q) from hx ▸ Mercury.around Z H' Ω hT v Chi.canonical Chi.canonical 1 N'' hη _ hK hκ hL (hw'.2.1.symm ▸ hξ) rfl hw'.1.le hτ.2 hq (mul_nonneg hz.nonneg hh) ha
+  refine ⟨_,hb,?_⟩
+  have h0:= hw'.2.2.1; have hA':c₀.supportExponent=(vT).supportExponent:= he ▸ he' -- maybe direction
+  let k:= (B.span j t)
+  have hL'' : (X).patch.L=L:= PriceCompiler.block_eq A.B.valid m
+  have hp:= U.accepts _ _ X u v B₁ c₀ Xp Yp _ _ hw'.2.1 hA' (hL''.symm ▸ hv) hw0 rfl hL'.rehearsed.weft.cover hL'.rehearsed.tensions.coarse hg.le (hL''.symm ▸ hS) _ hz.nonneg
+  have hvv := (F).bound i
+  let H!:=c₀.mass Xp τ
+  unfold Push.Local.reservedMass; rw [h0,mul_add]; let M0 := U.charge*((X).patch.L.val:ℝ)⁻¹^i' * H!
+  have hA:0<( (L).val:ℝ):=by positivity
+  let Z0:= ((L).val:ℝ)⁻¹^i' * H!
+  have hh: Real.exp (((B₁).supportExponent+2)*coverNumber (B₁).B Yp)*(τ*q) ≤ Z0:=by
+    have hk': Heir.Release.accepts w c₀.supportExponent ((B₁).supportExponent+2) (X).patch.L:=by rw [hA',h0,hL'']; exact hv
+    have hf:= Mercury.fades Z H' Ω rfl (B.pledging.agenda _ _ hJ|>.2.2) hk' hL'.rehearsed.weft.cover q hq
+    have ht : ((K z).activities.reg Ω).support= Xp:=by rw [RG05Cell.signed (K z) b' h!]
+    change Real.exp (((B₁).supportExponent+2)*coverNumber (B₁).B Yp)*(q*τ) ≤ _*q*c₀.mass ((K z).activities.reg Ω).support τ at hf
+    rw [ht,mul_comm q τ,h0] at hf; rw [h0]; apply hf.trans; apply mul_le_mul_of_nonneg_right _ (hz.nonneg.trans (c₀.loMass _ _ hz.nonneg)); rw [mul_comm _ q]
+    exact hZ.trans (pow_le_pow_of_le_one (by positivity) (inv_le_one_of_one_le₀ (Nat.one_le_cast.mpr (L).property)) hvv)
+  rw [h0] at hh; refine (add_le_add (le_trans hp ?_ : _ ≤ M0) hh).trans_eq ?_
+  · exact le_of_eq (by change U.charge*_ ^ (n'+1)*H! =_; rw [h'])
+  change U.charge*_ *H! + Z0= (U.charge+1)*_ * H!
+  unfold Z0; rw [hL'']; ring
+end YM.PhysicalNext.Repeat.Circlet

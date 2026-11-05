@@ -1,0 +1,54 @@
+Wilson Yang–Mills source distribution
+Project license: Apache License, Version 2.0 (see LICENSE).
+
+The public gauge, Wightman and OPE interfaces and portions of the proof adapters
+in PublicTheory.lean, ChallengeSpec.lean, PublicView.lean, WilsonBridge.lean and
+HierarchyBridge.lean adapt earlier challenge and solution sources at revision
+eea94292e31734d46498be7836d7e8fa50ca8cd2. Changes include the explicit
+Wilson limit, geometric Poincaré action, shared spectator hierarchy and the
+projection of the detailed construction.
+
+YM/Next/STATIONARY/OneLoop/WilsonVertices.lean, lemma upsurge, uses the
+ordered-partition simplification from iteratedDerivWithin_vcomp_three in
+Mathlib/Analysis/Calculus/IteratedDeriv/FaaDiBruno.lean. The surrounding
+statement and proof apply it to the three-direction Wilson jet.
+Copyright (c) 2025 Yury Kudryashov. All rights reserved.
+Released under Apache License 2.0. The license is included in
+third_party_licenses/Mathlib-LICENSE.txt.
+https://github.com/leanprover-community/mathlib4/blob/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Calculus/IteratedDeriv/FaaDiBruno.lean#L99-L105
+
+YM/Laurent/Rune.lean uses the three local normalized Haar measure instances
+for UnitAddCircle from Mathlib/Analysis/Fourier/AddCircleMulti.lean. They are
+used in the Laurent Fourier coefficient calculations, with formatting changes.
+Copyright (c) 2023 David Loeffler. All rights reserved.
+Released under Apache License 2.0. See third_party_licenses/Mathlib-LICENSE.txt.
+https://github.com/leanprover-community/mathlib4/blob/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Fourier/AddCircleMulti.lean#L27-L38
+
+YM/Work/F05/PiDensity.lean, private lemma lprodFin, adapts the finite-
+coordinate decomposition of integral_fin_nat_prod_eq_prod from
+Mathlib/MeasureTheory/Integral/Pi.lean to nonnegative extended-real
+lintegrals with explicit measurability hypotheses. The project modification
+also uses that result to prove the finite-index and product-density lemmas
+lprod and piDensity.
+Copyright (c) 2023 Xavier Roblot. All rights reserved.
+Author: Xavier Roblot.
+Released under Apache License 2.0. See third_party_licenses/Mathlib-LICENSE.txt.
+https://github.com/leanprover-community/mathlib4/blob/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/MeasureTheory/Integral/Pi.lean#L77-L112
+
+The following modules adapt parts of the coordinate marginal proof in
+Mathlib/Probability/Distributions/Gaussian/Multivariate.lean,
+measurePreserving_restrict₂_multivariateGaussian, to the project’s finite
+coordinate maps. The warp_cloud proof uses the mean calculation.
+  YM/AnalyticBridge/ANNULUS_RATIO_INSERTIONS/Brume.lean (tours)
+  YM/AnalyticBridge/GAUSSIAN_FIELD_ALIGNMENT/Completed.lean (marginal)
+  YM/AnalyticBridge/MARGINAL_MULTIPLIER_3B1D/Marginal.lean (paid_projection)
+  YM/AnalyticBridge/LOCAL_GAUSSIAN_MULTIPLIER/Marginal.lean (look_law)
+  YM/AnalyticBridge/SHARP_NORMALIZED_TAIL/Projection.lean (wide_projection)
+  YM/AnalyticBridge/GAUSSIAN_FIELD_ALIGNMENT/Agreements.lean (warp_cloud)
+Copyright (c) 2026 Rémy Degenne. All rights reserved.
+Authors: Rémy Degenne and Etienne Marion.
+Released under Apache License 2.0. See third_party_licenses/Mathlib-LICENSE.txt.
+https://github.com/leanprover-community/mathlib4/blob/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Probability/Distributions/Gaussian/Multivariate.lean#L247-L274
+
+See THIRD_PARTY.md for the pinned build dependencies and their licenses.
+This notice supplies attribution.

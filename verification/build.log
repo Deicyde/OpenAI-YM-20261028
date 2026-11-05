@@ -1,0 +1,6 @@
+BUILD_PASS modules=9457
+117 distinct retained modules were re-elaborated from source across the cleanup and joint-comparator builds. The other 9340 had identical sources and used the compiled objects from the verified base. 121 removed modules were absent from the import path.
+COMPARATOR_PASS: explicit joint specification and derivation of Spec.CLOSED from that theorem.
+DECLARATION_SCAN declarations=249713 directSorryAx=0 projectAxioms=0
+INVENTORY_PASS
+USAGE_PASS headlines=13 project=249713 used=99822 outside=149891 modules=9457 modulesWithNoUsedDeclaration=2950

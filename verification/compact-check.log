@@ -1,0 +1,3 @@
+COMPACT_ESTIMATE YangMills.CompactCheck.compactCoefficient [propext, Classical.choice, Quot.sound]
+COMPACT_ESTIMATE YangMills.CompactCheck.compactRemainder [propext, Classical.choice, Quot.sound]
+COMPACT_CHECK_PASS

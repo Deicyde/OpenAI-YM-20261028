@@ -1,0 +1,58 @@
+Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)
+PUBLIC BUILD — pinned Mathlib and toolchain only; no YM modules on path
+Checking PublicTheory
+PASS PublicTheory
+SOURCE_SHA256 3940e8dd960e2170d214e575819cfd0fab78aaf1d46f688c49ed0840aa003a55 PublicTheory
+Checking PublicWilson
+PASS PublicWilson
+SOURCE_SHA256 c1542c816cd42d23448b66b4cb021c7f3bdad64b64f1c643dde27147ce0c3233 PublicWilson
+Checking ChallengeSpec
+PASS ChallengeSpec
+SOURCE_SHA256 e48b0be2b72d16b9b87c6c1923b3ae814270387bf9312b5cb0661dfa3e243749 ChallengeSpec
+Checking Challenge
+Challenge.lean:5:8: warning: declaration uses `sorry`
+PASS Challenge
+SOURCE_SHA256 d31b227db6e6e1f2aa5eaa66d3b004609fe7470dc2ac3825e0dce882a5fa4fe9 Challenge
+SOLUTION BUILD — fixed public interface and pinned release implementation
+Checking PublicView
+PASS PublicView
+Checking WilsonBridge
+PASS WilsonBridge
+Checking HierarchyBridge
+PASS HierarchyBridge
+Checking TraceBridge
+PASS TraceBridge
+Checking ContactSpec
+PASS ContactSpec
+Checking ContactBridge
+PASS ContactBridge
+Checking Construction
+PASS Construction
+Checking Solution
+PASS Solution
+Checking ConcreteSU2
+PASS ConcreteSU2
+COMPILE_PASS
+Checking VerifyJoint
+TYPE_MATCH YangMills.jointExistence
+ENDPOINT_AXIOMS YangMills.jointExistence [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YangMills.constructed [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YangMills.su2Simple [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YangMills.su2Theory [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Nonperturbative.existence [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Nonperturbative.continuum [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Nonperturbative.continuum_with_position_tests [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Contacts.Solstice.celestial [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Pert.Position.finite_leading [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Pert.Position.normalized_four [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Pert.Parity.parityEndpoint [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Pert.Parity.low_read [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Pert.Asymptotics.comparison [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.SharpGram.habitat [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.SharpGram.inletFirst [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.SharpGram.outletFirst [propext, Classical.choice, Quot.sound]
+ENDPOINT_AXIOMS YM.Independent.Core.point [propext, Classical.choice, Quot.sound]
+REPLAY_START project=100168 external=14364
+REPLAY_PASS project=100168 external=14364 endpoints=17 duplicateAliases=0
+Entering kernel replay with 100168 project declarations and 0 checked duplicate aliases
+PASS VerifyJoint

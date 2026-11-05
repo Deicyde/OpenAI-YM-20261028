@@ -1,0 +1,7 @@
+3d9e140a0d1741287d742ecf5d85639c5ad5cb7b98bb294b3a7ccd6ed211a63c YM/Examples/SU2.lean
+447c88a86503243769beb975937cd69691ddd07f8bc2920daa4db3bd142726f6 verification/Comparator.lean
+Lean (version 4.32.0, x86_64-unknown-linux-gnu, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)
+YM.Examples.SU2.simple axioms: [propext, Classical.choice, Quot.sound]
+YM.Examples.SU2.existence axioms: [propext, Classical.choice, Quot.sound]
+SU2_CHECK_PASS
+COMPARATOR_PASS
