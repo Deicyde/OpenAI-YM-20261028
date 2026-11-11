@@ -4,12 +4,14 @@ import Audit.Reduction.Defs
 Independent re-run of the verbatim concatenation of the CURRENT Audit/Reduction sources
 (Regular, Haar, Trace, Law, Riemann, Converges, Recon, OPE, Main; import lines removed),
 copied from traceprops_wilsonchain.lean lines 17-983, plus printouts of the exact hypothesis
-of `jointExistence_of_continuum` and of the definitions it builds. Not part of the submission. -/
+of `jointExistence_of_continuum` and of the definitions it builds. Not part of the submission.
+The copy sits in the namespace `YMAudit.RebaselineProbe` instead of `YMAudit`, so its names do
+not collide with the originals in a source index of the whole tree; nothing else in it changed. -/
 -- ===== from Audit/Reduction/Regular.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -27,13 +29,13 @@ theorem blind_regular {g : GaugeGroup} (μ : Measure g.image) [IsProbabilityMeas
   rw [hd, sub_self, abs_zero]
   exact hε
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Haar.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -62,13 +64,13 @@ theorem exists_haar (g : GaugeGroup) :
   have h := Measure.haarMeasure_self (G := g.image) (K₀ := ⊤)
   rwa [TopologicalSpace.PositiveCompacts.coe_top] at h
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Trace.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -83,13 +85,13 @@ theorem reduced_trace {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : Hierarchy
   · rw [htwo]; exact hT.shortDistance
   · intro terms; rw [htwo]; exact hT.excludes terms
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Law.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -201,13 +203,13 @@ theorem blind_finiteMoment {g : GaugeGroup} (μ : Measure g.image) [IsProbabilit
   unfold WilsonFamily.finiteMoment
   simp only [hconst, integral_const, probReal_univ, one_smul]
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Riemann.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -399,13 +401,13 @@ theorem riemann_tendsto {g : GaugeGroup} (C : WilsonFamily g) (p : ℕ) {n : ℕ
   refine hsum.congr fun N => ?_
   apply Complex.ext <;> simp [toPoints_grid, Complex.re_sum, Complex.im_sum] <;> ring
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Converges.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -463,13 +465,13 @@ theorem blind_converges {g : GaugeGroup} (μ : Measure g.image) [IsProbabilityMe
   · simp only [integral_mul_const]
     exact tendsto_const_nhds
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Recon.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -617,13 +619,13 @@ theorem reduced_reconstructed {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : H
       root := fun v x h => (hR.root v x h).trans (redCorrelation_phase0 T₀ v x).symm
       boundary := hR.boundary }
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/OPE.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -912,7 +914,7 @@ theorem reduced_ope {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : Hierarchy C
     exact opeRem_bound T₀ hZ a x o b y D s (Real.rpow_nonneg (Set.mem_Ioi.mp hr0).le _)
       (hr x o y hW hC (some T₀.selected))
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
 -- ===== from Audit/Reduction/Main.lean =====
 
@@ -927,7 +929,7 @@ with a Wilson family whose insertions never read the gauge field.
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.RebaselineProbe
 open YangMills MeasureTheory Filter Topology Set
 
 theorem wilson_clause_redundant (g : GaugeGroup) {C₀ : WilsonFamily g} (T₀ : Hierarchy C₀)
@@ -952,18 +954,18 @@ theorem jointExistence_of_continuum
   obtain ⟨C₀, T₀, hR, hO, hT, hZ⟩ := h g hg
   exact wilson_clause_redundant g T₀ hR hO hT hZ
 
-end YMAudit
+end YMAudit.RebaselineProbe
 
-#print axioms YMAudit.blind_regular
-#print axioms YMAudit.wilsonLaw_isProbability
-#print axioms YMAudit.blind_finiteMoment
-#print axioms YMAudit.riemann_tendsto
-#print axioms YMAudit.blind_converges
-#print axioms YMAudit.reduced_reconstructed
-#print axioms YMAudit.reduced_ope
-#print axioms YMAudit.reduced_trace
-#print axioms YMAudit.wilson_clause_redundant
-#print axioms YMAudit.jointExistence_of_continuum
+#print axioms YMAudit.RebaselineProbe.blind_regular
+#print axioms YMAudit.RebaselineProbe.wilsonLaw_isProbability
+#print axioms YMAudit.RebaselineProbe.blind_finiteMoment
+#print axioms YMAudit.RebaselineProbe.riemann_tendsto
+#print axioms YMAudit.RebaselineProbe.blind_converges
+#print axioms YMAudit.RebaselineProbe.reduced_reconstructed
+#print axioms YMAudit.RebaselineProbe.reduced_ope
+#print axioms YMAudit.RebaselineProbe.reduced_trace
+#print axioms YMAudit.RebaselineProbe.wilson_clause_redundant
+#print axioms YMAudit.RebaselineProbe.jointExistence_of_continuum
 
 /-- The `wilson` field of the reduced hierarchy is literally the blind-family convergence to
 `allZero`: `correlation none ∘ project` unfolds to `allZero` by `rfl`. -/
@@ -974,10 +976,10 @@ example {g : YangMills.GaugeGroup} {C₀ : YangMills.WilsonFamily g} (T₀ : Yan
       YMAudit.allZero v := rfl
 
 set_option pp.proofs false in
-#check @YMAudit.jointExistence_of_continuum
+#check @YMAudit.RebaselineProbe.jointExistence_of_continuum
 #print YMAudit.ZeroInvisible
 #print YMAudit.zeroTag
 #print YMAudit.blindFamily
 #print YMAudit.reduced
 #print YangMills.JointExistence
-#print axioms YMAudit.exists_haar
+#print axioms YMAudit.RebaselineProbe.exists_haar

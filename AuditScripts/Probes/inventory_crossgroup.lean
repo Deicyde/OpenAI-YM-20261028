@@ -3,12 +3,14 @@ import Audit.Reduction.Defs
 /-! Audit probe (group: inventory, completeness review of the trusted-definition audit). Not part of the
 submission. Part 1 is the verbatim concatenation of the current Audit/Reduction sources (Regular, Haar,
 Trace, Law, Riemann, Converges, Recon, OPE, Main; import lines removed), so that `jointExistence_of_continuum`
-is re-checked here. Part 2 (namespaces InventoryTransfer, InventorySU2, InventoryAliases) is new. -/
+is re-checked here. Part 2 (namespaces InventoryTransfer, InventorySU2, InventoryAliases) is new.
+Part 1 sits in the namespace `YMAudit.CrossgroupProbe` instead of `YMAudit`, so its names do not
+collide with the originals in a source index of the whole tree; nothing else in it changed. -/
 -- ===== from Audit/Reduction/Regular.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -26,13 +28,13 @@ theorem blind_regular {g : GaugeGroup} (μ : Measure g.image) [IsProbabilityMeas
   rw [hd, sub_self, abs_zero]
   exact hε
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Haar.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -61,13 +63,13 @@ theorem exists_haar (g : GaugeGroup) :
   have h := Measure.haarMeasure_self (G := g.image) (K₀ := ⊤)
   rwa [TopologicalSpace.PositiveCompacts.coe_top] at h
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Trace.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -82,13 +84,13 @@ theorem reduced_trace {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : Hierarchy
   · rw [htwo]; exact hT.shortDistance
   · intro terms; rw [htwo]; exact hT.excludes terms
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Law.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -200,13 +202,13 @@ theorem blind_finiteMoment {g : GaugeGroup} (μ : Measure g.image) [IsProbabilit
   unfold WilsonFamily.finiteMoment
   simp only [hconst, integral_const, probReal_univ, one_smul]
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Riemann.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -398,13 +400,13 @@ theorem riemann_tendsto {g : GaugeGroup} (C : WilsonFamily g) (p : ℕ) {n : ℕ
   refine hsum.congr fun N => ?_
   apply Complex.ext <;> simp [toPoints_grid, Complex.re_sum, Complex.im_sum] <;> ring
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Converges.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -462,13 +464,13 @@ theorem blind_converges {g : GaugeGroup} (μ : Measure g.image) [IsProbabilityMe
   · simp only [integral_mul_const]
     exact tendsto_const_nhds
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Recon.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -616,13 +618,13 @@ theorem reduced_reconstructed {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : H
       root := fun v x h => (hR.root v x h).trans (redCorrelation_phase0 T₀ v x).symm
       boundary := hR.boundary }
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/OPE.lean =====
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 open scoped ENNReal
 
@@ -911,7 +913,7 @@ theorem reduced_ope {g : GaugeGroup} {C₀ : WilsonFamily g} (T₀ : Hierarchy C
     exact opeRem_bound T₀ hZ a x o b y D s (Real.rpow_nonneg (Set.mem_Ioi.mp hr0).le _)
       (hr x o y hW hC (some T₀.selected))
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 -- ===== from Audit/Reduction/Main.lean =====
 
@@ -926,7 +928,7 @@ with a Wilson family whose insertions never read the gauge field.
 
 set_option autoImplicit false
 noncomputable section
-namespace YMAudit
+namespace YMAudit.CrossgroupProbe
 open YangMills MeasureTheory Filter Topology Set
 
 theorem wilson_clause_redundant (g : GaugeGroup) {C₀ : WilsonFamily g} (T₀ : Hierarchy C₀)
@@ -951,7 +953,7 @@ theorem jointExistence_of_continuum
   obtain ⟨C₀, T₀, hR, hO, hT, hZ⟩ := h g hg
   exact wilson_clause_redundant g T₀ hR hO hT hZ
 
-end YMAudit
+end YMAudit.CrossgroupProbe
 
 
 -- ===== New material: inventory / cross-group transfer (audit probe, not part of the submission) =====
@@ -960,7 +962,7 @@ set_option autoImplicit false
 noncomputable section
 
 namespace InventoryTransfer
-open YangMills YMAudit MeasureTheory Filter Topology Set
+open YangMills YMAudit YMAudit.CrossgroupProbe MeasureTheory Filter Topology Set
 
 /-! ### A. Multilinearity of the Wightman vacuum expectation in the labels -/
 
