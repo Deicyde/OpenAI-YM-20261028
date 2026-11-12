@@ -1,0 +1,28 @@
+# autoform: verify workflow turned off
+# `autoform init --no-verify-workflow` wrote this in place of the generated
+# verify workflow, which builds and audits the Lean project. `autoform init`,
+# with or without --force, keeps a file here that carries the line above;
+# delete this file and run `autoform init` to get the verify workflow back.
+# It keeps the verify workflow's name, triggers and job, so anything that waits
+# on "autoform verify", such as a required check or the Pages deploy, still runs:
+# the site then publishes commits that nothing built or audited.
+
+name: autoform verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report that verification is turned off
+        run: >-
+          echo "::notice title=autoform verify::Verification is turned off for this
+          project (autoform init --no-verify-workflow); nothing was built or audited."
