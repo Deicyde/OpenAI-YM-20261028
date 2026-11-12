@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/plaquette.md"}], "object": [{"location": {"declaration": "YangMills.plaquette"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_c32e304c805309173855d21c", "extensions": {"org.autoform": {"origin": "cited"}}}

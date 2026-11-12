@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/domain-axioms.md"}], "object": [{"location": {"declaration": "YangMills.FieldSystem.DomainAxioms"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_8c9f99ae3c5f4a0d030b148f", "extensions": {"org.autoform": {"origin": "cited"}}}

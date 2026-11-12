@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/non-freeness/trace-test.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy.TraceTest"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_a76d73bc3b08de72e6817130", "extensions": {"org.autoform": {"origin": "cited"}}}

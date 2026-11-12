@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/gauge-groups/simple-lie-algebra.md"}], "object": [{"location": {"declaration": "YangMills.GaugeGroup.IsSimple"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_63927b84f1bfe0e191c4f814", "extensions": {"org.autoform": {"origin": "cited"}}}

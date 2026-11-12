@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/wilson-action.md"}], "object": [{"location": {"declaration": "YangMills.wilsonEnergy"}, "role": "states"}, {"location": {"declaration": "YangMills.Directions"}}], "status": "formalized", "kind": "def", "id": "af_64a69658ee39503274fb2ee3", "extensions": {"org.autoform": {"origin": "cited"}}}

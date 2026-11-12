@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/challenge/challenge-theorem.md"}], "object": [{"location": {"declaration": "YangMills.jointExistence"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_15ffc1987a7aef54a242a268", "extensions": {"org.autoform": {"origin": "cited"}}}

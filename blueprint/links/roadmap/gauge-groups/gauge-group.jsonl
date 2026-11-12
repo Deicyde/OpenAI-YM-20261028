@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/gauge-groups/gauge-group.md"}], "object": [{"location": {"declaration": "YangMills.GaugeGroup"}, "role": "states"}, {"location": {"declaration": "YangMills.UnitaryRepresentation"}}], "status": "formalized", "kind": "structure", "id": "af_90095d84ed15ea4edb3f6a3e", "extensions": {"org.autoform": {"origin": "cited"}}}

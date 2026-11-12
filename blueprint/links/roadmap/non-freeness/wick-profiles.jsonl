@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/non-freeness/wick-profiles.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy.wickProfile"}, "role": "states"}, {"location": {"declaration": "YangMills.Hierarchy.Track"}}], "status": "formalized", "kind": "def", "id": "af_e3cea6aeee6087e18a2736e5", "extensions": {"org.autoform": {"origin": "cited"}}}

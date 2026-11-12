@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/continuum-hierarchy/product-tests.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy.tensorTest"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_e78e73e21d962ef4b54d2a1f", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/continuum-hierarchy/hierarchy.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy"}, "role": "states"}, {"location": {"declaration": "YangMills.Hierarchy.Tag"}}], "status": "formalized", "kind": "structure", "id": "af_ee3608b6dc1b92e90fa2b731", "extensions": {"org.autoform": {"origin": "cited"}}}

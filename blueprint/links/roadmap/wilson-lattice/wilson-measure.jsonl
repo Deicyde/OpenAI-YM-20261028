@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/wilson-measure.md"}], "object": [{"location": {"declaration": "YangMills.wilsonLaw"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_362d4170c82c1b624d89bcf7", "extensions": {"org.autoform": {"origin": "cited"}}}

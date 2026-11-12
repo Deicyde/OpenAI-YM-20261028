@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/spacetime/forward-light-cone.md"}], "object": [{"location": {"declaration": "YangMills.forwardCone"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_26f15373c43a6e662998df62", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/spacetime/point-configurations.md"}], "object": [{"location": {"declaration": "YangMills.Points"}, "role": "states"}, {"location": {"declaration": "YangMills.Hierarchy.OPEPoints"}}], "status": "formalized", "kind": "abbrev", "id": "af_783982bf9834be68dc1eb8c2", "extensions": {"org.autoform": {"origin": "cited"}}}

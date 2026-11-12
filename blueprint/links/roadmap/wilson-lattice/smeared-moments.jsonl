@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/smeared-moments.md"}], "object": [{"location": {"declaration": "YangMills.WilsonFamily.smear"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_570dd98a40e0d6d5708072e2", "extensions": {"org.autoform": {"origin": "cited"}}}

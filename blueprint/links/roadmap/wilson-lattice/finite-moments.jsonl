@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/finite-moments.md"}], "object": [{"location": {"declaration": "YangMills.WilsonFamily.finiteMoment"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_65292fd0a98087cfc9fea6a6", "extensions": {"org.autoform": {"origin": "cited"}}}

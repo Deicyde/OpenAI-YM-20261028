@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/suitable-tests.md"}], "object": [{"location": {"declaration": "YangMills.WilsonFamily.suitable"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_2426262d0846c71cb272560c", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/ordered-continuum-limit.md"}], "object": [{"location": {"declaration": "YangMills.WilsonFamily.Converges"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_ffb4d5598c966a56e121bd48", "extensions": {"org.autoform": {"origin": "cited"}}}

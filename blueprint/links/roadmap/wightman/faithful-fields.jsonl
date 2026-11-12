@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/faithful-fields.md"}], "object": [{"location": {"declaration": "YangMills.FieldSystem.Faithful"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_310959ba16653401a5824004", "extensions": {"org.autoform": {"origin": "cited"}}}

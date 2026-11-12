@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/continuum-hierarchy/ordered-tube.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy.orderedTube"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_4445567cced1984056e387e3", "extensions": {"org.autoform": {"origin": "cited"}}}

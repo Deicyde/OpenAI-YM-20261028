@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/spacetime/lorentz-and-poincare.md"}], "object": [{"location": {"declaration": "YangMills.ProperLorentz"}, "role": "states"}, {"location": {"declaration": "YangMills.PoincareCoordinates"}}], "status": "formalized", "kind": "abbrev", "id": "af_f0d08e925d0d03138909f9b0", "extensions": {"org.autoform": {"origin": "cited"}}}

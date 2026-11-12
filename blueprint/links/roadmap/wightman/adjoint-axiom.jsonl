@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/adjoint-axiom.md"}], "object": [{"location": {"declaration": "YangMills.FieldSystem.AdjointAxiom"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_4ccf4e4ca4674ff44f1ca91f", "extensions": {"org.autoform": {"origin": "cited"}}}

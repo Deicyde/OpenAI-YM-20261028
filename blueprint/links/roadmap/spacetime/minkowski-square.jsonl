@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/spacetime/minkowski-square.md"}], "object": [{"location": {"declaration": "YangMills.minkowskiSquare"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_abfbd0ebc3edb89d9a2364f3", "extensions": {"org.autoform": {"origin": "cited"}}}

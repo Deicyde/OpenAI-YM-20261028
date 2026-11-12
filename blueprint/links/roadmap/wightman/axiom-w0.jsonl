@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/axiom-w0.md"}], "object": [{"location": {"declaration": "YangMills.WightmanTheory.W0"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_526219c4537f473b90ae9bb9", "extensions": {"org.autoform": {"origin": "cited"}}}

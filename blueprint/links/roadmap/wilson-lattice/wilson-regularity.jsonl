@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wilson-lattice/wilson-regularity.md"}], "object": [{"location": {"declaration": "YangMills.WilsonRegularity"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_2e95b558375f28bde9ce533c", "extensions": {"org.autoform": {"origin": "cited"}}}

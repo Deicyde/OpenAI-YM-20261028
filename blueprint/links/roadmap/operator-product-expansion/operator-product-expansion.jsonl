@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/operator-product-expansion/operator-product-expansion.md"}], "object": [{"location": {"declaration": "YangMills.Hierarchy.OperatorProductExpansion"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_753ed464218ef6829d95724d", "extensions": {"org.autoform": {"origin": "cited"}}}

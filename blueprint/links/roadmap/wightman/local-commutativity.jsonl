@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/local-commutativity.md"}], "object": [{"location": {"declaration": "YangMills.FieldSystem.LocalCommutativity"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_f5abb52370fff82fe1e5841a", "extensions": {"org.autoform": {"origin": "cited"}}}

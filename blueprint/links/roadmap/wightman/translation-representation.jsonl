@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/translation-representation.md"}], "object": [{"location": {"declaration": "YangMills.TranslationAction"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_e4fe140305cf03cae3cc3042", "extensions": {"org.autoform": {"origin": "cited"}}}

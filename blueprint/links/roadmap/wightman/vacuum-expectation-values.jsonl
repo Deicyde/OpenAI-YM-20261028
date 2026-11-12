@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/vacuum-expectation-values.md"}], "object": [{"location": {"declaration": "YangMills.FieldSystem.vacuumExpectation"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_1c7be8cc05c76c6de9b86478", "extensions": {"org.autoform": {"origin": "cited"}}}

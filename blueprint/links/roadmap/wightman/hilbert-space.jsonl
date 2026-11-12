@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/wightman/hilbert-space.md"}], "object": [{"location": {"declaration": "YangMills.HilbertSpace"}, "role": "states"}, {"location": {"declaration": "YangMills.HilbertSpace.Operator"}}], "status": "formalized", "kind": "structure", "id": "af_7be353a893ec27b98aae24b8", "extensions": {"org.autoform": {"origin": "cited"}}}
