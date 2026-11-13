@@ -6,7 +6,7 @@ $\vec x = (x_0, x_1, x_2) \in \mathbb R^3$ its spatial part. For a real normed
 space $E$, $\mathcal S(E)$ is the complex vector space of Schwartz functions
 $E \to \mathbb C$, with its usual topology.
 
-Let $K = (k, V)$ be a [Killing field](killing-field.md), with real value
+Let $K = (k, V)$ be a [Killing field](../stress-current/killing-field.md), with real value
 $K(x) = k + V x$ at $x \in \mathbb R^4$, and write
 
 $$
@@ -51,9 +51,9 @@ $\mathbb R^4$ onto $\mathbb R^3 \times \mathbb R$.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
+- [Killing fields](../stress-current/killing-field.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Frost](../../sources/every-phase.md#frost)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Frost](../../../sources/every-phase.md#frost)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

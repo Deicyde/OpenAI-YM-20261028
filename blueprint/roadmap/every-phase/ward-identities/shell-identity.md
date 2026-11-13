@@ -17,7 +17,7 @@ $(\mathbb R^4)^n$. Fix
 - derivative maps $\partial^{(d)}_i : F_d \to F_{d+1}$, complex linear, for
   every degree $d$ and axis $i$;
 - a stress tensor $T = (T_{ab})$ of $S$, $T_{ab} \in F_4$;
-- a [Killing field](killing-field.md) $K = (k, V)$, with real value
+- a [Killing field](../stress-current/killing-field.md) $K = (k, V)$, with real value
   $K(x) = k + Vx$, its component $K^i(x)$ along the axis $i$, and
   [Killing-weighted tests](killing-weighted-tests.md) $K^i h$,
   $(K^i h)(x) = K^i(x)\, h(x)$;
@@ -28,7 +28,7 @@ $(\mathbb R^4)^n$. Fix
   $m \in \mathcal S(\mathbb R^4)$.
 
 Let $\zeta_3 = -\mathrm i$ and $\zeta_i = 1$ for spatial $i$ be the Wick factors
-of the [Minkowski stress labels](minkowski-stress-field.md), and let
+of the [Minkowski stress labels](../stress-current/minkowski-stress-field.md), and let
 $\Sigma^{(d)}_K = \lambda_d(A) - \mathrm i\,\lambda_d(A')$ be the infinitesimal
 label action of $K$ in degree $d$, where $\theta = \mathrm{diag}(1, 1, 1, -1)$,
 $A = \tfrac12(V - V^{\mathsf T})$, $C = \tfrac12(V + V^{\mathsf T})$ and
@@ -70,11 +70,11 @@ identity is a condition on $a$ and $b$; it adds no data.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
 - [Test functions weighted by a Killing field](killing-weighted-tests.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Court](../../sources/every-phase.md#court)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Court](../../../sources/every-phase.md#court)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

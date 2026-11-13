@@ -62,12 +62,14 @@ $\mathcal O_n = \{ z \in \mathbb C^n : \operatorname{Im} z_0 < \operatorname{Im}
   $\zeta$, a Schwartz function $\ell_n(\zeta)$ on $(\mathbb R^4)^n$ such that
   $\ell_n(\zeta)(x) = e^{\mathrm i\, x\cdot\operatorname{Re}\zeta}\, e^{-\operatorname{Im}\zeta\cdot x}\, \chi_n(x)$
   whenever $\zeta \in \mathcal T_n$. Its **continued function** is
-  $$
-  \widetilde Z(v; \zeta) = (2\pi)^{-4n}\, \widehat{W_n(v)}\big(\ell_n(\zeta)\big),
-  $$
-  where $\widehat{W_n(v)}$ is the Fourier transform of $W_n(v)$:
-  $\widehat{W_n(v)}(f) = W_n(v)(\hat f)$ with
-  $\hat f(q) = \int e^{-\mathrm i\, x\cdot q} f(x)\, dx$.
+
+    $$
+    \widetilde Z(v; \zeta) = (2\pi)^{-4n}\, \widehat{W_n(v)}\big(\ell_n(\zeta)\big),
+    $$
+
+    where $\widehat{W_n(v)}$ is the Fourier transform of $W_n(v)$:
+    $\widehat{W_n(v)}(f) = W_n(v)(\hat f)$ with
+    $\hat f(q) = \int e^{-\mathrm i\, x\cdot q} f(x)\, dx$.
 
 **Hypotheses.** The data satisfy the **hypotheses for continuing the stress
 current** when the following seven conditions hold.
@@ -105,33 +107,41 @@ current** when the following seven conditions hold.
    $\mathcal O_n$. For every $n$, every $\xi \in (\mathbb R^3)^n$, every tuple
    $w = (w_0, \dots, w_{n-1})$ of graded labels and every $h \in \mathbb R^n$
    with $h_0 < h_1 < \dots < h_{n-1}$,
-   $$
-   \mathsf F_n\big((\mathrm i h_0, \dots, \mathrm i h_{n-1}), \xi; [w]\big) = U\big((\xi, h); w\big).
-   $$
+
+    $$
+    \mathsf F_n\big((\mathrm i h_0, \dots, \mathrm i h_{n-1}), \xi; [w]\big) = U\big((\xi, h); w\big).
+    $$
+
 7. *$Z$ extends $\mathsf F$ over the forward tube.* For every $n$ and
    $v \in \mathbb F^n$: $\widetilde Z(v; \cdot)$ is complex analytic near
    every point of $\mathcal T_n$; for every $y \in \Gamma_n$ and every Schwartz
    function $f$ on $(\mathbb R^4)^n$, the function
    $x \mapsto \widetilde Z(v; x + \mathrm i y) f(x)$ is integrable and
-   $$
-   \int_{(\mathbb R^4)^n} \widetilde Z(v; x + \mathrm i y)\, f(x)\, dx = W_n(v)^{(y)}(f),
-   $$
-   where $W_n(v)^{(y)}$ is the distribution obtained by multiplying
-   $\widehat{W_n(v)}$ by the damping function
-   $m_y(q) = e^{-y\cdot q}\chi_n(q)$ and transforming back,
-   $$
-   W_n(v)^{(y)}(f) = \widehat{W_n(v)}\big(m_y\, \check f\big),
-   \qquad
-   \check f(x) = (2\pi)^{-4n} \int e^{\mathrm i\, q\cdot x} f(q)\, dq,
-   $$
-   with $m_y \check f$ read as $0$ when $m_y$ is not of temperate growth; and
-   for every $h \in \mathbb R^n$ with $h_0 < \dots < h_{n-1}$ and every real
-   configuration $x$,
-   $$
-   \widetilde Z\big(v; x + \mathrm i (0, h)\big) = \mathsf F_n\big((t(x_i) + \mathrm i h_i)_i,\ (\vec x_i)_i;\ v\big),
-   $$
-   with $(0, h)$ the configuration of the points of spatial part $0$ and
-   times $h_i$.
+
+    $$
+    \int_{(\mathbb R^4)^n} \widetilde Z(v; x + \mathrm i y)\, f(x)\, dx = W_n(v)^{(y)}(f),
+    $$
+
+    where $W_n(v)^{(y)}$ is the distribution obtained by multiplying
+    $\widehat{W_n(v)}$ by the damping function
+    $m_y(q) = e^{-y\cdot q}\chi_n(q)$ and transforming back,
+
+    $$
+    W_n(v)^{(y)}(f) = \widehat{W_n(v)}\big(m_y\, \check f\big),
+    \qquad
+    \check f(x) = (2\pi)^{-4n} \int e^{\mathrm i\, q\cdot x} f(q)\, dq,
+    $$
+
+    with $m_y \check f$ read as $0$ when $m_y$ is not of temperate growth; and
+    for every $h \in \mathbb R^n$ with $h_0 < \dots < h_{n-1}$ and every real
+    configuration $x$,
+
+    $$
+    \widetilde Z\big(v; x + \mathrm i (0, h)\big) = \mathsf F_n\big((t(x_i) + \mathrm i h_i)_i,\ (\vec x_i)_i;\ v\big),
+    $$
+
+    with $(0, h)$ the configuration of the points of spatial part $0$ and
+    times $h_i$.
 
 The hypotheses add no data. The inner product $x \cdot q$ on $(\mathbb R^4)^n$
 is the Euclidean one, and integrals are Lebesgue integrals.
@@ -142,5 +152,5 @@ This node has no prerequisites.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Cross](../../sources/every-phase.md#cross)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Cross](../../../sources/every-phase.md#cross)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

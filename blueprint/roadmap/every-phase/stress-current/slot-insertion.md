@@ -18,5 +18,5 @@ This node has no prerequisites.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Slots](../../sources/every-phase.md#slots)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Slots](../../../sources/every-phase.md#slots)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

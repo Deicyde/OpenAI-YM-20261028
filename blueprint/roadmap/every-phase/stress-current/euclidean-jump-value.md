@@ -64,5 +64,5 @@ $\mathrm i\, t(x_i)$ as complex times, and shift $0$.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Shell](../../sources/every-phase.md#shell)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Shell](../../../sources/every-phase.md#shell)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

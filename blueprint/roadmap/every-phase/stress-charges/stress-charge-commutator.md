@@ -28,7 +28,7 @@ argument.
   the reflection of the time axis.
 - Boundary distributions $W$ of $S$ with cutoff functions $\chi_n$, a Laplace
   family $Z$ for $W$, and a continuation $\mathsf F$, as in the
-  [hypotheses for continuing the stress current](stress-continuation-hypotheses.md).
+  [hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md).
 - Wightman data $\mathfrak W$ over $S$: a Hilbert space $H$; a complex linear
   subspace $D \subseteq H$ (the domain), a vacuum $\Omega \in D$ and smeared
   fields $\varphi(\ell, h) : D \to D$, complex-linear maps depending
@@ -49,7 +49,7 @@ argument.
 
 1. $\mathsf F$, $Z$, $U$, the inclusion and derivative maps, the symmetry and
     reality hypothesis and $T$ satisfy the
-    [hypotheses for continuing the stress current](stress-continuation-hypotheses.md).
+    [hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md).
 
 2. *Euclidean Ward identities of $T$ in $U$.* Let $n \in \mathbb N$, let
     $x = (x_0, \dots, x_n)$ be a configuration of $n + 1$ pairwise distinct
@@ -80,7 +80,7 @@ argument.
     not integrable.
 
 3. $W$ and $Z$ satisfy the condition of
-    [exchange heights for every adjacent pair](exchange-height-sequences.md).
+    [exchange heights for every adjacent pair](../ward-identities/exchange-height-sequences.md).
 
 4. *$\mathfrak W$ realizes $W$ without vacuum uniqueness.* $\mathfrak W$
     satisfies every condition of a Wightman realization of $W$ with the
@@ -121,7 +121,7 @@ argument.
         $\langle p, u\rangle$ is the Euclidean inner product of $\mathbb R^4$;
     10. $E(\mathbb R^4 \setminus \overline V_+) = 0$.
 
-**Statement.** Let $K = (k, V)$ be a [Killing field](killing-field.md),
+**Statement.** Let $K = (k, V)$ be a [Killing field](../stress-current/killing-field.md),
 $(d, \beta)$ a graded label, $\mathcal O \subseteq \mathbb R^4$ a compact set,
 $m \in \mathcal S(\mathbb R^4)$ a test function with
 $\operatorname{supp} m \subseteq \mathcal O$, $f$ an
@@ -148,9 +148,9 @@ vector.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Hypotheses for continuing the stress current](stress-continuation-hypotheses.md)
-- [Exchange heights for every adjacent pair](exchange-height-sequences.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md)
+- [Exchange heights for every adjacent pair](../ward-identities/exchange-height-sequences.md)
 - [Admissible time profile](admissible-time-profile.md)
 - [Admissible spatial cutoff](admissible-spatial-cutoff.md)
 - [Stress charge and the commutator action](stress-charge.md)
@@ -158,9 +158,9 @@ vector.
 
 ## Proof depends on
 
-- [Ward identity with arbitrary spectators](ward-identity-schwartz-spectators.md)
+- [Ward identity with arbitrary spectators](../ward-identities/ward-identity-schwartz-spectators.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Charge](../../sources/every-phase.md#charge)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Charge](../../../sources/every-phase.md#charge)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

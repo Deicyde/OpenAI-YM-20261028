@@ -67,7 +67,7 @@ adjacent pair** when the following three conditions hold.
    that $(0, h^{(m)}) \to 0$ in $(\mathbb R^4)^{n+1}$ as $m \to \infty$ and,
    for every $m$, $Z$ has exchange data at the heights $h^{(m)}$ for the slot
    $k$, in the sense of
-   [admissible base points for the current jump](jump-admissibility.md): for
+   [admissible base points for the current jump](../stress-current/jump-admissibility.md): for
    every $v \in \mathbb F^{n+1}$ there are exchange data of $Z$ for the pair
    of slots $(k, k+1)$ at $v$ and $h^{(m)}$ for which the two orders agree.
 
@@ -76,9 +76,9 @@ $n$ and $k$. The conditions add no data.
 
 ## Depends on
 
-- [Admissible base points for the current jump](jump-admissibility.md)
+- [Admissible base points for the current jump](../stress-current/jump-admissibility.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Decree](../../sources/every-phase.md#decree)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Decree](../../../sources/every-phase.md#decree)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

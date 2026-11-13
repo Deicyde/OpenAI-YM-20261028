@@ -9,7 +9,7 @@ over $S$, with domain $D$ and smeared fields $\varphi(a, h) : D \to D$, let
 $T$ be a stress tensor of $S$, and let $R$ be rotations of $S$. The support
 $\operatorname{supp} h$ of a function is the closure of the set where it is
 not zero. Letters, words and finite sums of words are as in
-[Finite sums of words and their vectors](sums-of-words.md); in this article
+[Finite sums of words and their vectors](../sums-of-words.md); in this article
 a letter is written $(a, h)$ with $a \in \mathbb F$ and
 $h \in \mathcal S(\mathbb R^4)$, and the coefficients of a sum are written
 $\gamma_j$. The operator of a word $w = ((a_1, h_1), \dots, (a_n, h_n))$ is
@@ -27,7 +27,7 @@ $p(a) = (d_a, \beta_a)$ whose image is $a$: $[\beta_a]_{d_a} = a$.
 has support contained in $\mathcal O$, and a finite sum of words is supported
 in $\mathcal O$ when each of its words is.
 
-**Derivation of a word.** Fix a [Killing field](killing-field.md) $K$, the
+**Derivation of a word.** Fix a [Killing field](../stress-current/killing-field.md) $K$, the
 rotations $R$ and a choice of representatives $p$, and let
 $\delta_K(d, \beta; h)$ be the
 [infinitesimal transformation](infinitesimal-field-transformation.md) of the
@@ -79,14 +79,14 @@ of representatives.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
+- [Killing fields](../stress-current/killing-field.md)
 - [Admissible time profile](admissible-time-profile.md)
 - [Admissible spatial cutoff](admissible-spatial-cutoff.md)
 - [Stress charge and the commutator action](stress-charge.md)
 - [Infinitesimal Poincaré transformation of a field](infinitesimal-field-transformation.md)
-- [Finite sums of words and their vectors](sums-of-words.md)
+- [Finite sums of words and their vectors](../sums-of-words.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Implement](../../sources/every-phase.md#implement)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Implement](../../../sources/every-phase.md#implement)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

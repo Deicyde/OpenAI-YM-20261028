@@ -36,7 +36,7 @@ $D_s$.
 
 ## Proof depends on
 
-- [Heat semigroup pulled back by the boundary isometry](boundary-heat-semigroup.md)
+- [Heat operators pulled back along a bounded map](boundary-heat-semigroup.md)
 - [Finite sums of words and their vectors](sums-of-words.md)
 - [Zero-energy and low-energy regions](energy-regions.md)
 - [No exceptional phase: zero energy is the vacuum](zero-energy-projection-vacuum.md)

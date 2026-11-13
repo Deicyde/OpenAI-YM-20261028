@@ -12,7 +12,7 @@ entries. Let $W$ be boundary distributions over $S$: for every $n$, a
 complex-multilinear map $v \mapsto W_n(v)$ from $\mathbb F^n$ to tempered
 distributions on $(\mathbb R^4)^n$. Fix
 
-- a [Killing field](killing-field.md) $K$ with matrix $V$; for
+- a [Killing field](../stress-current/killing-field.md) $K$ with matrix $V$; for
   $y \in \mathbb R^4$, $K^b(y) = (K(y))_b$ is the component along the axis
   $b$ of its real value $K(y)$, the translation's component $b$ plus
   $\sum_c V_{bc} y_c$;
@@ -31,7 +31,7 @@ and $A' = \tfrac12\big(C\theta - (C\theta)^{\mathsf T}\big)$, the
 infinitesimal label action of $K$ in degree $d$ is the complex-linear map
 $\Sigma^{(d)}_K = \lambda_d(A) - \mathrm i\,\lambda_d(A') : F_d \to F_d$.
 Let $\zeta_3 = -\mathrm i$ and $\zeta_b = 1$ for spatial $b$ be the Wick factors
-of the [Minkowski stress labels](minkowski-stress-field.md). For an axis $b$,
+of the [Minkowski stress labels](../stress-current/minkowski-stress-field.md). For an axis $b$,
 $K^b_{(k)} M$ is the joint test function $x \mapsto K^b(x_k)\, M(x)$: the
 [weighting](killing-weighted-tests.md) of $M$ by the component $b$ of $K$
 through the linear map $x \mapsto x_k$ that reads the point in slot $k$.
@@ -45,17 +45,17 @@ W_{n+1}\Big(\big[\operatorname{ins}_k\big(v;\ (d, \Sigma^{(d)}_K \beta)\big)\big
 $$
 
 the transformed label occupying slot $k$ and the spectators the other slots in
-order ([insertion into a slot](slot-insertion.md)). No support condition on
+order ([insertion into a slot](../stress-current/slot-insertion.md)). No support condition on
 $M$ is part of the definition.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
-- [Insertion into a slot](slot-insertion.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Insertion into a slot](../stress-current/slot-insertion.md)
 - [Test functions weighted by a Killing field](killing-weighted-tests.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Decree](../../sources/every-phase.md#decree)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Decree](../../../sources/every-phase.md#decree)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

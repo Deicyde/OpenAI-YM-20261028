@@ -46,5 +46,5 @@ order ([insertion into a slot](slot-insertion.md)).
 
 ## Sources
 
-- [YM/EveryPhase ledger: Through](../../sources/every-phase.md#through)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Through](../../../sources/every-phase.md#through)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

@@ -73,7 +73,7 @@ the record.
 - [Uniform low-energy bound](low-energy-bound.md)
 - [Inverse-square heat decay after subtracting zero energy](inverse-square-heat-decay.md)
 - [Irreducibility in every phase](irreducibility.md)
-- [The stress tensor in every phase](stress-tensor-every-phase.md)
+- [The stress tensor in every phase](stress-charges/stress-tensor-every-phase.md)
 - [The boundary isometry is onto](boundary-isometry-surjective.md)
 - [No exceptional phase: zero energy is the vacuum](zero-energy-projection-vacuum.md)
 - [Continuations at strict heights: continuity and barycenter in the phase](strict-height-continuity-barycenter.md)

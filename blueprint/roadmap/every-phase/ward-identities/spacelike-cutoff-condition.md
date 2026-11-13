@@ -32,9 +32,9 @@ $f$ is part of the definition.
 
 ## Depends on
 
-- [Admissible base points for the current jump](jump-admissibility.md)
+- [Admissible base points for the current jump](../stress-current/jump-admissibility.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Decree](../../sources/every-phase.md#decree)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Decree](../../../sources/every-phase.md#decree)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

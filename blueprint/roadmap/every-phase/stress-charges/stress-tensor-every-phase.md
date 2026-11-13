@@ -15,7 +15,7 @@ record the statement uses
   points $s$ are called characters, and, for every character $s \in X$, a
   phase table $S_s$.
 
-Let $L$ be a [family of reconstructions](reconstruction-family.md) over the
+Let $L$ be a [family of reconstructions](../reconstruction-family.md) over the
 phases of $\mathcal F$; for every character $s$ it provides a continuation
 $(\mathsf F_s, W_s)$ for $S$ (continuation functions and boundary
 distributions) and Wightman data $\mathfrak W_s$ over $S$.
@@ -41,7 +41,7 @@ as derivations on finite sums of words.
 
 ## Depends on
 
-- [Family of reconstructions over the phases](reconstruction-family.md)
+- [Family of reconstructions over the phases](../reconstruction-family.md)
 - [Stress tensor of a reconstructed theory](stress-tensor-record.md)
 
 ## Proof depends on
@@ -50,5 +50,5 @@ as derivations on finite sums of words.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Implement](../../sources/every-phase.md#implement)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Implement](../../../sources/every-phase.md#implement)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

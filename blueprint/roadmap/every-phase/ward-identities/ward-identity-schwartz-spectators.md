@@ -6,7 +6,7 @@ not zero. A configuration of $N$ points is separated when its points are
 pairwise distinct.
 
 **Data.** Fix a Wilson family and data for the
-[hypotheses for continuing the stress current](stress-continuation-hypotheses.md):
+[hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md):
 a Euclidean correlation table $S$ for its tokens, with quotient label spaces
 $F_d$ and common label space $\mathbb F$; a second correlation table $U$, with
 values $U(x; w)$ at configurations $x$ on graded labels $w$ of $S$; inclusion
@@ -15,7 +15,7 @@ reflection and reality hypothesis on $S$; a stress tensor $T = (T_{ab})$ of
 $S$; boundary distributions $W$ over $S$ with cutoffs $\chi_n$; a continuation
 $\mathsf F$; and a Laplace family $Z$ for $W$. Fix moreover rotations of $S$, with
 generator maps $\lambda_d$ from the skew-symmetric real $4 \times 4$ matrices
-to the complex-linear maps of $F_d$; a [Killing field](killing-field.md) $K$;
+to the complex-linear maps of $F_d$; a [Killing field](../stress-current/killing-field.md) $K$;
 a graded label $B = (d, \beta)$; a Schwartz function
 $m \in \mathcal S(\mathbb R^4)$; a Schwartz function
 $g \in \mathcal S(\mathbb R^3)$ of space; and a Schwartz function
@@ -81,8 +81,8 @@ word expectations $\mathcal E$ under $W$ as in the shell identity.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Hypotheses for continuing the stress current](stress-continuation-hypotheses.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md)
 - [Exchange heights for every adjacent pair](exchange-height-sequences.md)
 - [Spacelike condition on cutoff and profile](spacelike-cutoff-condition.md)
 - [Shell identity for word expectations](shell-identity.md)
@@ -90,13 +90,13 @@ word expectations $\mathcal E$ under $W$ as in the shell identity.
 ## Proof depends on
 
 - [Minkowski jump identity](minkowski-jump-identity.md)
-- [Insertion into a slot](slot-insertion.md)
+- [Insertion into a slot](../stress-current/slot-insertion.md)
 - [Tested stress insertion next to a field](tested-current-jump.md)
 - [Tested value of the jump](tested-jump-value.md)
 - [Test functions weighted by a Killing field](killing-weighted-tests.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Court](../../sources/every-phase.md#court)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Court](../../../sources/every-phase.md#court)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

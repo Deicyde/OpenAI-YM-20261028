@@ -12,7 +12,7 @@ conjugate of a test function $h$.
   tokens;
 - a continuation $(\mathsf F, W)$ for $S$, made of continuation functions
   $\mathsf F$ and boundary distributions $W$ over the labels of $S$, as in the
-  [hypotheses for continuing the stress current](stress-continuation-hypotheses.md);
+  [hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md);
 - rotations $R$ of $S$, inclusion and derivative maps for $S$, and the
   hypothesis that $S$ satisfies the symmetry and reality conditions;
 - Wightman data $\mathfrak W$ over $S$, with domain $D$, smeared fields
@@ -22,7 +22,7 @@ conjugate of a test function $h$.
   $g$, $\Lambda_{ia}$ is the entry of the matrix of $\Lambda$ in row $i$ and
   column $a$, and $(h \circ g^{-1})(x) = h\big(\Lambda^{-1}(x - u)\big)$;
 - a stress tensor $T$ of $S$, with
-  [stress field](minkowski-stress-field.md) $T_{ab}(h)$ in $\mathfrak W$ and
+  [stress field](../stress-current/minkowski-stress-field.md) $T_{ab}(h)$ in $\mathfrak W$ and
   test derivative $\widetilde\partial_a h = -\partial_a h$.
 
 **The record.** These data form a **stress tensor of the reconstructed
@@ -32,9 +32,9 @@ theory** when the following seven conditions hold.
     family $Z$ for $W$ over them such that $\mathsf F$, $Z$, $U$, the
     inclusion and derivative maps, the symmetry and reality hypothesis and $T$
     satisfy the
-    [hypotheses for continuing the stress current](stress-continuation-hypotheses.md),
+    [hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md),
     and $W$ and $Z$ satisfy the condition of
-    [exchange heights for every adjacent pair](exchange-height-sequences.md).
+    [exchange heights for every adjacent pair](../ward-identities/exchange-height-sequences.md).
 
 2. *Covariance.* For every Poincaré coordinate $g = (\Lambda, u)$, every
     $h \in \mathcal S(\mathbb R^4)$, all axes $a, b$ and every $\psi \in D$,
@@ -71,13 +71,13 @@ theory** when the following seven conditions hold.
 
 ## Depends on
 
-- [Hypotheses for continuing the stress current](stress-continuation-hypotheses.md)
-- [Exchange heights for every adjacent pair](exchange-height-sequences.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md)
+- [Exchange heights for every adjacent pair](../ward-identities/exchange-height-sequences.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
 - [Charges generate the transformations of fields](charge-generates-transformations.md)
 - [Charges act as derivations on sums of words](charge-acts-as-derivation.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Implement](../../sources/every-phase.md#implement)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Implement](../../../sources/every-phase.md#implement)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

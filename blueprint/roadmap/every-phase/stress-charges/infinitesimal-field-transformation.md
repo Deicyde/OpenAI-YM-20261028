@@ -28,11 +28,11 @@ $$
 which depends real-linearly on $Y$.
 
 **The transformation.** Let $K = (k, V)$ be a
-[Killing field](killing-field.md), with component
+[Killing field](../stress-current/killing-field.md), with component
 $K^i(x) = k_i + \sum_{j=0}^{3} V_{ij} x_j$ along the axis $i$, and let
-$K^i m$ be the [Killing-weighted test](killing-weighted-tests.md)
+$K^i m$ be the [Killing-weighted test](../ward-identities/killing-weighted-tests.md)
 $x \mapsto K^i(x)\, m(x)$. Write $\widetilde\partial_i m = -\partial_i m$ for
-the [test derivative](minkowski-stress-field.md), with $\partial_i$ the
+the [test derivative](../stress-current/minkowski-stress-field.md), with $\partial_i$ the
 derivative in the direction of the $i$-th standard basis vector. For a graded
 label $(d, \beta)$ and a test function $m \in \mathcal S(\mathbb R^4)$, the
 **infinitesimal transformation** of the field of $(d, \beta)$ smeared with $m$
@@ -52,11 +52,11 @@ $\mathfrak W$, and $K$.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
-- [Test functions weighted by a Killing field](killing-weighted-tests.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Test functions weighted by a Killing field](../ward-identities/killing-weighted-tests.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Charge](../../sources/every-phase.md#charge)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Charge](../../../sources/every-phase.md#charge)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

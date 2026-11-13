@@ -15,15 +15,15 @@ vacuum $\Omega \in D$ and, for every label $\ell \in \mathbb F$ and Schwartz
 test function $h \in \mathcal S(\mathbb R^4)$, a complex-linear map
 $\varphi(\ell, h) : D \to D$ depending complex-linearly on $\ell$ and on $h$.
 Let $T = (T_{ab})$ be a stress tensor of $S$ and $T_{ab}(h)$ its
-[stress field](minkowski-stress-field.md) in $\mathfrak W$: the field of
+[stress field](../stress-current/minkowski-stress-field.md) in $\mathfrak W$: the field of
 $[-\zeta_a\zeta_b T_{ab}]_4 \in \mathbb F$, the image of the Minkowski stress
 label $-\zeta_a\zeta_b T_{ab} \in F_4$ under the map
 $\beta \mapsto [\beta]_4$, smeared with $h$, where $\zeta_3 = -\mathrm i$ and
 $\zeta_a = 1$ for the spatial axes $a \in \{0, 1, 2\}$. Let $K = (k, V)$ be a
-[Killing field](killing-field.md), with value $K(x) = k + Vx \in \mathbb R^4$
+[Killing field](../stress-current/killing-field.md), with value $K(x) = k + Vx \in \mathbb R^4$
 at $x$, and write $K^b(x) = k_b + \sum_{j=0}^{3} V_{bj} x_j$ for its component
 along the axis $b$. For a test function $h$, $K^b h$ is the
-[Killing-weighted test](killing-weighted-tests.md), the Schwartz function
+[Killing-weighted test](../ward-identities/killing-weighted-tests.md), the Schwartz function
 $x \mapsto K^b(x)\, h(x)$.
 
 **The charge.** For a Schwartz function $f \in \mathcal S(\mathbb R)$ of time
@@ -51,11 +51,11 @@ $$
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
-- [Test functions weighted by a Killing field](killing-weighted-tests.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Test functions weighted by a Killing field](../ward-identities/killing-weighted-tests.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Charge](../../sources/every-phase.md#charge)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Charge](../../../sources/every-phase.md#charge)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

@@ -12,9 +12,9 @@ A **Killing field** $K = (k, V)$ consists of
 - a real $4 \times 4$ matrix $V = (V_{bc})$, indexed by the axes, satisfying
   the tangent condition
 
-  $$
-  V^{\mathsf T} = -\,\theta V \theta .
-  $$
+    $$
+    V^{\mathsf T} = -\,\theta V \theta .
+    $$
 
 Since $\eta = \mathrm{diag}(-1, -1, -1, 1) = -\theta$, the tangent condition
 says $V^{\mathsf T}\eta + \eta V = 0$: $V$ is an infinitesimal Lorentz
@@ -49,5 +49,5 @@ $$
 
 ## Sources
 
-- [YM/EveryPhase ledger: Killing](../../sources/every-phase.md#killing)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Killing](../../../sources/every-phase.md#killing)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

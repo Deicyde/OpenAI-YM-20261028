@@ -94,9 +94,9 @@ It depends on $Z$, $K$, $T$, $v$, $g$ and $k$.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Cross](../../sources/every-phase.md#cross)
-- [YM/EveryPhase ledger: Strip](../../sources/every-phase.md#strip)
-- [YM/EveryPhase ledger: Killing](../../sources/every-phase.md#killing)
-- [YM/EveryPhase ledger: Slots](../../sources/every-phase.md#slots)
-- [YM/EveryPhase ledger: Docks](../../sources/every-phase.md#docks)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Cross](../../../sources/every-phase.md#cross)
+- [YM/EveryPhase ledger: Strip](../../../sources/every-phase.md#strip)
+- [YM/EveryPhase ledger: Killing](../../../sources/every-phase.md#killing)
+- [YM/EveryPhase ledger: Slots](../../../sources/every-phase.md#slots)
+- [YM/EveryPhase ledger: Docks](../../../sources/every-phase.md#docks)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

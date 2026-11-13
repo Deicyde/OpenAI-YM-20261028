@@ -18,7 +18,7 @@ $\mathcal O \subseteq \mathbb R^4$, every
 $\mathcal O$ and $f$, every graded label $(d, \beta)$, every test function
 $m \in \mathcal S(\mathbb R^4)$ with
 $\operatorname{supp} m \subseteq \mathcal O$ and every
-[Killing field](killing-field.md) $K$, the
+[Killing field](../stress-current/killing-field.md) $K$, the
 [commutator action](stress-charge.md) of the stress charge
 $\mathcal Q_K(f, g)$ of $\mathfrak W$, $K$ and $T$ on the field of
 $(d, \beta)$ smeared with $m$ is its
@@ -42,7 +42,7 @@ about $\mathfrak W$.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
+- [Killing fields](../stress-current/killing-field.md)
 - [Admissible time profile](admissible-time-profile.md)
 - [Admissible spatial cutoff](admissible-spatial-cutoff.md)
 - [Stress charge and the commutator action](stress-charge.md)
@@ -50,5 +50,5 @@ about $\mathfrak W$.
 
 ## Sources
 
-- [YM/EveryPhase ledger: Implement](../../sources/every-phase.md#implement)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Implement](../../../sources/every-phase.md#implement)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

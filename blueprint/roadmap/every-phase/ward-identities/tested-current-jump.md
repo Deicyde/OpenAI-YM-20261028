@@ -15,7 +15,7 @@ $$
 \sigma_j(x, y) = \operatorname{ins}_j(x; y) = (x_0, \dots, x_{j-1},\ y,\ x_j, \dots, x_{n-1}),
 $$
 
-which puts the point $y$ in slot $j$ ([insertion into a slot](slot-insertion.md)).
+which puts the point $y$ in slot $j$ ([insertion into a slot](../stress-current/slot-insertion.md)).
 It is a real-linear bijection, and an isometry when the product carries the
 norm $\|(x, y)\|^2 = \|x\|^2 + \|y\|^2$; in particular it is a continuous
 linear isomorphism with continuous inverse. For a joint test function $M$ on
@@ -37,11 +37,11 @@ $\mathbb F$, and write
 $[\beta]_4 \in \mathbb F$ for the image of $\beta \in F_4$. Let $W$ be
 boundary distributions over $S$: for every $n$, a complex-multilinear map
 $v \mapsto W_n(v)$ from $\mathbb F^n$ to tempered distributions on
-$(\mathbb R^4)^n$. Let $K$ be a [Killing field](killing-field.md), with
+$(\mathbb R^4)^n$. Let $K$ be a [Killing field](../stress-current/killing-field.md), with
 Killing-weighted tests $K^b h$ ([weighted tests](killing-weighted-tests.md)),
 and let $T = (T_{ab})$ be a stress tensor of $S$, $T_{ab} \in F_4$. Let
 $\zeta_3 = -\mathrm i$ and $\zeta_b = 1$ for spatial $b$ be the Wick factors of
-the [Minkowski stress labels](minkowski-stress-field.md).
+the [Minkowski stress labels](../stress-current/minkowski-stress-field.md).
 
 **The tested insertion.** For labels $v \in \mathbb F^n$, a slot
 $j \in \{0, \dots, n\}$, a joint test function $M$ on $n$ points, a Schwartz
@@ -62,14 +62,14 @@ support or reality condition on $M$, $g$ or $f$ is part of the definition.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
-- [Insertion into a slot](slot-insertion.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Insertion into a slot](../stress-current/slot-insertion.md)
 - [Test functions weighted by a Killing field](killing-weighted-tests.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Decree](../../sources/every-phase.md#decree)
-- [YM/EveryPhase ledger: Frost](../../sources/every-phase.md#frost)
-- [YM/EveryPhase ledger: Slots](../../sources/every-phase.md#slots)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Decree](../../../sources/every-phase.md#decree)
+- [YM/EveryPhase ledger: Frost](../../../sources/every-phase.md#frost)
+- [YM/EveryPhase ledger: Slots](../../../sources/every-phase.md#slots)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

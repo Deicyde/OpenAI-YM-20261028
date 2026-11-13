@@ -7,7 +7,7 @@ where it is not zero. A configuration of $N$ points is separated when its
 points are pairwise distinct.
 
 **Data.** Fix a Wilson family and data for the
-[hypotheses for continuing the stress current](stress-continuation-hypotheses.md):
+[hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md):
 a Euclidean correlation table $S$ for its tokens, with quotient label spaces
 $F_d$, common label space $\mathbb F$ and images $[\beta]_d \in \mathbb F$ of
 $\beta \in F_d$; a second correlation table $U$, with values $U(x; w)$ at
@@ -19,7 +19,7 @@ Laplace family $Z$ for $W$. Fix moreover
 
 - rotations of $S$, with generator maps $\lambda_d$ from the skew-symmetric
   real $4 \times 4$ matrices to the complex-linear maps of $F_d$;
-- a [Killing field](killing-field.md) $K$;
+- a [Killing field](../stress-current/killing-field.md) $K$;
 - spectator graded labels $v_0, \dots, v_{n-1}$, a slot
   $k \in \{0, \dots, n\}$ and a graded label $B = (d, \beta)$;
 - a joint test function $M$ on $n+1$ points, a Schwartz function
@@ -72,7 +72,7 @@ integrable.
 
 Let $\alpha = \big[\operatorname{ins}_k(v; B)\big] \in \mathbb F^{n+1}$ be the
 labels with $[\beta]_d$ in slot $k$ and the images $[v_i]$ of the spectators in
-the other slots ([insertion into a slot](slot-insertion.md)). Then
+the other slots ([insertion into a slot](../stress-current/slot-insertion.md)). Then
 
 $$
 \mathcal J_{k+1}(\alpha; M, g, f) - \mathcal J_k(\alpha; M, g, f) = \mathcal R_k(v, B; M)\ \int_{\mathbb R} f(\tau)\, d\tau ,
@@ -87,9 +87,9 @@ generator maps $\lambda_d$ and the derivative maps $\partial^{(d)}_b$.
 
 ## Depends on
 
-- [Killing fields](killing-field.md)
-- [Insertion into a slot](slot-insertion.md)
-- [Hypotheses for continuing the stress current](stress-continuation-hypotheses.md)
+- [Killing fields](../stress-current/killing-field.md)
+- [Insertion into a slot](../stress-current/slot-insertion.md)
+- [Hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md)
 - [Exchange heights for every adjacent pair](exchange-height-sequences.md)
 - [Spacelike condition on cutoff and profile](spacelike-cutoff-condition.md)
 - [Tested stress insertion next to a field](tested-current-jump.md)
@@ -97,14 +97,14 @@ generator maps $\lambda_d$ and the derivative maps $\partial^{(d)}_b$.
 
 ## Proof depends on
 
-- [Joint limit of the current jump](joint-current-jump-limit.md)
-- [Continued value of the current jump](continued-jump-value.md)
-- [Spatially integrated current and its jump](integrated-current-jump.md)
-- [Admissible base points for the current jump](jump-admissibility.md)
+- [Joint limit of the current jump](../stress-current/joint-current-jump-limit.md)
+- [Continued value of the current jump](../stress-current/continued-jump-value.md)
+- [Spatially integrated current and its jump](../stress-current/integrated-current-jump.md)
+- [Admissible base points for the current jump](../stress-current/jump-admissibility.md)
 - [Test functions weighted by a Killing field](killing-weighted-tests.md)
-- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
 
 ## Sources
 
-- [YM/EveryPhase ledger: Decree](../../sources/every-phase.md#decree)
-- [Armstrong's informalization: unit V.3](../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)
+- [YM/EveryPhase ledger: Decree](../../../sources/every-phase.md#decree)
+- [Armstrong's informalization: unit V.3](../../../sources/armstrong.md#unit-v3-reconstruction-for-every-phase)

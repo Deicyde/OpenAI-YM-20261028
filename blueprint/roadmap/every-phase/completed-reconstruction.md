@@ -97,11 +97,11 @@ data.
 - [Family of reconstructions over the phases](reconstruction-family.md)
 - [Finite sums of words and their vectors](sums-of-words.md)
 - [Compactly supported sums of words](compactly-supported-sums.md)
-- [Spectral measure of a word vector](word-spectral-measure.md)
+- [Spectral measure of a finite sum of words](word-spectral-measure.md)
 - [Zero-energy and low-energy regions](energy-regions.md)
-- [Heat semigroup pulled back by the boundary isometry](boundary-heat-semigroup.md)
+- [Heat operators pulled back along a bounded map](boundary-heat-semigroup.md)
 - [Weak commutant with the Hilbert-space adjoint](weak-commutant.md)
-- [Stress tensor of a reconstructed theory](stress-tensor-record.md)
+- [Stress tensor of a reconstructed theory](stress-charges/stress-tensor-record.md)
 
 ## Sources
 
