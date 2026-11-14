@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/every-phase/energy-regions.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.zeroE"}, "role": "states"}, {"location": {"declaration": "YM.EveryPhase.lowE"}}], "status": "formalized", "kind": "def", "id": "af_858450ca6c1e2946c525f7a2", "extensions": {"org.autoform": {"origin": "cited"}}}

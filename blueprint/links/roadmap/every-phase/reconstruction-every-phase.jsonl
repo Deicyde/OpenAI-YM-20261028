@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../roadmap/every-phase/reconstruction-every-phase.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.all_characters"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_177475474c37e6685dcb0add", "extensions": {"org.autoform": {"origin": "cited"}}}
