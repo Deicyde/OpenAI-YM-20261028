@@ -56,7 +56,9 @@ at the selected character, such that:
    and $\int_X W_s(a_1, \dots, a_n; g)\, d\nu(s)$ is the boundary
    distribution of the record's continuation of $S$ at $(a_1, \dots, a_n; g)$;
    and for every word $w$ of pairwise distinct points,
-   $\int_X S_s(w)\, d\nu(s) = S(w)$.
+   $\int_X S_s(w)\, d\nu(s) = S(w)$, where $S(w)$ and $S_s(w)$ are the
+   Schwinger functions of $S$ and of $S_s$ at the points of $w$ with their
+   tokens.
 
 The precise meaning of each item is that of the corresponding conditions of
 a completed reconstruction (items 1 to 8 are its conditions 1 to 8, and item
@@ -77,6 +79,8 @@ the record.
 - [The boundary isometry is onto](boundary-isometry-surjective.md)
 - [No exceptional phase: zero energy is the vacuum](zero-energy-projection-vacuum.md)
 - [Continuations at strict heights: continuity and barycenter in the phase](strict-height-continuity-barycenter.md)
+- [Weakly central bounded operators](weakly-central-operators.md)
+- [Zero-energy and low-energy regions](energy-regions.md)
 
 ## Sources
 

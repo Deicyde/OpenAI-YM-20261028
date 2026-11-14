@@ -4,9 +4,11 @@ Fix a Wilson family and two Euclidean correlation tables $S$ and $U$ for its
 tokens. For every degree $d$ the graded fields of degree $d$ form the
 quotient label space $F_d$ of $S$; the label of $v \in F_d$ is its image in
 the common label space $\mathbb F$ of $S$, the span of these images. A point
-of spacetime is $x = (x_0, x_1, x_2, x_3) \in \mathbb R^4$, with time
-$t(x) = x_3$ and spatial part $\vec x = (x_0, x_1, x_2)$; a momentum $p$ has
-energy $p_3$. Inner products are conjugate-linear in the first argument.
+of spacetime is $q = (q_0, q_1, q_2, q_3) \in \mathbb R^4$, with time
+$t(q) = q_3$ and spatial part $\vec q = (q_0, q_1, q_2)$; a momentum $p$ has
+energy $p_3$. For a configuration $x = (x_1, \dots, x_n)$ and heights $y$,
+$t(x) + \mathrm i y$ is the tuple of complex times $t(x_j) + \mathrm i y_j$
+and $\vec x$ the tuple of spatial parts. Inner products are conjugate-linear in the first argument.
 
 **Data.** The lemma concerns the following data.
 
@@ -20,10 +22,10 @@ energy $p_3$. Inner products are conjugate-linear in the first argument.
   translating the words; the Euclidean vacuum $\omega = \Psi(\varnothing)$;
   and the translation representation $U^{\rm OS}$ of $\mathbb R^4$ that
   combines real-time evolution with the spatial translations.
-- Slab operators $\Pi$ on $\mathcal H^{\rm OS}$: for every thickness $d \ge 0$ and word $w$ a
-  bounded operator $\Pi(d, w)$ that maps $\Psi(b)$ to the vector of $w$
-  followed by $b$ translated by $d$ in time, whenever $w$ lies in the slab of
-  thickness $d$.
+- Slab operators $\Pi$ on $\mathcal H^{\rm OS}$: for every thickness $\ell \ge 0$ and word $w$ a
+  bounded operator $\Pi(\ell, w)$ that maps $\Psi(b)$ to the vector of $w$
+  followed by $b$ translated by $\ell$ in time, whenever $w$ lies in the slab of
+  thickness $\ell$.
 - A reconstruction staging $Y$ for $S$ over $\mathcal H^{\rm OS}$ and $\Pi$. It consists of
   one-point slab operators: for every half-width $\delta \ge 0$ a
   complex-linear map $a \mapsto B_\delta(a)$ from $\mathbb F$ to bounded
@@ -39,17 +41,17 @@ energy $p_3$. Inner products are conjugate-linear in the first argument.
   holomorphic in $z$ where the imaginary parts strictly increase; to take at
   purely imaginary, strictly ordered times the Schwinger values of $U$ on
   labels of $S$; to obey a bound
-  $|\mathsf F_n(t(x) + \mathrm i y, \vec x; a)| \le C k^{-m}$ when the gaps of
+  $|\mathsf F_n(t(x) + \mathrm i y, \vec x; a)| \le K k^{-L}$ when the gaps of
   $y$ are at least $k \in (0, 1]$; and to have tested values at strictly
   increasing heights that are integrable and continuous in the heights, and
-  whose derivative along a line of heights $y + r h$ is the tested value at
+  whose derivative in the real parameter $r$ along a line of heights $y + r h$ is the tested value at
   $y + r h$ against $-\mathrm i$ times the derivative of the test function in
   the direction of the configuration with spatial parts $0$ and times $h_j$.
 - Wightman data $\mathfrak W$ for $S$: a Hilbert space $H$, a field domain
   $D$, a vacuum $\Omega \in D$, smeared fields $\varphi(a, f) : D \to D$
   depending complex-linearly on $a$ and on $f$, a conjugate-linear map
   $a \mapsto a^\star$ of $\mathbb F$ (the star operation), for every Lorentz
-  transformation $g$ an invertible linear map $\sigma(g)$ of $\mathbb F$
+  transformation $\Lambda$ an invertible linear map $\sigma(\Lambda)$ of $\mathbb F$
   and an invertible linear map of each $F_d$ (the Lorentz action, on labels
   and on graded fields), a strongly continuous unitary representation of the
   Poincaré group on $H$ and an energy–momentum projection-valued measure.
@@ -111,18 +113,19 @@ $0 < \delta < 1$, $4\delta < y_1$ and $4\delta < y_{j+1} - y_j$ for all $j$.
    exchange data for that pair exist. (d) A label all of whose
    $W$-expectation values vanish is $0$. (e) For a word
    $\beta = ((a_1, f_1), \dots, (a_n, f_n))$ of labels and Schwartz test
-   functions and for $\varepsilon > 0$, put
+   functions, with $a = (a_1, \dots, a_n)$, and for $\varepsilon > 0$, put
    $\delta_\varepsilon = \min(\varepsilon, 1)/8$ and
    $y_\varepsilon = (\varepsilon, 2\varepsilon, \dots, n\varepsilon)$. Then
    $x \mapsto f_1(x_1) \cdots f_n(x_n)\, \Psi_{\delta_\varepsilon}(a; x + \mathrm i y_\varepsilon)$
-   is integrable. Writing $\Psi_\varepsilon[\beta]$ for its integral,
-   $\langle \Psi_\varepsilon[\beta], \Psi_{\varepsilon'}[\gamma] \rangle \to W(\beta^\dagger \gamma)$
+   is integrable. Writing $\widetilde\Psi_\varepsilon[\beta]$ for its integral,
+   for every second word $\gamma$ of the same kind,
+   $\langle \widetilde\Psi_\varepsilon[\beta], \widetilde\Psi_{\varepsilon'}[\gamma] \rangle \to W(\beta^\dagger \gamma)$
    as $\varepsilon, \varepsilon' \to 0^+$ independently, where $\beta^\dagger$
-   reverses $\beta$ and replaces each letter $(a, f)$ by $(a^\star, \bar f)$,
+   reverses $\beta$ and replaces each letter $(a_j, f_j)$ by $(a_j^\star, \bar f_j)$,
    and $W$ of a word is $W_n$ of its labels tested on the product of its test
    functions. For every $c \in \mathbb R^4$ and $\varepsilon > 0$,
-   $\Psi_\varepsilon$ of the word with letters $(\sigma(1)\, a_j, f_j(\cdot - c))$
-   is $U^{\rm OS}(c)\, \Psi_\varepsilon[\beta]$, where $\sigma(1)$ is the map
+   $\widetilde\Psi_\varepsilon$ of the word with letters $(\sigma(1)\, a_j, f_j(\cdot - c))$
+   is $U^{\rm OS}(c)\, \widetilde\Psi_\varepsilon[\beta]$, where $\sigma(1)$ is the map
    of $\mathbb F$ that the Lorentz action of $\mathfrak W$ assigns to the
    identity transformation.
 3. *$U$ is symmetric*: its Schwinger functions at configurations of distinct

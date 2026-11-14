@@ -1,8 +1,8 @@
 # Tested stress insertion next to a field
 
 Spacetime axes are numbered $0, 1, 2, 3$, with time the axis $3$; for
-$x \in \mathbb R^4$, $t(x) = x_3$ is its time and
-$\vec x = (x_0, x_1, x_2)$ its spatial part.
+$y \in \mathbb R^4$, $t(y) = y_3$ is its time and
+$\vec y = (y_0, y_1, y_2)$ its spatial part.
 Configurations of $n$ points are elements of $(\mathbb R^4)^n$, a Euclidean
 space with the norm $\|x\|^2 = \sum_i \|x_i\|^2$. A joint test function on
 $n$ points is a Schwartz function $(\mathbb R^4)^n \to \mathbb C$.
@@ -38,7 +38,8 @@ $[\beta]_4 \in \mathbb F$ for the image of $\beta \in F_4$. Let $W$ be
 boundary distributions over $S$: for every $n$, a complex-multilinear map
 $v \mapsto W_n(v)$ from $\mathbb F^n$ to tempered distributions on
 $(\mathbb R^4)^n$. Let $K$ be a [Killing field](../stress-current/killing-field.md), with
-Killing-weighted tests $K^b h$ ([weighted tests](killing-weighted-tests.md)),
+component $K^b(y)$ of its real value at $y$ along the axis $b$ and
+Killing-weighted tests $(K^b h)(y) = K^b(y)\, h(y)$ ([weighted tests](killing-weighted-tests.md)),
 and let $T = (T_{ab})$ be a stress tensor of $S$, $T_{ab} \in F_4$. Let
 $\zeta_3 = -\mathrm i$ and $\zeta_b = 1$ for spatial $b$ be the Wick factors of
 the [Minkowski stress labels](../stress-current/minkowski-stress-field.md).
@@ -46,7 +47,8 @@ the [Minkowski stress labels](../stress-current/minkowski-stress-field.md).
 **The tested insertion.** For labels $v \in \mathbb F^n$, a slot
 $j \in \{0, \dots, n\}$, a joint test function $M$ on $n$ points, a Schwartz
 function $g \in \mathcal S(\mathbb R^3)$ of space and a Schwartz function
-$f \in \mathcal S(\mathbb R)$ of time, the **tested stress insertion** in slot
+$f \in \mathcal S(\mathbb R)$ of time, with product test
+$(g \otimes f)(y) = g(\vec y)\, f(t(y))$, the **tested stress insertion** in slot
 $j$ is the complex number
 
 $$

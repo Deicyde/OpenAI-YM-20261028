@@ -16,7 +16,7 @@ $(\mathbb R^4)^n$. Fix
   real $4 \times 4$ matrices to the complex-linear maps of $F_d$;
 - derivative maps $\partial^{(d)}_i : F_d \to F_{d+1}$, complex linear, for
   every degree $d$ and axis $i$;
-- a stress tensor $T = (T_{ab})$ of $S$, $T_{ab} \in F_4$;
+- a stress tensor $T = (T_{ij})$ of $S$, $T_{ij} \in F_4$;
 - a [Killing field](../stress-current/killing-field.md) $K = (k, V)$, with real value
   $K(x) = k + Vx$, its component $K^i(x)$ along the axis $i$, and
   [Killing-weighted tests](killing-weighted-tests.md) $K^i h$,

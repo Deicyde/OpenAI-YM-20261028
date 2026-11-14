@@ -29,9 +29,9 @@ $\tau \ge 0$, $e^{-\tau H_s} = J_s^*\, e^{-\tau H^{\rm OS}_s}\, J_s$ is the
 heat operator pulled back by $J_s$. For a word $w$ of the Wilson family's
 tokens (a finite sequence of points of $\mathbb R^4$, each carrying a
 token), $S(w)$ and $S_s(w)$ are the Schwinger functions of $S$ and of $S_s$
-at the points of $w$ with their tokens. On $\mathbb C$, $r \le r'$ means
-$\operatorname{Re} r \le \operatorname{Re} r'$ and
-$\operatorname{Im} r = \operatorname{Im} r'$.
+at the points of $w$ with their tokens. On $\mathbb C$, $\zeta \le \zeta'$ means
+$\operatorname{Re} \zeta \le \operatorname{Re} \zeta'$ and
+$\operatorname{Im} \zeta = \operatorname{Im} \zeta'$.
 
 **Definition.** The family $L$ is **completed** for $\mathcal F$ when
 the following eleven conditions hold.
@@ -64,7 +64,8 @@ the following eleven conditions hold.
    $r$ is real and $0 \le r \le M \tau^{-2}$.
 7. *Weak commutant.* For every $s$ and every bounded complex-linear
    operator $B$ on $H_s$: $B$ belongs to the weak commutant of
-   $\mathfrak W_s$ if and only if $B = c \cdot 1$ for some $c \in \mathbb C$.
+   $\mathfrak W_s$ if and only if $B = c \cdot 1$ for some $c \in \mathbb C$,
+   where $1$ is the identity operator of $H_s$.
 8. *Stress tensor.* For every $s$, the data $S$, $S_s$,
    $(\mathsf F_s, W_s)$, $R$, $\partial$, the reflection and reality
    symmetry of $S$, $\mathfrak W_s$ and $T$ form a stress tensor of the

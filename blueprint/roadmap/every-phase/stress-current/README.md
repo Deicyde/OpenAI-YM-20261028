@@ -2,11 +2,11 @@
 
 ## Conventions
 
-The Wick factors are $\zeta_3 = -\mathrm i$ and $\zeta_a = 1$ for the spatial
-axes. The Minkowski stress labels are $-\zeta_a \zeta_b\, T_{ab}$, and the
+The Wick factors are $\zeta_3 = -\mathrm i$ for the time axis $3$ and $\zeta_a = 1$ for the spatial
+axes $a$. The Minkowski stress labels of a stress tensor $T = (T_{ab})$ are $-\zeta_a \zeta_b\, T_{ab}$, and the
 stress field $T_{ab}(h)$ is the field of the Minkowski label smeared with
-$h$. A
-Killing field $K(x) = k + V x$ consists of a translation $k$ and an
+a test function $h$. A
+Killing field $K(x) = c + V x$ consists of a translation $c$ and an
 infinitesimal Lorentz transformation $V$. The infinitesimal transformation
 of labels it induces comes from the rotations of the field algebra: the
 skew-symmetric part of $V$ acts through the infinitesimal rotations, and the
@@ -15,8 +15,8 @@ skew part of its product with the time reflection. Inserting an entry into a
 slot of a tuple places a stress label or point next to a given field.
 Finally, the hypotheses for continuing the stress current collect the
 analytic data the continuation needs. They are the symmetry, reality and
-conservation of $T$, the Euclidean axioms of the correlation table, the
-permutation symmetry of $S$, and the inclusion and derivative laws. They
+conservation of $T$, the Euclidean axioms of the second correlation table, the
+permutation symmetry of the Euclidean correlation table $S$, and the inclusion and derivative laws. They
 also ask that the continuation continue the table, and that a Laplace
 family of the boundary distributions extend the continuation
 holomorphically to the forward tube, with partial boundary values.
@@ -34,8 +34,8 @@ spatial position of the inserted stress against a spatial test $g$ gives the
 integrated current at a complex insertion time. Its jump at a slot $k$ is
 the difference between the integrated current with the stress inserted just
 after the field in slot $k$ and just before it, at complex times
-$u_k + t \pm \mathrm i s$. A base point $(\xi, u, t)$ consists of spatial
-positions, complex times and a real shift. It allows $g$ at the slot $k$
+$u_k + t \pm \mathrm i s$, where $s$ is real and the base point $(\xi, u, t)$ consists of spatial
+positions $\xi$, complex times $u$ and a real shift $t$. A base point allows $g$ at the slot $k$
 when the shift is smaller than the spatial distance from $\xi_k$ to the
 support of every first derivative of $g$. The exchange data at tied heights,
 in which the heights of the slots $k$ and $k+1$ coincide, are local

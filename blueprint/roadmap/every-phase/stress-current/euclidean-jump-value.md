@@ -46,15 +46,15 @@ spectators $v_0, \dots, v_{n-1}$ occupying the other slots in order
 ([insertion into a slot](slot-insertion.md)).
 
 **Purely Euclidean base point.** For a configuration
-$x = (x_0, \dots, x_{m-1}) \in (\mathbb R^4)^m$, the purely Euclidean
-[base point](integrated-current-jump.md) of $x$ is
+$q = (q_0, \dots, q_{m-1}) \in (\mathbb R^4)^m$, the purely Euclidean
+[base point](integrated-current-jump.md) of $q$ is
 
 $$
-p_{\mathrm E}(x) = \Big( (\vec x_0, \dots, \vec x_{m-1}),\ \big(\mathrm i\, t(x_0), \dots, \mathrm i\, t(x_{m-1})\big),\ 0 \Big),
+p_{\mathrm E}(q) = \Big( (\vec q_0, \dots, \vec q_{m-1}),\ \big(\mathrm i\, t(q_0), \dots, \mathrm i\, t(q_{m-1})\big),\ 0 \Big),
 $$
 
-with the spatial parts of $x$ as spatial positions, the imaginary times
-$\mathrm i\, t(x_i)$ as complex times, and shift $0$.
+with the spatial parts of $q$ as spatial positions, the imaginary times
+$\mathrm i\, t(q_i)$ as complex times, and shift $0$.
 
 ## Depends on
 

@@ -4,8 +4,8 @@ Spacetime axes are numbered $0, 1, 2, 3$, with time the axis $3$. Fix a Wilson
 family and let $S$ be a Euclidean correlation table for its tokens, with
 quotient label spaces $F_d$ and common label space $\mathbb F$; a graded
 label is a pair $(d, \beta)$ with $\beta \in F_d$, and for a tuple
-$w = ((d_0, \beta_0), \dots, (d_{m-1}, \beta_{m-1}))$ of graded labels,
-$[w]$ is the tuple of the images $[\beta_i]_{d_i} \in \mathbb F$ of its
+$q = ((d_0, \beta_0), \dots, (d_{m-1}, \beta_{m-1}))$ of graded labels,
+$[q]$ is the tuple of the images $[\beta_i]_{d_i} \in \mathbb F$ of its
 entries. Let
 $Z$ be a Laplace family for boundary distributions over $S$, with continued
 function $\widetilde Z$, and let $\langle \xi, u\rangle$ be the complex

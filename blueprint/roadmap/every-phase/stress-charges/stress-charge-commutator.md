@@ -14,8 +14,8 @@ argument.
 - Euclidean correlation tables $S$ and $U$ of the construction, with the
   quotient label spaces $F_d$ and common label space $\mathbb F$ of $S$;
   $[\beta]_d \in \mathbb F$ is the image of $\beta \in F_d$, a graded label is
-  a pair $(d, \beta)$ with $\beta \in F_d$, and $U(x; v)$ is the value of $U$
-  at a configuration $x$ on graded labels $v$ of $S$.
+  a pair $(d, \beta)$ with $\beta \in F_d$, and $U(x; w)$ is the value of $U$
+  at a configuration $x$ on graded labels $w$ of $S$.
 - A stress tensor $T = (T_{ab})$ of $S$, rotations $R$ of $S$ with
   infinitesimal rotations $\lambda_d$, inclusion and derivative maps
   $\rho_{d,e} : F_d \to F_e$ and $\partial^{(d)}_a : F_d \to F_{d+1}$ for
@@ -95,27 +95,29 @@ argument.
         spatial axis $j$ the derivative at $r = 0$ of
         $r \mapsto \sigma_d(\Lambda_j(r))\beta$, where $\Lambda_j(r)$ is the
         boost of rapidity $r$ along the axis $j$, is
-        $-\mathrm i\,\lambda_d(e_{3j} - e_{j3})\beta$, where $e_{ab}$ is the
+        $-\mathrm i\,\lambda_d(\epsilon_{3j} - \epsilon_{j3})\beta$, where $\epsilon_{ab}$ is the
         matrix with entry $1$ at $(a, b)$ and $0$ elsewhere, $\sigma_d$ agrees
         with the action of $R$ on spatial rotations, and $\sigma_d(\Lambda)$
         commutes with $\beta \mapsto \beta^\dagger$;
     3. $\|\Omega\| = 1$, $D$ is dense in $H$, $D$ is spanned by the vectors
-        $\varphi(\ell_1, h_1) \cdots \varphi(\ell_k, h_k)\Omega$, and
+        $\varphi(\ell_1, h_1) \cdots \varphi(\ell_n, h_n)\Omega$, and
         $h \mapsto \varphi(\ell, h)\psi$ is continuous from
         $\mathcal S(\mathbb R^4)$ to $H$ for every $\ell$ and $\psi \in D$;
     4. $\langle \varphi(\ell, h)\psi, \psi' \rangle = \langle \psi, \varphi(\ell^\star, \bar h)\psi' \rangle$
         for all $\ell$, $h$ and $\psi, \psi' \in D$;
-    5. $\langle \Omega, \varphi(\ell_1, h_1) \cdots \varphi(\ell_k, h_k)\Omega \rangle
-        = W_k(\ell_1, \dots, \ell_k)(h_1 \otimes \dots \otimes h_k)$ for all
-        labels and test functions, with
-        $(h_1 \otimes \dots \otimes h_k)(x) = \prod_i h_i(x_{i-1})$;
+    5. $\langle \Omega, \varphi(\ell_1, h_1) \cdots \varphi(\ell_n, h_n)\Omega \rangle
+        = W_n(\ell_1, \dots, \ell_n)(h_1 \otimes \dots \otimes h_n)$ for all
+        labels and test functions, where $W_n(\ell_1, \dots, \ell_n)$ is the
+        tempered distribution that $W$ assigns to the labels
+        $\ell_1, \dots, \ell_n$, and
+        $(h_1 \otimes \dots \otimes h_n)(x) = \prod_i h_i(x_{i-1})$;
     6. $\varphi(\ell, h)\varphi(\ell', h')\psi = \varphi(\ell', h')\varphi(\ell, h)\psi$
         for $\psi \in D$ whenever $z - z'$ is spacelike for all
         $z \in \operatorname{supp} h$, $z' \in \operatorname{supp} h'$;
     7. for every label $\ell \ne 0$ there is $h$ with $\varphi(\ell, h) \ne 0$;
     8. $\mathcal U(g)$ maps $D$ into $D$ and fixes $\Omega$, and
         $\mathcal U(g)\varphi(\ell, h)\psi = \varphi\big(\sigma(\Lambda)\ell,\ h \circ g^{-1}\big)\,\mathcal U(g)\psi$
-        for $g = (\Lambda, u)$, with $(h \circ g^{-1})(x) = h(\Lambda^{-1}(x - u))$;
+        for $g = (\Lambda, u)$, with $(h \circ g^{-1})(y) = h(\Lambda^{-1}(y - u))$;
     9. $\int e^{\mathrm i \langle p, u\rangle}\, d\langle \psi, E(p)\psi\rangle = \langle \psi, \mathcal U(1, u)\psi\rangle$
         for all $\psi \in H$ and $u \in \mathbb R^4$, where
         $\langle p, u\rangle$ is the Euclidean inner product of $\mathbb R^4$;
@@ -142,8 +144,8 @@ $$
 an equality of complex-linear maps $D \to D$: applied to every $\psi \in D$,
 the two sides agree. Here $\Sigma^{(d)}_V$ is the label action of the matrix
 $V$ of $K$ built from the infinitesimal rotations of $R$,
-$K^i(x) = k_i + \sum_{j=0}^{3} V_{ij} x_j$ is the component of $K$ along the
-axis $i$, and $\partial_i$ is the derivative along the $i$-th standard basis
+$K^i(y) = k_i + \sum_{j=0}^{3} V_{ij} y_j$ is the component of $K$ along the
+axis $i$ at $y \in \mathbb R^4$, and $\partial_i$ is the derivative along the $i$-th standard basis
 vector.
 
 ## Depends on
@@ -159,6 +161,10 @@ vector.
 ## Proof depends on
 
 - [Ward identity with arbitrary spectators](../ward-identities/ward-identity-schwartz-spectators.md)
+- [Test functions weighted by a Killing field](../ward-identities/killing-weighted-tests.md)
+- [Spacelike condition on cutoff and profile](../ward-identities/spacelike-cutoff-condition.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Admissible base points for the current jump](../stress-current/jump-admissibility.md)
 
 ## Sources
 

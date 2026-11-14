@@ -27,11 +27,11 @@ $\mathcal O_n = \{ z \in \mathbb C^n : \operatorname{Im} z_0 < \operatorname{Im}
 - A Wilson family and a Euclidean correlation table $S$ for its tokens, with
   quotient label spaces $F_d$ ($d \in \mathbb N$) and common label space $\mathbb F$; for
   $\beta \in F_d$, $[\beta]_d \in \mathbb F$ is its image. A graded label is a
-  pair $(d, \beta)$ with $\beta \in F_d$; for a tuple $v$ of graded labels,
-  $[v]$ is the tuple of their images in $\mathbb F$.
+  pair $(d, \beta)$ with $\beta \in F_d$; for a tuple $w$ of graded labels,
+  $[w]$ is the tuple of their images in $\mathbb F$.
 - A second correlation table $U$, for the same tokens as $S$. For a configuration $x$ of $n$ points and
-  graded labels $v_0, \dots, v_{n-1}$, $U(x; v)$ is the value of $U$ at $x$ on
-  fixed representatives of the classes $v_i$ (and likewise $S(x; v)$).
+  graded labels $w_0, \dots, w_{n-1}$, $U(x; w)$ is the value of $U$ at $x$ on
+  fixed representatives of the classes $w_i$ (and likewise $S(x; w)$).
 - Inclusion and derivative maps for $S$: complex-linear maps
   $\rho_{d,e} : F_d \to F_e$ for $d \le e$, and
   $\partial^{(d)}_a : F_d \to F_{d+1}$ for every degree $d$ and axis $a$.
@@ -85,8 +85,8 @@ current** when the following seven conditions hold.
    and in smeared form (including the integrability of the smeared
    integrands), smoothness on separated configurations, and polynomial bounds
    on its derivatives: for every number of points, all labels and every order
-   $j$ there are $C \ge 0$ and $A \in \mathbb N$ such that the $j$-th
-   derivative in the positions has norm at most $C r^{-A}$ at every
+   $j$ there are $c \ge 0$ and $A \in \mathbb N$ such that the $j$-th
+   derivative in the positions has norm at most $c\, r^{-A}$ at every
    configuration whose points are pairwise at sup-norm distance at least $r$,
    for every $0 < r \le 1$.
 3. *Symmetry of $S$.* $S$ is unchanged when the points of a separated

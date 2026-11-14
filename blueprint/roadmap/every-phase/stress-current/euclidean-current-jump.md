@@ -83,6 +83,12 @@ imaginary times $\mathrm i\, t(x_i)$, $i \ne k$.
 - [Spatially integrated current and its jump](integrated-current-jump.md)
 - [Euclidean value of the current jump](euclidean-jump-value.md)
 
+## Proof depends on
+
+- [Admissible base points for the current jump](jump-admissibility.md)
+- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Tested stress insertion next to a field](../ward-identities/tested-current-jump.md)
+
 ## Sources
 
 - [YM/EveryPhase ledger: Pure](../../../sources/every-phase.md#pure)

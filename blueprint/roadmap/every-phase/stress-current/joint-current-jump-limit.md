@@ -58,7 +58,7 @@ such that
    $|t| < \|r - \xi_k\|$ for every spatial axis $i$ and every $r$ in the closed
    support of $\partial_i g$; and
 4. $Z$ has [exchange data](jump-admissibility.md) at the tied heights
-   $y(p, k) \in \mathbb R^{n+2}$ of $p$ for the slot $k$.
+   $\eta(p, k) \in \mathbb R^{n+2}$ of $p$ for the slot $k$.
 
 Let $J_k$ be the [current jump](integrated-current-jump.md) at slot $k$ of
 $Z$, $K$, $T$, the labels $[\operatorname{ins}_k(v; B)] \in \mathbb F^{n+1}$
@@ -89,6 +89,9 @@ $s$ with $0 < s < \delta$.
 ## Proof depends on
 
 - [The current jump at Euclidean points](euclidean-current-jump.md)
+- [Euclidean value of the current jump](euclidean-jump-value.md)
+- [Minkowski stress labels and the stress field](minkowski-stress-field.md)
+- [Tested stress insertion next to a field](../ward-identities/tested-current-jump.md)
 
 ## Sources
 

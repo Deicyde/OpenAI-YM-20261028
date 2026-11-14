@@ -9,7 +9,7 @@ $\mathbb F$; a graded label
 is a pair $(d, \beta)$ with $\beta \in F_d$, and for a tuple $w$ of graded
 labels $[w]$ is the tuple of the images $[\beta_i]_{d_i} \in \mathbb F$ of its
 entries. Let $W$ be boundary distributions over $S$: for every $n$, a
-complex-multilinear map $v \mapsto W_n(v)$ from $\mathbb F^n$ to tempered
+complex-multilinear map $u \mapsto W_n(u)$ from $\mathbb F^n$ to tempered
 distributions on $(\mathbb R^4)^n$. Fix
 
 - a [Killing field](../stress-current/killing-field.md) $K$ with matrix $V$; for

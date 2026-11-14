@@ -5,7 +5,8 @@ adjacent pair: attenuable cutoffs, spectral support of the boundary
 distributions in the cone, and, for every number of points and every slot,
 one sequence of tied heights tending to zero at which exchange data exist
 for all labels. A spatial cutoff $g$ and a time profile $f$ satisfy the
-spacelike condition at a point $x$ when $g = 1$ near $\vec x$ and every point
+spacelike condition at a point $x$ when $g = 1$ near the spatial part
+$\vec x$ of $x$ and every point
 with spatial part in the support of a first derivative of $g$ and time in
 the support of $f$ is spacelike to $x$. Tests weighted by the components of
 a Killing field and product tests $g \otimes f$ of space and time give the

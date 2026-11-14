@@ -33,7 +33,8 @@ $$
 
 as complex-linear maps $D \to D$, where $K = (k, V)$ is the Killing field
 with translation $k$ and matrix $V$,
-$K^i(x) = k_i + \sum_{j=0}^{3} V_{ij} x_j$ its components, $\partial_i$ the
+$K^i(x) = k_i + \sum_{j=0}^{3} V_{ij} x_j$ its components at
+$x \in \mathbb R^4$, $\partial_i$ the
 derivative along the $i$-th standard basis vector, and $\Sigma^{(d)}_V$ the
 label action of $V$ on $F_d$.
 

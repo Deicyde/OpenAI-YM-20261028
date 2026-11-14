@@ -23,7 +23,7 @@ $$
 **Tied heights.** The tied heights of $p$ at $k$ are the $n + 1$ real numbers
 
 $$
-y(p, k) = \operatorname{ins}_{k+1}\big( (\operatorname{Im} u_0, \dots, \operatorname{Im} u_{n-1});\ \operatorname{Im} u_k \big) \in \mathbb R^{n+1},
+\eta(p, k) = \operatorname{ins}_{k+1}\big( (\operatorname{Im} u_0, \dots, \operatorname{Im} u_{n-1});\ \operatorname{Im} u_k \big) \in \mathbb R^{n+1},
 $$
 
 obtained by inserting $\operatorname{Im} u_k$ again into slot $k + 1$
@@ -31,7 +31,8 @@ obtained by inserting $\operatorname{Im} u_k$ again into slot $k + 1$
 both $\operatorname{Im} u_k$. The adjacent pair at $k$ is the pair of slots
 $(k, k+1)$ in $\{0, \dots, n\}$.
 
-**Exchange data.** Let $N = n + 1$, let $W$ be boundary distributions and $Z$
+**Exchange data.** Let $N = n + 1$, let $W$ be boundary distributions over a
+Euclidean correlation table with common label space $\mathbb F$, and $Z$
 a Laplace family for them, with continued function $\widetilde Z$, as in the
 [spatially integrated current](integrated-current-jump.md). Write
 $\mathcal T_N$ for the forward tube (complex configurations whose imaginary

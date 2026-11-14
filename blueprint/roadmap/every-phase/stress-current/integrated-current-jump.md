@@ -3,7 +3,7 @@
 Spacetime axes are numbered $0, 1, 2, 3$, with time the axis $3$. Fix a Wilson
 family and let $S$ be a Euclidean correlation table for its tokens, with
 quotient label spaces
-$F_d$ and common label space $\mathbb F$, and write $[\beta]_4 \in \mathbb F$
+$F_d$ ($d \in \mathbb N$) and common label space $\mathbb F$, and write $[\beta]_4 \in \mathbb F$
 for the image of $\beta \in F_4$. Let $W$ be boundary distributions over $S$
 (a complex-multilinear map $v \mapsto W_n(v)$ from $\mathbb F^n$ to tempered
 distributions on $(\mathbb R^4)^n$ for every $n$), let $Z$ be a Laplace family
@@ -36,7 +36,7 @@ points $\langle \xi_i, u_i\rangle$. For a slot $j \in \{0, \dots, n\}$, a
 spatial point $r \in \mathbb R^3$ and a complex time $z$, put
 
 $$
-\zeta^j(\xi, u; r, z) = \big\langle \operatorname{ins}_j(\xi; r),\ \operatorname{ins}_j(u; z) \big\rangle \in (\mathbb C^4)^{n+1},
+\gamma^j(\xi, u; r, z) = \big\langle \operatorname{ins}_j(\xi; r),\ \operatorname{ins}_j(u; z) \big\rangle \in (\mathbb C^4)^{n+1},
 $$
 
 the configuration with the point $\langle r, z\rangle$ in slot $j$ and the
@@ -57,7 +57,7 @@ where $\zeta_j \in \mathbb C^4$ is the point of $\zeta$ in slot $j$. The
 **integrated current** with the stress in slot $j$ at complex time $z$ is
 
 $$
-I^j(\xi, u; z) = \int_{\mathbb R^3} g(r)\ \tau^j_3\big(\zeta^j(\xi, u; r, z)\big)\, dr ,
+I^j(\xi, u; z) = \int_{\mathbb R^3} g(r)\ \tau^j_3\big(\gamma^j(\xi, u; r, z)\big)\, dr ,
 $$
 
 a Lebesgue integral over $\mathbb R^3$, taken to be $0$ when the integrand is

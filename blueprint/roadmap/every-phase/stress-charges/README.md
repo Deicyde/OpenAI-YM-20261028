@@ -2,7 +2,11 @@
 
 The stress charge of a Killing field $K$ is
 $\mathcal Q_K(f, g) = \sum_b T_{3b}\big(K^b\, (g \otimes f)\big)$, built from a
-time profile $f$ and a spatial cutoff $g$. A time profile is admissible when
+time profile $f$ and a spatial cutoff $g$: the stress field $T_{3b}$ of a
+stress tensor $T$, with first index the time axis $3$, is tested with the
+component $K^b$ of $K$ along the axis $b$ times the function $g \otimes f$,
+whose value at a point is $g$ at its spatial part times $f$ at its time, and
+summed over $b$. A time profile is admissible when
 it is real, compactly supported and of integral $1$. A spatial cutoff is
 admissible for a set of spacetime points and a profile when it is compactly
 supported and equal to $1$ on a ball whose exterior, at the times of the
@@ -31,7 +35,8 @@ heights. Then come covariance of the stress field under the Poincaré
 representation, symmetry, hermiticity and conservation. Last come the
 commutator identity for all admissible data and the derivation rule on
 finite sums of words, for every choice of representatives of the labels. At
-every character the record holds for $\mathfrak W_s$. Its continuation data
+every character $s$ the record holds for $\mathfrak W_s$, the Wightman data
+of the reconstruction at $s$. Its continuation data
 and the commutator identity come from the reconstruction at $s$ and the
 results above. Covariance, symmetry and hermiticity come from the laws of
 the field algebra and the Wightman conditions of $\mathfrak W_s$;

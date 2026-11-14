@@ -47,6 +47,14 @@ as derivations on finite sums of words.
 ## Proof depends on
 
 - [The stress charge generates the transformation](stress-charge-commutator.md)
+- [Hypotheses for continuing the stress current](../stress-current/stress-continuation-hypotheses.md)
+- [Exchange heights for every adjacent pair](../ward-identities/exchange-height-sequences.md)
+- [Admissible base points for the current jump](../stress-current/jump-admissibility.md)
+- [Charges generate the transformations of fields](charge-generates-transformations.md)
+- [Minkowski stress labels and the stress field](../stress-current/minkowski-stress-field.md)
+- [Charges act as derivations on sums of words](charge-acts-as-derivation.md)
+- [Stress charge and the commutator action](stress-charge.md)
+- [Finite sums of words and their vectors](../sums-of-words.md)
 
 ## Sources
 

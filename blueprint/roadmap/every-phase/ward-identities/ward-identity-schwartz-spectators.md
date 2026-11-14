@@ -64,20 +64,24 @@ integrable.
 7. for every $x \in \operatorname{supp} m$, the cutoff $g$ and the profile $f$
    satisfy the [spacelike condition](spacelike-cutoff-condition.md) at $x$.
 
-Then for all words $a$ and $b$, whose letters carry arbitrary Schwartz test
+Then for all words $u$ and $v$, whose letters carry arbitrary Schwartz test
 functions, the [shell identity](shell-identity.md) for $W$, the generator maps
 $\lambda_d$, the derivative maps $\partial^{(d)}_i$, $T$, $K$, $f$, $g$, $B$
-and $m$ holds for $a$ and $b$:
+and $m$ holds for $u$ and $v$:
 
 $$
-\sum_{i=0}^{3} \zeta_i\, \mathcal E\big(a\, \ell\, r_i\, b\big) - \sum_{i=0}^{3} \zeta_i\, \mathcal E\big(a\, r_i\, \ell\, b\big)
-= \mathcal E\Big(a\, \big([\Sigma^{(d)}_K \beta]_d,\ m\big)\, b\Big)
-+ \sum_{i=0}^{3} \zeta_i\, \mathcal E\Big(a\, \big([\partial^{(d)}_i \beta]_{d+1},\ K^i m\big)\, b\Big),
+\sum_{i=0}^{3} \zeta_i\, \mathcal E\big(u\, \ell\, r_i\, v\big) - \sum_{i=0}^{3} \zeta_i\, \mathcal E\big(u\, r_i\, \ell\, v\big)
+= \mathcal E\Big(u\, \big([\Sigma^{(d)}_K \beta]_d,\ m\big)\, v\Big)
++ \sum_{i=0}^{3} \zeta_i\, \mathcal E\Big(u\, \big([\partial^{(d)}_i \beta]_{d+1},\ K^i m\big)\, v\Big),
 $$
 
 with $\ell = ([\beta]_d, m)$, $r_i = ([T_{3i}]_4, K^i(g \otimes f))$, the Wick
 factors $\zeta_i$, the infinitesimal label action $\Sigma^{(d)}_K$ and the
-word expectations $\mathcal E$ under $W$ as in the shell identity.
+word expectations $\mathcal E$ under $W$ as in the shell identity. Here
+$[\beta]_d \in \mathbb F$ is the image of $\beta \in F_d$, $K^i h$ is the
+Schwartz function $h$ multiplied by the component $i$ of the real value of
+$K$, $g \otimes f$ is the product test of $g$ in space and $f$ in time, and
+juxtaposition of words and letters denotes concatenation.
 
 ## Depends on
 

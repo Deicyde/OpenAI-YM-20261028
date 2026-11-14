@@ -12,8 +12,8 @@ multilinear in the labels. Let $L$ be a family of reconstructions over the
 phases for $\mathcal F$, and write $\mathsf F_s$ for the continuation
 functions of its member at the character $s \in X$.
 
-A point of spacetime is $x = (x_0, x_1, x_2, x_3) \in \mathbb R^4$, with time
-$t(x) = x_3$ and spatial part $\vec x = (x_0, x_1, x_2)$. For
+A point of spacetime is $q = (q_0, q_1, q_2, q_3) \in \mathbb R^4$, with time
+$t(q) = q_3$ and spatial part $\vec q = (q_0, q_1, q_2)$. For
 $n \in \mathbb N$, a configuration $x = (x_1, \dots, x_n) \in (\mathbb R^4)^n$
 and real heights $y = (y_1, \dots, y_n)$, put
 

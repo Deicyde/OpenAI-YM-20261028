@@ -26,10 +26,11 @@ definition uses:
   $S_{s_0}$, with its boundary distributions;
 - the selected Wightman data $\mathfrak W_*$ for $S$, with star operation
   $a \mapsto a^\star$ on $\mathbb F$ and Lorentz action $\sigma$ (the maps
-  $\sigma(g)$ of $\mathbb F$ together with the maps of each $F_d$).
+  $\sigma(g)$ of $\mathbb F$, for Lorentz transformations $g$, together with
+  the maps of each $F_d$).
 
-A point of spacetime is $x = (x_0, x_1, x_2, x_3) \in \mathbb R^4$, with time
-$t(x) = x_3$ and spatial part $\vec x = (x_0, x_1, x_2)$; a momentum $p$ has
+A point of spacetime is $q = (q_0, q_1, q_2, q_3) \in \mathbb R^4$, with time
+$t(q) = q_3$ and spatial part $\vec q = (q_0, q_1, q_2)$; a momentum $p$ has
 energy $p_3$. For a configuration $x = (x_1, \dots, x_n)$ and heights $y$,
 $t(x) + \mathrm i y$ is the tuple of complex times $t(x_j) + \mathrm i y_j$
 and $\vec x$ the tuple of spatial parts. The data below use these notions,
@@ -44,10 +45,10 @@ each explained in mathematical words.
   continuous unitary group of spatial translations that act on these vectors
   by translating the words. Its Euclidean vacuum $\omega$ is the vector of
   the empty word.
-- **Slab operators** on it assign to every thickness $d \ge 0$ and word $w$ a
+- **Slab operators** on it assign to every thickness $\ell \ge 0$ and word $w$ a
   bounded operator that maps the vector of a positive-time word $b$ to the
-  vector of $w$ followed by $b$ translated by $d$ in time, whenever $w$ lies
-  in the time slab of thickness $d$.
+  vector of $w$ followed by $b$ translated by $\ell$ in time, whenever $w$ lies
+  in the time slab of thickness $\ell$.
 - **One-point slab operators realized by** slab operators $\Pi$ assign to
   every half-width $\delta \ge 0$ a complex-linear map $a \mapsto B_\delta(a)$
   from $\mathbb F$ to bounded operators, such that for $\delta > 0$, every
@@ -103,11 +104,11 @@ properties.
      and holomorphic in the times there, its values at purely imaginary,
      strictly ordered times are the Schwinger functions of $S_s$ read on
      labels of $S$, and for every strictly increasing height tuple $y$ and
-     Schwartz function $g$ the function
-     $x \mapsto \mathsf F_s(t(x) + \mathrm i y, \vec x; a)\, g(x)$ is
+     Schwartz function $h$ the function
+     $x \mapsto \mathsf F_s(t(x) + \mathrm i y, \vec x; a_1, \dots, a_n)\, h(x)$ is
      integrable and its integral with $y$ replaced by $\varepsilon y$ tends
-     to $W_s(a; g)$ as $\varepsilon \to 0^+$;
-   - (b) these tested values tend to $W_s(a; g)$ as $y \to 0$ through all
+     to $W_s(a_1, \dots, a_n; h)$ as $\varepsilon \to 0^+$;
+   - (b) these tested values tend to $W_s(a_1, \dots, a_n; h)$ as $y \to 0$ through all
      strictly increasing height tuples (non-tangential boundary values);
    - (c) there is a reconstruction staging over $\mathcal H^{\rm OS}_s$ and
      $\Pi_s$ (one-point slab operators realized by $\Pi_s$ with polynomial
@@ -156,7 +157,7 @@ properties.
      on $D_s$;
    - every nonzero label $a$ has a test function $f$ with
      $\varphi_s(a, f) \ne 0$;
-   - each $V_s(g)$ maps $D_s$ into itself and fixes $\Omega_s$, and
+   - for every Poincaré transformation $g$, $V_s(g)$ maps $D_s$ into itself and fixes $\Omega_s$, and
      $V_s(g)\, \varphi_s(a, f)\, \psi = \varphi_s(\sigma(g)\, a, f \circ g^{-1})\, V_s(g)\, \psi$,
      where $\sigma(g)$ is the action on labels of the Lorentz part of $g$;
    - for every $\psi \in H_s$ and $c \in \mathbb R^4$,
@@ -174,10 +175,10 @@ properties.
    map $\Phi_a$ from Schwartz functions on $(\mathbb R^4)^n$ to $H_s$ with
    $\Phi_a(f_1 \otimes \dots \otimes f_n) = \varphi_s(a_1, f_1) \cdots \varphi_s(a_n, f_n)\, \Omega_s$,
    such that for all slab operators on $\mathcal H^{\rm OS}_s$, all
-   one-point slab operators they realize and every Schwartz function $g$, the
+   one-point slab operators they realize and every Schwartz function $h$, the
    Euclidean word vectors of half-width $\delta$, labels $a$ and complex
-   times $t(x_j) + \mathrm i y_j$, smeared as $\int g(x)\, (\cdot)\, dx$ over
-   $x \in (\mathbb R^4)^n$, converge to $J_s \Phi_a(g)$ as $y \to 0$ with
+   times $t(x_j) + \mathrm i y_j$, smeared as $\int h(x)\, (\cdot)\, dx$ over
+   $x \in (\mathbb R^4)^n$, converge to $J_s \Phi_a(h)$ as $y \to 0$ with
    $0 < y_1 < \dots < y_n$, $0 < \delta < 1$, $4\delta < y_1$ and
    $4\delta < y_{j+1} - y_j$.
 

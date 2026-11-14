@@ -41,9 +41,9 @@ contents the chapter uses the following.
     Osterwalder–Schrader space of $S$.
   - The compressions of the slab operators to that ground space generate a
     commutative C\*-algebra, and the points of $X$ index its characters
-    bijectively. Each character is continuous, $s \mapsto \chi_s(M)$ is
-    continuous for every element $M$, and $\int_X \chi_s(M)\, d\nu(s)$ is the
-    vacuum expectation of $M$.
+    bijectively, $s \mapsto \kappa_s$. Each character is continuous, $s \mapsto \kappa_s(Q)$ is
+    continuous for every element $Q$, and $\int_X \kappa_s(Q)\, d\nu(s)$ is the
+    vacuum expectation of $Q$.
   - $\nu$ is a probability measure that gives positive measure to every
     nonempty open set.
   - For every character $s$ and every word $w$ of pairwise distinct points,
@@ -147,7 +147,7 @@ such a family, which it constructs from the record.
 - [Family of reconstructions over the phases](reconstruction-family.md)
 
 The first property is surjectivity of the boundary isometry. The lemma is
-general, about any bounded map with the boundary-isometry property between
+general, about any bounded map $J$ with the boundary-isometry property between
 Wightman data and an Osterwalder–Schrader space, under the analytic
 compatibility hypotheses of a reconstruction staging, symmetry and
 smoothness of the table of the Osterwalder–Schrader space, inclusion of the
@@ -189,8 +189,8 @@ compactly supported when every test function in it has compact support.
 - [Compactly supported sums of words](compactly-supported-sums.md)
 
 At the character $s$ the spectral measure of $A$ is the diagonal measure
-$\mu^s_A(B) = \langle A\Omega_s, E_s(B)\, A\Omega_s \rangle$ of the
-energy–momentum measure. The zero-energy region is the hyperplane
+$\mu^s_A(\Delta) = \langle A\Omega_s, E_s(\Delta)\, A\Omega_s \rangle$, for Borel sets
+$\Delta \subseteq \mathbb R^4$, of the energy–momentum measure. The zero-energy region is the hyperplane
 $Z = \{p : p_3 = 0\}$, and the low-energy region of height $u$ is the slab
 $\{p : 0 < p_3 \le u\}$. The heat operator of the character is pulled back
 through the boundary map:
@@ -228,8 +228,8 @@ $\langle \psi, e^{-\tau H_s}\, \psi \rangle$ is the integral of $e^{-\tau p_3}$
 against the diagonal measure of $\psi$. After the whole zero-energy projection
 $E_s(Z)$ is subtracted, only energies $p_3 > 0$ remain. Laplace integration
 of the low-energy bound then gives
-$0 \le \langle A\Omega_s, (e^{-\tau H_s} - E_s(Z))\, A\Omega_s \rangle \le M \tau^{-2}$
-for $\tau \ge 1$, uniformly in $s$. At this stage $E_s(Z)$ is the full
+$0 \le \langle A\Omega_s, (e^{-\tau H_s} - E_s(Z))\, A\Omega_s \rangle \le M' \tau^{-2}$
+for $\tau \ge 1$, with a constant $M'$ uniform in $s$. At this stage $E_s(Z)$ is the full
 spectral projection, not yet known to be the projection onto the vacuum line.
 
 - [Inverse-square heat decay after subtracting zero energy](inverse-square-heat-decay.md)
@@ -241,7 +241,7 @@ the projection onto $\mathbb C\,\Omega_s$, so the bound holds for the
 vacuum-subtracted form
 $\langle A\Omega_s, e^{-\tau H_s} A\Omega_s \rangle - |\langle \Omega_s, A\Omega_s \rangle|^2$.
 This form is continuous in $s$, so the set of characters where it lies in
-$[0, M\tau^{-2}]$ is closed and of full measure. Since $\nu$ charges every
+$[0, M'\tau^{-2}]$ is closed and of full measure. Since $\nu$ charges every
 nonempty open set, it is all of $X$. As $\tau \to \infty$, $e^{-\tau H_s}$
 tends strongly to $E_s(Z)$. Hence
 $\langle \psi, E_s(Z)\, \psi \rangle = |\langle \Omega_s, \psi \rangle|^2$ for every
