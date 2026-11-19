@@ -1,0 +1,179 @@
+## structures
+ChallengeSpec	YangMills.Hierarchy	data	23 fields	reached	[H, labels, theory, Field, fieldAdd, fieldSpace, fieldFinite, toLabel, project, Character, characterMetric, characterSets, characterBorel, characterCompact, phaseMeasure, selected, correlation, continuation, Channel, finiteChannels, actor, coefficient, centeredTrace]
+ChallengeSpec	YangMills.Hierarchy.Mode	data	6 fields	reached	[mass, spatialOrder, timeOrder, numerator, continuous, homogeneous]
+ChallengeSpec	YangMills.Hierarchy.OperatorProductExpansion	Prop	2 fields	reached	[coefficients, remainder]
+ChallengeSpec	YangMills.Hierarchy.Properties	Prop	4 fields	reached	[wilson, reconstruction, ope, nonfree]
+ChallengeSpec	YangMills.Hierarchy.Reconstructed	Prop	15 fields	reached	[axioms, faithful, injective, acts, covers, represents, normalized, fullSupport, permutation, smooth, characterContinuity, mixture, analytic, root, boundary]
+ChallengeSpec	YangMills.Hierarchy.TraceTest	Prop	4 fields	reached	[centered, amplitudePositive, shortDistance, excludes]
+ChallengeSpec	YangMills.Hierarchy.Track	data	2 fields	reached	[n, modes]
+ChallengeSpec	YangMills.WilsonRegularity	Prop	4 fields	reached	[running, continuous, invariant, localSupport]
+PublicTheory	YangMills.EnergyMomentumMeasure	data	9 fields	reached	[projection, empty, univ, intersection, selfAdjoint, countablyAdditive, diagonal, finite, diagonalIdentity]
+PublicTheory	YangMills.FieldLabels	data	3 fields	reached	[carrier, addCommGroup, module]
+PublicTheory	YangMills.FieldSystem	data	3 fields	reached	[domain, vacuum, field]
+PublicTheory	YangMills.FieldSystem.DomainAxioms	Prop	4 fields	reached	[normalizedVacuum, denseDomain, cyclicVacuum, tempered]
+PublicTheory	YangMills.GaugeGroup	data	5 fields	reached	[n, image, imageClosed, lieAlgebra, generates]
+PublicTheory	YangMills.HilbertSpace	data	4 fields	reached	[carrier, normedAddCommGroup, innerProductSpace, completeSpace]
+PublicTheory	YangMills.PoincareAction	data	19 fields	reached	[Symmetry, one, mul, topology, onStates, onLabels, onTests, pureTranslation, identity, composition, unitary, stronglyContinuous, coordinates, identityCoordinates, productCoordinates, translationCoordinates, pullback, translationZero, translationAdd]
+PublicTheory	YangMills.TranslationAction	data	5 fields	reached	[operator, identity, add, unitary, stronglyContinuous]
+PublicTheory	YangMills.WightmanTheory	data	6 fields	reached	[fields, adjointLabel, translations, energyMomentum, poincare, translationCompatibility]
+PublicTheory	YangMills.WightmanTheory.Axioms	Prop	4 fields	reached	[w0, w1, w2, w3]
+PublicTheory	YangMills.WightmanTheory.W0	Prop	3 fields	reached	[spectralRepresentation, positiveEnergy, uniqueVacuum]
+PublicTheory	YangMills.WightmanTheory.W1	Prop	2 fields	reached	[domain, adjoint]
+PublicTheory	YangMills.WightmanTheory.W2	Prop	5 fields	reached	[labelIdentity, labelComposition, domainInvariant, vacuumInvariant, fieldCovariance]
+PublicTheory	YangMills.WightmanTheory.W3	Prop	1 fields	reached	[locality]
+PublicWilson	YangMills.WilsonFamily	data	10 fields	reached	[period, denominator, periodStrict, denominatorStrict, beta, haar, probability, invariantHaar, Token, insertion]
+## definitions
+ChallengeSpec	YangMills.Hierarchy.Clear	reached
+ChallengeSpec	YangMills.Hierarchy.Mode.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Mode.ctorIdx	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Mode.kernel	reached
+ChallengeSpec	YangMills.Hierarchy.Mode.mk.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Mode.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Mode.noConfusionType	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Mode.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.OPEComplexTimes	reached
+ChallengeSpec	YangMills.Hierarchy.OPEPoint	reached
+ChallengeSpec	YangMills.Hierarchy.OPEPoints	reached
+ChallengeSpec	YangMills.Hierarchy.OPESpacePoints	reached
+ChallengeSpec	YangMills.Hierarchy.OperatorProductExpansion.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.OperatorProductExpansion.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Properties.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Properties.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Reconstructed.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Reconstructed.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Tag	reached
+ChallengeSpec	YangMills.Hierarchy.TraceTest.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.TraceTest.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.ctorIdx	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.mk.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.noConfusionType	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Track.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.Within	reached
+ChallengeSpec	YangMills.Hierarchy.casesOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.complexShift	reached
+ChallengeSpec	YangMills.Hierarchy.ctorIdx	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.grouped	reached
+ChallengeSpec	YangMills.Hierarchy.imaginaryTimes	reached
+ChallengeSpec	YangMills.Hierarchy.mk.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.noConfusion	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.noConfusionType	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.orderedTube	reached
+ChallengeSpec	YangMills.Hierarchy.recOn	UNREACHED
+ChallengeSpec	YangMills.Hierarchy.spatialPoints	reached
+ChallengeSpec	YangMills.Hierarchy.tensorTest	reached
+ChallengeSpec	YangMills.Hierarchy.timePair	reached
+ChallengeSpec	YangMills.Hierarchy.traceTwo	reached
+ChallengeSpec	YangMills.Hierarchy.weight	reached
+ChallengeSpec	YangMills.Hierarchy.wickProfile	reached
+ChallengeSpec	YangMills.JointExistence	reached
+ChallengeSpec	YangMills.WilsonRegularity.casesOn	UNREACHED
+ChallengeSpec	YangMills.WilsonRegularity.recOn	UNREACHED
+PublicTheory	YangMills.Axis	reached
+PublicTheory	YangMills.EnergyMomentumMeasure.casesOn	UNREACHED
+PublicTheory	YangMills.EnergyMomentumMeasure.ctorIdx	UNREACHED
+PublicTheory	YangMills.EnergyMomentumMeasure.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.EnergyMomentumMeasure.noConfusion	UNREACHED
+PublicTheory	YangMills.EnergyMomentumMeasure.noConfusionType	UNREACHED
+PublicTheory	YangMills.EnergyMomentumMeasure.recOn	UNREACHED
+PublicTheory	YangMills.FieldLabels.casesOn	UNREACHED
+PublicTheory	YangMills.FieldLabels.ctorIdx	UNREACHED
+PublicTheory	YangMills.FieldLabels.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.FieldLabels.noConfusion	UNREACHED
+PublicTheory	YangMills.FieldLabels.noConfusionType	UNREACHED
+PublicTheory	YangMills.FieldLabels.recOn	UNREACHED
+PublicTheory	YangMills.FieldSystem.AdjointAxiom	reached
+PublicTheory	YangMills.FieldSystem.DomainAxioms.casesOn	UNREACHED
+PublicTheory	YangMills.FieldSystem.DomainAxioms.recOn	UNREACHED
+PublicTheory	YangMills.FieldSystem.Faithful	reached
+PublicTheory	YangMills.FieldSystem.LocalCommutativity	reached
+PublicTheory	YangMills.FieldSystem.SpacelikeSeparated	reached
+PublicTheory	YangMills.FieldSystem.casesOn	UNREACHED
+PublicTheory	YangMills.FieldSystem.ctorIdx	UNREACHED
+PublicTheory	YangMills.FieldSystem.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.FieldSystem.noConfusion	UNREACHED
+PublicTheory	YangMills.FieldSystem.noConfusionType	UNREACHED
+PublicTheory	YangMills.FieldSystem.recOn	UNREACHED
+PublicTheory	YangMills.FieldSystem.vacuumExpectation	reached
+PublicTheory	YangMills.FieldSystem.vector	reached
+PublicTheory	YangMills.GaugeGroup.IsSimple	reached
+PublicTheory	YangMills.GaugeGroup.casesOn	UNREACHED
+PublicTheory	YangMills.GaugeGroup.ctorIdx	UNREACHED
+PublicTheory	YangMills.GaugeGroup.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.GaugeGroup.noConfusion	UNREACHED
+PublicTheory	YangMills.GaugeGroup.noConfusionType	UNREACHED
+PublicTheory	YangMills.GaugeGroup.recOn	UNREACHED
+PublicTheory	YangMills.HilbertSpace.Operator	reached
+PublicTheory	YangMills.HilbertSpace.casesOn	UNREACHED
+PublicTheory	YangMills.HilbertSpace.ctorIdx	UNREACHED
+PublicTheory	YangMills.HilbertSpace.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.HilbertSpace.noConfusion	UNREACHED
+PublicTheory	YangMills.HilbertSpace.noConfusionType	UNREACHED
+PublicTheory	YangMills.HilbertSpace.recOn	UNREACHED
+PublicTheory	YangMills.PoincareAction.casesOn	UNREACHED
+PublicTheory	YangMills.PoincareAction.ctorIdx	UNREACHED
+PublicTheory	YangMills.PoincareAction.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.PoincareAction.noConfusion	UNREACHED
+PublicTheory	YangMills.PoincareAction.noConfusionType	UNREACHED
+PublicTheory	YangMills.PoincareAction.recOn	UNREACHED
+PublicTheory	YangMills.PoincareCoordinates	reached
+PublicTheory	YangMills.ProperLorentz	reached
+PublicTheory	YangMills.Space	reached
+PublicTheory	YangMills.SpaceAxis	reached
+PublicTheory	YangMills.Spacetime	reached
+PublicTheory	YangMills.TestFunction	reached
+PublicTheory	YangMills.TranslationAction.casesOn	UNREACHED
+PublicTheory	YangMills.TranslationAction.ctorIdx	UNREACHED
+PublicTheory	YangMills.TranslationAction.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.TranslationAction.noConfusion	UNREACHED
+PublicTheory	YangMills.TranslationAction.noConfusionType	UNREACHED
+PublicTheory	YangMills.TranslationAction.recOn	UNREACHED
+PublicTheory	YangMills.UnitaryRepresentation	reached
+PublicTheory	YangMills.WightmanTheory.Axioms.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.Axioms.recOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W0.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W0.recOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W1.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W1.recOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W2.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W2.recOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W3.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.W3.recOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.casesOn	UNREACHED
+PublicTheory	YangMills.WightmanTheory.ctorIdx	UNREACHED
+PublicTheory	YangMills.WightmanTheory.mk.noConfusion	UNREACHED
+PublicTheory	YangMills.WightmanTheory.noConfusion	UNREACHED
+PublicTheory	YangMills.WightmanTheory.noConfusionType	UNREACHED
+PublicTheory	YangMills.WightmanTheory.recOn	UNREACHED
+PublicTheory	YangMills.conjugateTest	reached
+PublicTheory	YangMills.forwardCone	reached
+PublicTheory	YangMills.minkowskiSquare	reached
+PublicTheory	YangMills.spacelike	reached
+PublicTheory	YangMills.spatial	reached
+PublicTheory	YangMills.time	reached
+PublicTheory	YangMills.timeAxis	reached
+PublicWilson	YangMills.Configuration	reached
+PublicWilson	YangMills.Directions	reached
+PublicWilson	YangMills.Points	reached
+PublicWilson	YangMills.Site	reached
+PublicWilson	YangMills.WilsonFamily.Converges	reached
+PublicWilson	YangMills.WilsonFamily.SeparatedTest	reached
+PublicWilson	YangMills.WilsonFamily.casesOn	UNREACHED
+PublicWilson	YangMills.WilsonFamily.ctorIdx	UNREACHED
+PublicWilson	YangMills.WilsonFamily.finiteMoment	reached
+PublicWilson	YangMills.WilsonFamily.mesh	reached
+PublicWilson	YangMills.WilsonFamily.mk.noConfusion	UNREACHED
+PublicWilson	YangMills.WilsonFamily.noConfusion	UNREACHED
+PublicWilson	YangMills.WilsonFamily.noConfusionType	UNREACHED
+PublicWilson	YangMills.WilsonFamily.place	reached
+PublicWilson	YangMills.WilsonFamily.recOn	UNREACHED
+PublicWilson	YangMills.WilsonFamily.separated	reached
+PublicWilson	YangMills.WilsonFamily.smear	reached
+PublicWilson	YangMills.WilsonFamily.suitable	reached
+PublicWilson	YangMills.plaquette	reached
+PublicWilson	YangMills.wilsonEnergy	reached
+PublicWilson	YangMills.wilsonLaw	reached
+## instances
+PublicWilson	YangMills.GaugeGroup.instBorelSpaceSubtypeMatrixFinHAddNatNOfNatComplexMemSubmonoidUnitaryRepresentationSubgroupImage_publicWilson	UNREACHED
+PublicWilson	YangMills.GaugeGroup.instMeasurableSpaceSubtypeMatrixFinHAddNatNOfNatComplexMemSubmonoidUnitaryRepresentationSubgroupImage_publicWilson	reached
