@@ -1,1 +1,0 @@
-{"subject": [{"type": "generic", "uri": "../../../../roadmap/every-phase/stress-charges/stress-tensor-record.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.Force"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_ec3fd73fe332b901d7686328", "extensions": {"org.autoform": {"origin": "cited"}}}

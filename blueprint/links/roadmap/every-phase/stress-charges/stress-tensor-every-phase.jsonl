@@ -1,1 +1,0 @@
-{"subject": [{"type": "generic", "uri": "../../../../roadmap/every-phase/stress-charges/stress-tensor-every-phase.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.force"}, "role": "states"}], "status": "formalized", "kind": "lemma", "id": "af_3c51d23224147f6d9603a546", "extensions": {"org.autoform": {"origin": "cited"}}}

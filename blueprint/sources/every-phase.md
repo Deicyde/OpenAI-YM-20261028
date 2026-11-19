@@ -65,7 +65,7 @@ version of the book.
 | `YM.EveryPhase.Stress.measure_identity` | lemma | [104](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Charge.lean#L104) |  |
 | `YM.EveryPhase.Stress.local_action` | theorem | [143](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Charge.lean#L143) | Testing functions are Schwartz with HasCompactSupport (C∞ with compact support). Real f, integral one; any such height profile. Spatial cutoff can also be complex. Test supports not including exterior vectors of the matrix element between which we test. Only a local identity. |
 
-Covered by [Admissible time profile](../roadmap/every-phase/stress-charges/admissible-time-profile.md) (`YM.EveryPhase.Stress.Season`); [Admissible spatial cutoff](../roadmap/every-phase/stress-charges/admissible-spatial-cutoff.md) (`YM.EveryPhase.Stress.Reservation`); [Stress charge and the commutator action](../roadmap/every-phase/stress-charges/stress-charge.md) (`YM.EveryPhase.Stress.Charge`, `YM.EveryPhase.Stress.adjAction`); [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md) (`YM.EveryPhase.Stress.action`); and [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) (`YM.EveryPhase.Stress.local_action`).
+Covered by [Admissible time profile](../roadmap/phases/every-phase/stress-charges/admissible-time-profile.md) (`YM.EveryPhase.Stress.Season`); [Admissible spatial cutoff](../roadmap/phases/every-phase/stress-charges/admissible-spatial-cutoff.md) (`YM.EveryPhase.Stress.Reservation`); [Stress charge and the commutator action](../roadmap/phases/every-phase/stress-charges/stress-charge.md) (`YM.EveryPhase.Stress.Charge`, `YM.EveryPhase.Stress.adjAction`); [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md) (`YM.EveryPhase.Stress.action`); and [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) (`YM.EveryPhase.Stress.local_action`).
 
 Lean-side notes:
 
@@ -81,30 +81,30 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Admissible time profile](../roadmap/every-phase/stress-charges/admissible-time-profile.md), [Admissible spatial cutoff](../roadmap/every-phase/stress-charges/admissible-spatial-cutoff.md) |
-| `YM.Mink.spacelike` | [YM/Mink/Geometry.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L80) | [Admissible spatial cutoff](../roadmap/every-phase/stress-charges/admissible-spatial-cutoff.md) |
-| `YM.position` | [YM/Space/Configurations.lean:29](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L29) | [Admissible spatial cutoff](../roadmap/every-phase/stress-charges/admissible-spatial-cutoff.md) |
-| `YM.Mink.lateral` | [YM/Mink/Geometry.lean:103](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L103) | [Admissible spatial cutoff](../roadmap/every-phase/stress-charges/admissible-spatial-cutoff.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Stress charge and the commutator action](../roadmap/every-phase/stress-charges/stress-charge.md), [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md), [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Stress charge and the commutator action](../roadmap/every-phase/stress-charges/stress-charge.md) |
-| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Stress charge and the commutator action](../roadmap/every-phase/stress-charges/stress-charge.md), [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md) |
-| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md) |
-| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md) |
-| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Infinitesimal Poincaré transformation of a field](../roadmap/every-phase/stress-charges/infinitesimal-field-transformation.md) |
-| `YM.Next.BOUNDARY.FieldCore` | [YM/Next/BOUNDARY/Core.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L34) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Waves` | [YM/Boundary/Contour.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L57) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Table.RealSpin` | [YM/Euclid/Table.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L80) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Spins.Descends` | [YM/Fields/Star.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L26) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.starRead` | [YM/Fields/Star.lean:42](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L42) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
-| `YM.Boundary.Symmetries` | [YM/Fields/System.lean:111](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L111) | [The stress charge generates the transformation](../roadmap/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Admissible time profile](../roadmap/phases/every-phase/stress-charges/admissible-time-profile.md), [Admissible spatial cutoff](../roadmap/phases/every-phase/stress-charges/admissible-spatial-cutoff.md) |
+| `YM.Mink.spacelike` | [YM/Mink/Geometry.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L80) | [Admissible spatial cutoff](../roadmap/phases/every-phase/stress-charges/admissible-spatial-cutoff.md) |
+| `YM.position` | [YM/Space/Configurations.lean:29](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L29) | [Admissible spatial cutoff](../roadmap/phases/every-phase/stress-charges/admissible-spatial-cutoff.md) |
+| `YM.Mink.lateral` | [YM/Mink/Geometry.lean:103](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L103) | [Admissible spatial cutoff](../roadmap/phases/every-phase/stress-charges/admissible-spatial-cutoff.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Stress charge and the commutator action](../roadmap/phases/every-phase/stress-charges/stress-charge.md), [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md), [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Stress charge and the commutator action](../roadmap/phases/every-phase/stress-charges/stress-charge.md) |
+| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Stress charge and the commutator action](../roadmap/phases/every-phase/stress-charges/stress-charge.md), [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md) |
+| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md) |
+| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md) |
+| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Infinitesimal Poincaré transformation of a field](../roadmap/phases/every-phase/stress-charges/infinitesimal-field-transformation.md) |
+| `YM.Next.BOUNDARY.FieldCore` | [YM/Next/BOUNDARY/Core.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L34) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Waves` | [YM/Boundary/Contour.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L57) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Table.RealSpin` | [YM/Euclid/Table.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L80) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Spins.Descends` | [YM/Fields/Star.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L26) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.starRead` | [YM/Fields/Star.lean:42](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L42) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
+| `YM.Boundary.Symmetries` | [YM/Fields/System.lean:111](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L111) | [The stress charge generates the transformation](../roadmap/phases/every-phase/stress-charges/stress-charge-commutator.md) |
 
 ### Compatibility
 
@@ -139,7 +139,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.widespread` | lemma | [121](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Court.lean#L121) |  |
 | `YM.EveryPhase.Stress.Schwartz_shells` | lemma | [147](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Court.lean#L147) |  |
 
-Covered by [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) (`YM.EveryPhase.Stress.shells`); and [Ward identity with arbitrary spectators](../roadmap/every-phase/ward-identities/ward-identity-schwartz-spectators.md) (`YM.EveryPhase.Stress.Schwartz_shells`).
+Covered by [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) (`YM.EveryPhase.Stress.shells`); and [Ward identity with arbitrary spectators](../roadmap/phases/every-phase/ward-identities/ward-identity-schwartz-spectators.md) (`YM.EveryPhase.Stress.Schwartz_shells`).
 
 Lean-side notes:
 
@@ -151,14 +151,14 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Surface.expect` | [YM/Fields/Star.lean:95](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L95) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.Boundary.Joint.materialize` | [YM/Distribution/Product.lean:139](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L139) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.Boundary.Sentence` | [YM/Fields/Star.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L39) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.Boundary.Letter` | [YM/Fields/Star.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L38) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Shell identity for word expectations](../roadmap/every-phase/ward-identities/shell-identity.md) |
-| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Ward identity with arbitrary spectators](../roadmap/every-phase/ward-identities/ward-identity-schwartz-spectators.md) |
-| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [Ward identity with arbitrary spectators](../roadmap/every-phase/ward-identities/ward-identity-schwartz-spectators.md) |
+| `YM.Boundary.Surface.expect` | [YM/Fields/Star.lean:95](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L95) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.Boundary.Joint.materialize` | [YM/Distribution/Product.lean:139](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L139) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.Boundary.Sentence` | [YM/Fields/Star.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L39) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.Boundary.Letter` | [YM/Fields/Star.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L38) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Shell identity for word expectations](../roadmap/phases/every-phase/ward-identities/shell-identity.md) |
+| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Ward identity with arbitrary spectators](../roadmap/phases/every-phase/ward-identities/ward-identity-schwartz-spectators.md) |
+| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [Ward identity with arbitrary spectators](../roadmap/phases/every-phase/ward-identities/ward-identity-schwartz-spectators.md) |
 
 ### Cross
 
@@ -183,7 +183,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.currentJump` | def | [130](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Cross.lean#L130) |  |
 | `YM.EveryPhase.Stress.variation` | lemma | [133](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Cross.lean#L133) |  |
 
-Covered by [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) (`YM.EveryPhase.Stress.Prospect`); and [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.crest`, `YM.EveryPhase.Stress.trough`, `YM.EveryPhase.Stress.currentJump`).
+Covered by [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) (`YM.EveryPhase.Stress.Prospect`); and [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.crest`, `YM.EveryPhase.Stress.trough`, `YM.EveryPhase.Stress.currentJump`).
 
 Lean-side notes:
 
@@ -195,27 +195,27 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Table.Conserved` | [YM/Euclid/Stress.lean:59](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L59) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Table.Hierarchy` | [YM/Euclid/Words.lean:141](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L141) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Table.RealSpin` | [YM/Euclid/Table.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L80) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Table.Symmetric` | [YM/Euclid/Table.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.DiffPlan.Inclusions` | [YM/Euclid/Differential.lean:58](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L58) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.DiffPlan.Derivatives` | [YM/Euclid/Differential.lean:61](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L61) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Waves` | [YM/Boundary/Contour.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L57) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Waves.Region` | [YM/Boundary/Contour.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Blanket.partialD` | [YM/Shift/Sol.lean:78](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L78) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md), [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Boundary.Surface.Aurora.emit` | [YM/Shift/Sol.lean:116](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L116) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md), [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Boundary.Surface.Aurora.FullBody` | [YM/Shift/Sol.lean:118](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L118) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.fields` | [YM/Shift/Closing.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/every-phase/stress-current/stress-continuation-hypotheses.md) |
-| `YM.Boundary.glow` | [YM/Shift/Sol.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L34) | [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Boundary.place` | [YM/Boundary/Contour.lean:44](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L44) | [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Boundary.dawn` | [YM/Shift/Ridge.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Ridge.lean#L24) | [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
-| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Table.Conserved` | [YM/Euclid/Stress.lean:59](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L59) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Table.Hierarchy` | [YM/Euclid/Words.lean:141](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L141) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Table.RealSpin` | [YM/Euclid/Table.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L80) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Table.Symmetric` | [YM/Euclid/Table.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.DiffPlan.Inclusions` | [YM/Euclid/Differential.lean:58](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L58) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.DiffPlan.Derivatives` | [YM/Euclid/Differential.lean:61](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L61) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Waves` | [YM/Boundary/Contour.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L57) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Waves.Region` | [YM/Boundary/Contour.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Blanket.partialD` | [YM/Shift/Sol.lean:78](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L78) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md), [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Boundary.Surface.Aurora.emit` | [YM/Shift/Sol.lean:116](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L116) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md), [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Boundary.Surface.Aurora.FullBody` | [YM/Shift/Sol.lean:118](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L118) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.fields` | [YM/Shift/Closing.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L71) | [Hypotheses for continuing the stress current](../roadmap/phases/every-phase/stress-current/stress-continuation-hypotheses.md) |
+| `YM.Boundary.glow` | [YM/Shift/Sol.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L34) | [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Boundary.place` | [YM/Boundary/Contour.lean:44](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L44) | [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Boundary.dawn` | [YM/Shift/Ridge.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Ridge.lean#L24) | [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
+| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) |
 
 ### Decay
 
@@ -230,7 +230,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.uniform_heat` | theorem | [113](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Decay.lean#L113) |  |
 | `YM.EveryPhase.inverse_square` | theorem | [173](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Decay.lean#L173) | Subtraction of the FULL zero-energy projection. |
 
-Covered by [Inverse-square heat decay after subtracting zero energy](../roadmap/every-phase/inverse-square-heat-decay.md) (`YM.EveryPhase.inverse_square`).
+Covered by [Inverse-square heat decay after subtracting zero energy](../roadmap/phases/every-phase/inverse-square-heat-decay.md) (`YM.EveryPhase.inverse_square`).
 
 Lean-side notes:
 
@@ -242,7 +242,7 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Inverse-square heat decay after subtracting zero energy](../roadmap/every-phase/inverse-square-heat-decay.md) |
+| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Inverse-square heat decay after subtracting zero energy](../roadmap/phases/every-phase/inverse-square-heat-decay.md) |
 
 ### Decree
 
@@ -269,7 +269,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.dawn_zero` | lemma | [206](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Decree.lean#L206) |  |
 | `YM.EveryPhase.Stress.verdict` | theorem | [208](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Decree.lean#L208) |  |
 
-Covered by [Spacelike condition on cutoff and profile](../roadmap/every-phase/ward-identities/spacelike-cutoff-condition.md) (`YM.EveryPhase.Stress.Jury`); [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) (`YM.EveryPhase.Stress.Gallery`); [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.stamp`); [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) (`YM.EveryPhase.Stress.receives`); and [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) (`YM.EveryPhase.Stress.verdict`).
+Covered by [Spacelike condition on cutoff and profile](../roadmap/phases/every-phase/ward-identities/spacelike-cutoff-condition.md) (`YM.EveryPhase.Stress.Jury`); [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) (`YM.EveryPhase.Stress.Gallery`); [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.stamp`); [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) (`YM.EveryPhase.Stress.receives`); and [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) (`YM.EveryPhase.Stress.verdict`).
 
 Lean-side notes:
 
@@ -284,30 +284,30 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.Blanket.Modified` | [YM/Shift/Sol.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L70) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Bid.cones` | [YM/Bid/Tar.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Tar.lean#L39) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.coneM` | [YM/Shift/Closing.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L23) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Mink.Lorentz.dual` | [YM/Mink/Lorentz.lean:95](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Lorentz.lean#L95) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.shores` | [YM/Shift/Closing.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L70) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.dawn` | [YM/Shift/Ridge.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Ridge.lean#L24) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.Distn.fourier` | [YM/Distribution/Tests.lean:108](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L108) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.Probe.hat` | [YM/Distribution/Tests.lean:73](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L73) | [Exchange heights for every adjacent pair](../roadmap/every-phase/ward-identities/exchange-height-sequences.md) |
-| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md), [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) |
-| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) |
-| `YM.Boundary.Joint` | [YM/Distribution/Product.lean:123](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L123) | [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) |
-| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md), [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) |
-| `YM.Next.BOUNDARY.Descent.lie` | [YM/Next/BOUNDARY/Derived.lean:104](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L104) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Tested value of the jump](../roadmap/every-phase/ward-identities/tested-jump-value.md) |
-| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) |
-| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) |
-| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) |
-| `YM.conf` | [YM/Space/Configurations.lean:63](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L63) | [Minkowski jump identity](../roadmap/every-phase/ward-identities/minkowski-jump-identity.md) |
+| `YM.Boundary.Blanket` | [YM/Shift/Sol.lean:60](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L60) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.Blanket.Modified` | [YM/Shift/Sol.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L70) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Bid.cones` | [YM/Bid/Tar.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Tar.lean#L39) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.coneM` | [YM/Shift/Closing.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L23) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Mink.Lorentz.dual` | [YM/Mink/Lorentz.lean:95](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Lorentz.lean#L95) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.shores` | [YM/Shift/Closing.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L70) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.dawn` | [YM/Shift/Ridge.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Ridge.lean#L24) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.Distn.fourier` | [YM/Distribution/Tests.lean:108](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L108) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.Probe.hat` | [YM/Distribution/Tests.lean:73](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L73) | [Exchange heights for every adjacent pair](../roadmap/phases/every-phase/ward-identities/exchange-height-sequences.md) |
+| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md), [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) |
+| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) |
+| `YM.Boundary.Joint` | [YM/Distribution/Product.lean:123](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L123) | [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) |
+| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md), [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) |
+| `YM.Next.BOUNDARY.Descent.lie` | [YM/Next/BOUNDARY/Derived.lean:104](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L104) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Tested value of the jump](../roadmap/phases/every-phase/ward-identities/tested-jump-value.md) |
+| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) |
+| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) |
+| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) |
+| `YM.conf` | [YM/Space/Configurations.lean:63](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L63) | [Minkowski jump identity](../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md) |
 
 ### DerivativeHelpers
 
@@ -340,7 +340,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.allows` | def | [185](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Docks.lean#L185) |  |
 | `YM.EveryPhase.Stress.tidal_shift` | lemma | [187](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Docks.lean#L187) |  |
 
-Covered by [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.Dock`, `YM.EveryPhase.Stress.town`, `YM.EveryPhase.Stress.morn`, `YM.EveryPhase.Stress.eve`); and [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.sundial`, `YM.EveryPhase.Stress.atlases`, `YM.EveryPhase.Stress.allows`).
+Covered by [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.Dock`, `YM.EveryPhase.Stress.town`, `YM.EveryPhase.Stress.morn`, `YM.EveryPhase.Stress.eve`); and [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.sundial`, `YM.EveryPhase.Stress.atlases`, `YM.EveryPhase.Stress.allows`).
 
 Lean-side notes:
 
@@ -351,14 +351,14 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.NearPair` | [YM/Shift/Swap.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L19) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.NearPair.Fleck` | [YM/Shift/Swap.lean:56](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L56) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.Pane` | [YM/Shift/Swap.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L66) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.NearPair.Panes` | [YM/Shift/Exchange.lean:33](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L33) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.NearPair.Panes.sameGround` | [YM/Shift/Exchange.lean:40](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L40) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Mink.spacelike` | [YM/Mink/Geometry.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L80) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.shores` | [YM/Shift/Closing.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L70) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
-| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.NearPair` | [YM/Shift/Swap.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L19) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.NearPair.Fleck` | [YM/Shift/Swap.lean:56](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L56) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.Pane` | [YM/Shift/Swap.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Swap.lean#L66) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.NearPair.Panes` | [YM/Shift/Exchange.lean:33](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L33) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.NearPair.Panes.sameGround` | [YM/Shift/Exchange.lean:40](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L40) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Mink.spacelike` | [YM/Mink/Geometry.lean:80](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L80) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.shores` | [YM/Shift/Closing.lean:70](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Closing.lean#L70) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
+| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) |
 
 ### Extension
 
@@ -385,7 +385,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.fixedHeat` | lemma | [100](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Extension.lean#L100) |  |
 | `YM.EveryPhase.exactly_fixed` | lemma | [103](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Extension.lean#L103) |  |
 
-Covered by [Weak commutant with the Hilbert-space adjoint](../roadmap/every-phase/weak-commutant.md) (`YM.EveryPhase.member`); [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) (`YM.EveryPhase.Completed`); and [Reconstruction in every phase](../roadmap/every-phase/reconstruction-every-phase.md) (`YM.EveryPhase.all_characters`).
+Covered by [Weak commutant with the Hilbert-space adjoint](../roadmap/phases/every-phase/weak-commutant.md) (`YM.EveryPhase.member`); [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) (`YM.EveryPhase.Completed`); and [Reconstruction in every phase](../roadmap/phases/every-phase/reconstruction-every-phase.md) (`YM.EveryPhase.all_characters`).
 
 Lean-side notes:
 
@@ -401,17 +401,17 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Weak commutant with the Hilbert-space adjoint](../roadmap/every-phase/weak-commutant.md), [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Boundary.Fields.denselyDefined` | [YM/Fields/System.lean:50](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L50) | [Weak commutant with the Hilbert-space adjoint](../roadmap/every-phase/weak-commutant.md) |
-| `YM.Boundary.Wightman.Realizes` | [YM/Fields/System.lean:124](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L124) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.OS.Chamber.UniqueHeat` | [YM/Phase/Mixture.lean:35](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L35) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Word.distinct` | [YM/Euclid/Words.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L34) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Table.expect` | [YM/Euclid/Words.lean:93](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L93) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Boundary.Joint` | [YM/Distribution/Product.lean:123](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L123) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.OS.Selection` | [YM/Phase/Mixture.lean:127](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L127) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md) |
-| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Completed reconstruction](../roadmap/every-phase/completed-reconstruction.md), [Reconstruction in every phase](../roadmap/every-phase/reconstruction-every-phase.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Weak commutant with the Hilbert-space adjoint](../roadmap/phases/every-phase/weak-commutant.md), [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Boundary.Fields.denselyDefined` | [YM/Fields/System.lean:50](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L50) | [Weak commutant with the Hilbert-space adjoint](../roadmap/phases/every-phase/weak-commutant.md) |
+| `YM.Boundary.Wightman.Realizes` | [YM/Fields/System.lean:124](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L124) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.OS.Chamber.UniqueHeat` | [YM/Phase/Mixture.lean:35](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L35) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Word.distinct` | [YM/Euclid/Words.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L34) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Table.expect` | [YM/Euclid/Words.lean:93](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L93) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Boundary.Surface` | [YM/Boundary/Contour.lean:54](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L54) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Boundary.Joint` | [YM/Distribution/Product.lean:123](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L123) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.OS.Selection` | [YM/Phase/Mixture.lean:127](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L127) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md) |
+| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Completed reconstruction](../roadmap/phases/every-phase/completed-reconstruction.md), [Reconstruction in every phase](../roadmap/phases/every-phase/reconstruction-every-phase.md) |
 
 ### Frequency
 
@@ -473,7 +473,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.mandate_int` | lemma | [102](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Frost.lean#L102) |  |
 | `YM.EveryPhase.Stress.harvest` | lemma | [118](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Frost.lean#L118) |  |
 
-Covered by [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.cloth`); and [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) (`YM.EveryPhase.Stress.pincushion`, `YM.EveryPhase.Stress.effect`, `YM.EveryPhase.Stress.touch`).
+Covered by [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.cloth`); and [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) (`YM.EveryPhase.Stress.pincushion`, `YM.EveryPhase.Stress.effect`, `YM.EveryPhase.Stress.touch`).
 
 Lean-side notes:
 
@@ -485,11 +485,11 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) |
-| `YM.Boundary.Probe.along` | [YM/Distribution/Tests.lean:29](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L29) | [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) |
-| `YM.Boundary.Probe.combine` | [YM/Distribution/Product.lean:73](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L73) | [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) |
-| `YM.Mink.divide` | [YM/Mink/Geometry.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L39) | [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) |
-| `YM.M4.move` | [YM/Space/Orthogonal.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Orthogonal.lean#L24) | [Test functions weighted by a Killing field](../roadmap/every-phase/ward-identities/killing-weighted-tests.md) |
+| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) |
+| `YM.Boundary.Probe.along` | [YM/Distribution/Tests.lean:29](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L29) | [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) |
+| `YM.Boundary.Probe.combine` | [YM/Distribution/Product.lean:73](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L73) | [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) |
+| `YM.Mink.divide` | [YM/Mink/Geometry.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Geometry.lean#L39) | [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) |
+| `YM.M4.move` | [YM/Space/Orthogonal.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Orthogonal.lean#L24) | [Test functions weighted by a Killing field](../roadmap/phases/every-phase/ward-identities/killing-weighted-tests.md) |
 
 ### Hot
 
@@ -532,7 +532,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.Force.rule` | field | [92](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Implement.lean#L92) |  |
 | `YM.EveryPhase.Stress.force` | lemma | [94](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Implement.lean#L94) |  |
 
-Covered by [Charges act as derivations on sums of words](../roadmap/every-phase/stress-charges/charge-acts-as-derivation.md) (`YM.EveryPhase.Stress.Modes`, `YM.EveryPhase.Stress.involved`, `YM.EveryPhase.Stress.repertoire`, `YM.EveryPhase.Stress.wordAct`, `YM.EveryPhase.Stress.sumAct`, `YM.EveryPhase.Stress.Derives`); [Charges generate the transformations of fields](../roadmap/every-phase/stress-charges/charge-generates-transformations.md) (`YM.EveryPhase.Stress.Generates`); [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) (`YM.EveryPhase.Stress.Force`); and [The stress tensor in every phase](../roadmap/every-phase/stress-charges/stress-tensor-every-phase.md) (`YM.EveryPhase.Stress.force`).
+Covered by [Charges act as derivations on sums of words](../roadmap/phases/every-phase/stress-charges/charge-acts-as-derivation.md) (`YM.EveryPhase.Stress.Modes`, `YM.EveryPhase.Stress.involved`, `YM.EveryPhase.Stress.repertoire`, `YM.EveryPhase.Stress.wordAct`, `YM.EveryPhase.Stress.sumAct`, `YM.EveryPhase.Stress.Derives`); [Charges generate the transformations of fields](../roadmap/phases/every-phase/stress-charges/charge-generates-transformations.md) (`YM.EveryPhase.Stress.Generates`); [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) (`YM.EveryPhase.Stress.Force`); and [The stress tensor in every phase](../roadmap/phases/every-phase/stress-charges/stress-tensor-every-phase.md) (`YM.EveryPhase.Stress.force`).
 
 Lean-side notes:
 
@@ -545,17 +545,17 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Charges generate the transformations of fields](../roadmap/every-phase/stress-charges/charge-generates-transformations.md), [Charges act as derivations on sums of words](../roadmap/every-phase/stress-charges/charge-acts-as-derivation.md), [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Charges act as derivations on sums of words](../roadmap/every-phase/stress-charges/charge-acts-as-derivation.md) |
-| `YM.Boundary.Contour` | [YM/Boundary/Contour.lean:115](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L115) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Mink.Poincare` | [YM/Mink/Poincare.lean:32](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Poincare.lean#L32) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Boundary.Joint.push` | [YM/Distribution/Product.lean:157](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L157) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Boundary.Probe.bar` | [YM/Distribution/Tests.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L37) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Boundary.Action` | [YM/Fields/System.lean:92](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L92) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Next.BOUNDARY.mat` | [YM/Next/BOUNDARY/Coordinates.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Coordinates.lean#L64) | [Stress tensor of a reconstructed theory](../roadmap/every-phase/stress-charges/stress-tensor-record.md) |
-| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [The stress tensor in every phase](../roadmap/every-phase/stress-charges/stress-tensor-every-phase.md) |
-| `YM.Spec.Algebra` | [YM/Spec/Closed.lean:28](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L28) | [The stress tensor in every phase](../roadmap/every-phase/stress-charges/stress-tensor-every-phase.md) |
-| `YM.Table.Hierarchy` | [YM/Euclid/Words.lean:141](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L141) | [The stress tensor in every phase](../roadmap/every-phase/stress-charges/stress-tensor-every-phase.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Charges generate the transformations of fields](../roadmap/phases/every-phase/stress-charges/charge-generates-transformations.md), [Charges act as derivations on sums of words](../roadmap/phases/every-phase/stress-charges/charge-acts-as-derivation.md), [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Charges act as derivations on sums of words](../roadmap/phases/every-phase/stress-charges/charge-acts-as-derivation.md) |
+| `YM.Boundary.Contour` | [YM/Boundary/Contour.lean:115](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L115) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Mink.Poincare` | [YM/Mink/Poincare.lean:32](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Mink/Poincare.lean#L32) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Boundary.Joint.push` | [YM/Distribution/Product.lean:157](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L157) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Boundary.Probe.bar` | [YM/Distribution/Tests.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L37) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Boundary.Action` | [YM/Fields/System.lean:92](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L92) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Next.BOUNDARY.mat` | [YM/Next/BOUNDARY/Coordinates.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Coordinates.lean#L64) | [Stress tensor of a reconstructed theory](../roadmap/phases/every-phase/stress-charges/stress-tensor-record.md) |
+| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [The stress tensor in every phase](../roadmap/phases/every-phase/stress-charges/stress-tensor-every-phase.md) |
+| `YM.Spec.Algebra` | [YM/Spec/Closed.lean:28](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L28) | [The stress tensor in every phase](../roadmap/phases/every-phase/stress-charges/stress-tensor-every-phase.md) |
+| `YM.Table.Hierarchy` | [YM/Euclid/Words.lean:141](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Words.lean#L141) | [The stress tensor in every phase](../roadmap/phases/every-phase/stress-charges/stress-tensor-every-phase.md) |
 
 ### Irreducible
 
@@ -572,7 +572,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.precise` | theorem | [195](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Irreducible.lean#L195) |  |
 | `YM.EveryPhase.irreducible` | theorem | [207](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Irreducible.lean#L207) |  |
 
-Covered by [Weakly central bounded operators](../roadmap/every-phase/weakly-central-operators.md) (`YM.EveryPhase.weaklyCentral`); and [Irreducibility in every phase](../roadmap/every-phase/irreducibility.md) (`YM.EveryPhase.irreducible`).
+Covered by [Weakly central bounded operators](../roadmap/phases/every-phase/weakly-central-operators.md) (`YM.EveryPhase.weaklyCentral`); and [Irreducibility in every phase](../roadmap/phases/every-phase/irreducibility.md) (`YM.EveryPhase.irreducible`).
 
 Lean-side notes:
 
@@ -585,9 +585,9 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Weakly central bounded operators](../roadmap/every-phase/weakly-central-operators.md) |
-| `YM.Boundary.Probe.bar` | [YM/Distribution/Tests.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L37) | [Weakly central bounded operators](../roadmap/every-phase/weakly-central-operators.md) |
-| `YM.Boundary.StarOp` | [YM/Fields/Star.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L37) | [Weakly central bounded operators](../roadmap/every-phase/weakly-central-operators.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Weakly central bounded operators](../roadmap/phases/every-phase/weakly-central-operators.md) |
+| `YM.Boundary.Probe.bar` | [YM/Distribution/Tests.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L37) | [Weakly central bounded operators](../roadmap/phases/every-phase/weakly-central-operators.md) |
+| `YM.Boundary.StarOp` | [YM/Fields/Star.lean:37](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L37) | [Weakly central bounded operators](../roadmap/phases/every-phase/weakly-central-operators.md) |
 
 ### IrreducibleHelpers
 
@@ -635,7 +635,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.hole_hol` | lemma | [213](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Killing.lean#L213) |  |
 | `YM.EveryPhase.Stress.lodge_hol` | lemma | [218](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Killing.lean#L218) |  |
 
-Covered by [Killing fields](../roadmap/every-phase/stress-current/killing-field.md) (`YM.EveryPhase.Stress.Killing`, `YM.EveryPhase.Stress.Killing.realV`, `YM.EveryPhase.Stress.Killing.w`, `YM.EveryPhase.Stress.Killing.we`); and [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.tide`).
+Covered by [Killing fields](../roadmap/phases/every-phase/stress-current/killing-field.md) (`YM.EveryPhase.Stress.Killing`, `YM.EveryPhase.Stress.Killing.realV`, `YM.EveryPhase.Stress.Killing.w`, `YM.EveryPhase.Stress.Killing.we`); and [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.tide`).
 
 Lean-side notes:
 
@@ -648,10 +648,10 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Next.BOUNDARY.Descent.tangent` | [YM/Next/BOUNDARY/Derived.lean:21](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L21) | [Killing fields](../roadmap/every-phase/stress-current/killing-field.md) |
-| `YM.Next.BOUNDARY.theta` | [YM/Next/BOUNDARY/Coordinates.lean:84](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Coordinates.lean#L84) | [Killing fields](../roadmap/every-phase/stress-current/killing-field.md) |
-| `YM.M4` | [YM/Space/Orthogonal.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Orthogonal.lean#L19) | [Killing fields](../roadmap/every-phase/stress-current/killing-field.md) |
-| `YM.Next.BOUNDARY.wick` | [YM/Next/BOUNDARY/Derivative.lean:30](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derivative.lean#L30) | [Killing fields](../roadmap/every-phase/stress-current/killing-field.md) |
+| `YM.Next.BOUNDARY.Descent.tangent` | [YM/Next/BOUNDARY/Derived.lean:21](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L21) | [Killing fields](../roadmap/phases/every-phase/stress-current/killing-field.md) |
+| `YM.Next.BOUNDARY.theta` | [YM/Next/BOUNDARY/Coordinates.lean:84](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Coordinates.lean#L84) | [Killing fields](../roadmap/phases/every-phase/stress-current/killing-field.md) |
+| `YM.M4` | [YM/Space/Orthogonal.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Orthogonal.lean#L19) | [Killing fields](../roadmap/phases/every-phase/stress-current/killing-field.md) |
+| `YM.Next.BOUNDARY.wick` | [YM/Next/BOUNDARY/Derivative.lean:30](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derivative.lean#L30) | [Killing fields](../roadmap/phases/every-phase/stress-current/killing-field.md) |
 
 ### Light
 
@@ -675,7 +675,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.late` | theorem | [208](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Light.lean#L208) |  |
 | `YM.EveryPhase.light_bound` | theorem | [221](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Light.lean#L221) |  |
 
-Covered by [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) (`YM.EveryPhase.lowE`); [Spectral measure of a finite sum of words](../roadmap/every-phase/word-spectral-measure.md) (`YM.EveryPhase.νletter`); and [Uniform low-energy bound](../roadmap/every-phase/low-energy-bound.md) (`YM.EveryPhase.light_bound`).
+Covered by [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) (`YM.EveryPhase.lowE`); [Spectral measure of a finite sum of words](../roadmap/phases/every-phase/word-spectral-measure.md) (`YM.EveryPhase.νletter`); and [Uniform low-energy bound](../roadmap/phases/every-phase/low-energy-bound.md) (`YM.EveryPhase.light_bound`).
 
 Lean-side notes:
 
@@ -688,9 +688,9 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Spectral measure of a finite sum of words](../roadmap/every-phase/word-spectral-measure.md), [Uniform low-energy bound](../roadmap/every-phase/low-energy-bound.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Spectral measure of a finite sum of words](../roadmap/every-phase/word-spectral-measure.md) |
-| `YM.time` | [YM/Space/Configurations.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L27) | [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) |
+| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [Spectral measure of a finite sum of words](../roadmap/phases/every-phase/word-spectral-measure.md), [Uniform low-energy bound](../roadmap/phases/every-phase/low-energy-bound.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Spectral measure of a finite sum of words](../roadmap/phases/every-phase/word-spectral-measure.md) |
+| `YM.time` | [YM/Space/Configurations.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L27) | [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) |
 
 ### Pack
 
@@ -725,7 +725,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Almanac.copy` | lemma | [202](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pack.lean#L202) | records the uniform-in-character arbitrary-copy bounds explicitly. |
 | `YM.EveryPhase.Almanac.almostEvery` | lemma | [208](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pack.lean#L208) |  |
 
-Covered by [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) (`YM.EveryPhase.Almanac`).
+Covered by [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) (`YM.EveryPhase.Almanac`).
 
 Lean-side notes:
 
@@ -739,29 +739,29 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.OS.Selection` | [YM/Phase/Mixture.lean:127](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L127) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.OS.Spread.Resolution` | [YM/Phase/Mixture.lean:65](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L65) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.OS.Spread` | [YM/OS/Slabs.lean:101](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Slabs.lean#L101) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.OS.Spread.Laws` | [YM/OS/Slabs.lean:153](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Slabs.lean#L153) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Bid.Pantry` | [YM/Bid/Corners.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L23) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Contour` | [YM/Boundary/Contour.lean:115](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L115) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Contour.From` | [YM/Boundary/Contour.lean:119](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L119) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Waves.NonTangentialFree` | [YM/Boundary/Contour.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L96) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Next.BOUNDARY.Compatible` | [YM/Next/BOUNDARY/Stage.lean:190](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Stage.lean#L190) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Org.Show.Rhythm` | [YM/Org/Theatre.lean:17](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L17) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Org.Show.Reveals` | [YM/Org/Theatre.lean:47](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L47) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Next.BOUNDARY.FieldCore` | [YM/Next/BOUNDARY/Core.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L34) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Next.BOUNDARY.Attachment` | [YM/Next/BOUNDARY/Core.lean:156](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L156) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Action.Intervenes` | [YM/Fields/Spectrum.lean:103](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Spectrum.lean#L103) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Small` | [YM/Fields/Tall.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L19) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Small.concretized` | [YM/Fields/Tall.lean:25](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L25) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Spins` | [YM/Fields/Star.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L22) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.Spins.Descends` | [YM/Fields/Star.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L26) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
-| `YM.Boundary.starRead` | [YM/Fields/Star.lean:42](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L42) | [Family of reconstructions over the phases](../roadmap/every-phase/reconstruction-family.md) |
+| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.OS.Selection` | [YM/Phase/Mixture.lean:127](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L127) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.OS.Spread.Resolution` | [YM/Phase/Mixture.lean:65](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L65) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.OS.Spread` | [YM/OS/Slabs.lean:101](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Slabs.lean#L101) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.OS.Spread.Laws` | [YM/OS/Slabs.lean:153](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Slabs.lean#L153) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Bid.Pantry` | [YM/Bid/Corners.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L23) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Contour` | [YM/Boundary/Contour.lean:115](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L115) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Contour.From` | [YM/Boundary/Contour.lean:119](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L119) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Waves.NonTangentialFree` | [YM/Boundary/Contour.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L96) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Next.BOUNDARY.Compatible` | [YM/Next/BOUNDARY/Stage.lean:190](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Stage.lean#L190) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Org.Show.Rhythm` | [YM/Org/Theatre.lean:17](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L17) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Org.Show.Reveals` | [YM/Org/Theatre.lean:47](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L47) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Next.BOUNDARY.FieldCore` | [YM/Next/BOUNDARY/Core.lean:34](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L34) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Next.BOUNDARY.Attachment` | [YM/Next/BOUNDARY/Core.lean:156](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L156) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Action.Intervenes` | [YM/Fields/Spectrum.lean:103](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Spectrum.lean#L103) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Small` | [YM/Fields/Tall.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L19) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Small.concretized` | [YM/Fields/Tall.lean:25](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L25) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Spins` | [YM/Fields/Star.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L22) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.Spins.Descends` | [YM/Fields/Star.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L26) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
+| `YM.Boundary.starRead` | [YM/Fields/Star.lean:42](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L42) | [Family of reconstructions over the phases](../roadmap/phases/every-phase/reconstruction-family.md) |
 
 ### Pages
 
@@ -790,7 +790,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.path_diff` | lemma, private | [184](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pages.lean#L184) |  |
 | `YM.EveryPhase.strict_evaluation` | lemma | [193](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pages.lean#L193) | At strict heights -- includes ALL points, not just tested limits. |
 
-Covered by [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/every-phase/strict-height-continuity-barycenter.md) (`YM.EveryPhase.strict_evaluation`).
+Covered by [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/phases/every-phase/strict-height-continuity-barycenter.md) (`YM.EveryPhase.strict_evaluation`).
 
 Lean-side notes:
 
@@ -802,10 +802,10 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Waves.restricted` | [YM/Boundary/Contour.lean:63](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L63) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/every-phase/strict-height-continuity-barycenter.md) |
-| `YM.Boundary.east` | [YM/Boundary/Contour.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L27) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/every-phase/strict-height-continuity-barycenter.md) |
-| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/every-phase/strict-height-continuity-barycenter.md) |
-| `YM.OS.Spread.Resolution` | [YM/Phase/Mixture.lean:65](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L65) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/every-phase/strict-height-continuity-barycenter.md) |
+| `YM.Boundary.Waves.restricted` | [YM/Boundary/Contour.lean:63](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L63) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/phases/every-phase/strict-height-continuity-barycenter.md) |
+| `YM.Boundary.east` | [YM/Boundary/Contour.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L27) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/phases/every-phase/strict-height-continuity-barycenter.md) |
+| `YM.Spec.Final` | [YM/Spec/Closed.lean:64](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spec/Closed.lean#L64) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/phases/every-phase/strict-height-continuity-barycenter.md) |
+| `YM.OS.Spread.Resolution` | [YM/Phase/Mixture.lean:65](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Phase/Mixture.lean#L65) | [Continuations at strict heights: continuity and barycenter in the phase](../roadmap/phases/every-phase/strict-height-continuity-barycenter.md) |
 
 ### Polynomials
 
@@ -839,7 +839,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.delta` | def | [171](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Polynomials.lean#L171) |  |
 | `YM.EveryPhase.comm_expect` | theorem | [175](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Polynomials.lean#L175) |  |
 
-Covered by [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) (`YM.EveryPhase.SumOfWords`, `YM.EveryPhase.monomial`, `YM.EveryPhase.operator`, `YM.EveryPhase.stands`); and [Compactly supported sums of words](../roadmap/every-phase/compactly-supported-sums.md) (`YM.EveryPhase.boundedWord`, `YM.EveryPhase.finite`).
+Covered by [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) (`YM.EveryPhase.SumOfWords`, `YM.EveryPhase.monomial`, `YM.EveryPhase.operator`, `YM.EveryPhase.stands`); and [Compactly supported sums of words](../roadmap/phases/every-phase/compactly-supported-sums.md) (`YM.EveryPhase.boundedWord`, `YM.EveryPhase.finite`).
 
 Lean-side notes:
 
@@ -852,14 +852,14 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Boundary.Letter` | [YM/Fields/Star.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L38) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) |
-| `YM.Boundary.Sentence` | [YM/Fields/Star.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L39) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/every-phase/compactly-supported-sums.md) |
-| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) |
-| `YM.Table.observations` | [YM/Euclid/Union.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L23) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) |
-| `YM.Table.Union` | [YM/Euclid/Union.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L24) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) |
-| `YM.Table.spectra` | [YM/Euclid/Null.lean:93](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Null.lean#L93) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md) |
-| `YM.Boundary.Test4` | [YM/Distribution/Product.lean:122](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L122) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/every-phase/compactly-supported-sums.md) |
-| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Finite sums of words and their vectors](../roadmap/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/every-phase/compactly-supported-sums.md) |
+| `YM.Boundary.Letter` | [YM/Fields/Star.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L38) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) |
+| `YM.Boundary.Sentence` | [YM/Fields/Star.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Star.lean#L39) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/phases/every-phase/compactly-supported-sums.md) |
+| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) |
+| `YM.Table.observations` | [YM/Euclid/Union.lean:23](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L23) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) |
+| `YM.Table.Union` | [YM/Euclid/Union.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L24) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) |
+| `YM.Table.spectra` | [YM/Euclid/Null.lean:93](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Null.lean#L93) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md) |
+| `YM.Boundary.Test4` | [YM/Distribution/Product.lean:122](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Product.lean#L122) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/phases/every-phase/compactly-supported-sums.md) |
+| `YM.Boundary.Probe` | [YM/Distribution/Tests.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Distribution/Tests.lean#L20) | [Finite sums of words and their vectors](../roadmap/phases/every-phase/sums-of-words.md), [Compactly supported sums of words](../roadmap/phases/every-phase/compactly-supported-sums.md) |
 
 ### Projection
 
@@ -886,7 +886,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.residual` | lemma | [128](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Projection.lean#L128) |  |
 | `YM.EveryPhase.residual_pair` | lemma | [145](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Projection.lean#L145) |  |
 
-Covered by [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) (`YM.EveryPhase.zeroE`); and [Heat operators pulled back along a bounded map](../roadmap/every-phase/boundary-heat-semigroup.md) (`YM.EveryPhase.bHeat`).
+Covered by [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) (`YM.EveryPhase.zeroE`); and [Heat operators pulled back along a bounded map](../roadmap/phases/every-phase/boundary-heat-semigroup.md) (`YM.EveryPhase.bHeat`).
 
 Lean-side notes:
 
@@ -898,12 +898,12 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.E4` | [YM/Space/Configurations.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L24) | [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) |
-| `YM.time` | [YM/Space/Configurations.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L27) | [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) |
-| `YM.timeAxis` | [YM/Space/Index.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Index.lean#L20) | [Zero-energy and low-energy regions](../roadmap/every-phase/energy-regions.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Heat operators pulled back along a bounded map](../roadmap/every-phase/boundary-heat-semigroup.md) |
-| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [Heat operators pulled back along a bounded map](../roadmap/every-phase/boundary-heat-semigroup.md) |
-| `YM.OS.Semigroup` | [YM/OS/Flow.lean:94](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Flow.lean#L94) | [Heat operators pulled back along a bounded map](../roadmap/every-phase/boundary-heat-semigroup.md) |
+| `YM.E4` | [YM/Space/Configurations.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L24) | [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) |
+| `YM.time` | [YM/Space/Configurations.lean:27](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Configurations.lean#L27) | [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) |
+| `YM.timeAxis` | [YM/Space/Index.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Space/Index.lean#L20) | [Zero-energy and low-energy regions](../roadmap/phases/every-phase/energy-regions.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Heat operators pulled back along a bounded map](../roadmap/phases/every-phase/boundary-heat-semigroup.md) |
+| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [Heat operators pulled back along a bounded map](../roadmap/phases/every-phase/boundary-heat-semigroup.md) |
+| `YM.OS.Semigroup` | [YM/OS/Flow.lean:94](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Flow.lean#L94) | [Heat operators pulled back along a bounded map](../roadmap/phases/every-phase/boundary-heat-semigroup.md) |
 
 ### Pure
 
@@ -914,7 +914,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.fibers` | lemma | [13](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pure.lean#L13) |  |
 | `YM.EveryPhase.Stress.pure_clock` | theorem | [43](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Pure.lean#L43) |  |
 
-Covered by [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) (`YM.EveryPhase.Stress.pure_clock`).
+Covered by [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) (`YM.EveryPhase.Stress.pure_clock`).
 
 Lean-side notes:
 
@@ -925,12 +925,12 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Work.C20.ordered` | [YM/Work/C20.lean:145](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Work/C20.lean#L145) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
-| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
-| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
-| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
-| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
-| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [The current jump at Euclidean points](../roadmap/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Work.C20.ordered` | [YM/Work/C20.lean:145](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Work/C20.lean#L145) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Table.Window` | [YM/Euclid/Stress.lean:72](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L72) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
+| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [The current jump at Euclidean points](../roadmap/phases/every-phase/stress-current/euclidean-current-jump.md) |
 
 ### Seeds
 
@@ -979,7 +979,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.taskE` | def | [124](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Shell.lean#L124) |  |
 | `YM.EveryPhase.Stress.euclidean_shell` | lemma | [128](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Shell.lean#L128) |  |
 
-Covered by [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) (`YM.EveryPhase.Stress.pureU`, `YM.EveryPhase.Stress.pureDock`, `YM.EveryPhase.Stress.taskE`).
+Covered by [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) (`YM.EveryPhase.Stress.pureU`, `YM.EveryPhase.Stress.pureDock`, `YM.EveryPhase.Stress.taskE`).
 
 Lean-side notes:
 
@@ -991,11 +991,11 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) |
-| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) |
-| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) |
-| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Euclidean value of the current jump](../roadmap/every-phase/stress-current/euclidean-jump-value.md) |
+| `YM.Table.useAt` | [YM/Euclid/Lift.lean:69](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L69) | [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) |
+| `YM.Table.Tag` | [YM/Euclid/Lift.lean:66](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L66) | [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) |
+| `YM.Table.Rotation` | [YM/Euclid/Stress.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L22) | [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) |
+| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Euclidean value of the current jump](../roadmap/phases/every-phase/stress-current/euclidean-jump-value.md) |
 
 ### Slots
 
@@ -1027,7 +1027,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.hole_ord` | lemma | [88](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Slots.lean#L88) |  |
 | `YM.EveryPhase.Stress.affords` | lemma | [101](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Slots.lean#L101) | local uniform strip over exterior complex times. |
 
-Covered by [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.pair`); [Insertion into a slot](../roadmap/every-phase/stress-current/slot-insertion.md) (`YM.EveryPhase.Stress.hole`); [Tested stress insertion next to a field](../roadmap/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.seat`, `YM.EveryPhase.Stress.cushion`, `YM.EveryPhase.Stress.chairs`); and [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.laid`, `YM.EveryPhase.Stress.lodge`).
+Covered by [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.pair`); [Insertion into a slot](../roadmap/phases/every-phase/stress-current/slot-insertion.md) (`YM.EveryPhase.Stress.hole`); [Tested stress insertion next to a field](../roadmap/phases/every-phase/ward-identities/tested-current-jump.md) (`YM.EveryPhase.Stress.seat`, `YM.EveryPhase.Stress.cushion`, `YM.EveryPhase.Stress.chairs`); and [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.laid`, `YM.EveryPhase.Stress.lodge`).
 
 Lean-side notes:
 
@@ -1054,7 +1054,7 @@ Lean-side notes:
 | `YM.EveryPhase.Stress.waveT_space` | lemma | [145](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Strip.lean#L145) |  |
 | `YM.EveryPhase.Stress.harbors_speed` | lemma | [156](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Strip.lean#L156) |  |
 
-Covered by [Spatially integrated current and its jump](../roadmap/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.waveT`, `YM.EveryPhase.Stress.harbors`); and [Admissible base points for the current jump](../roadmap/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.drift`).
+Covered by [Spatially integrated current and its jump](../roadmap/phases/every-phase/stress-current/integrated-current-jump.md) (`YM.EveryPhase.Stress.waveT`, `YM.EveryPhase.Stress.harbors`); and [Admissible base points for the current jump](../roadmap/phases/every-phase/stress-current/jump-admissibility.md) (`YM.EveryPhase.Stress.drift`).
 
 Lean-side notes:
 
@@ -1085,7 +1085,7 @@ Lean-side notes:
 | `YM.EveryPhase.ordered_covered` | lemma | [160](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Surjective.lean#L160) |  |
 | `YM.EveryPhase.onto` | lemma | [178](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Surjective.lean#L178) |  |
 
-Covered by [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) (`YM.EveryPhase.onto`).
+Covered by [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) (`YM.EveryPhase.onto`).
 
 Lean-side notes:
 
@@ -1098,22 +1098,22 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Next.BOUNDARY.Attachment` | [YM/Next/BOUNDARY/Core.lean:156](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L156) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Org.Show.Rhythm` | [YM/Org/Theatre.lean:17](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L17) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Org.Show.Lights` | [YM/Org/Theatre.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L39) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Org.Show.Reveals` | [YM/Org/Theatre.lean:47](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L47) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Bid.Hull` | [YM/Bid/Grow.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Grow.lean#L19) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Table.Symmetric` | [YM/Euclid/Table.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L71) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Table.Smooth` | [YM/Euclid/Table.lean:88](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L88) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Table.respects` | [YM/Euclid/Lift.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L20) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Waves.NonTangentialFree` | [YM/Boundary/Contour.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L96) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Small` | [YM/Fields/Tall.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L19) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Small.Lamp` | [YM/Fields/Tall.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L96) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.NearPair.Panes` | [YM/Shift/Exchange.lean:33](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L33) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
-| `YM.Boundary.Surface.Persists` | [YM/Fields/Stems.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Stems.lean#L38) | [The boundary isometry is onto](../roadmap/every-phase/boundary-isometry-surjective.md) |
+| `YM.Next.BOUNDARY.Attachment` | [YM/Next/BOUNDARY/Core.lean:156](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Core.lean#L156) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Org.Show.Rhythm` | [YM/Org/Theatre.lean:17](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L17) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Org.Show.Lights` | [YM/Org/Theatre.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L39) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Org.Show.Reveals` | [YM/Org/Theatre.lean:47](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Org/Theatre.lean#L47) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Bid.Hull` | [YM/Bid/Grow.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Grow.lean#L19) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Table.Symmetric` | [YM/Euclid/Table.lean:71](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L71) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Table.Smooth` | [YM/Euclid/Table.lean:88](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Table.lean#L88) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Table.respects` | [YM/Euclid/Lift.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Lift.lean#L20) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Waves.NonTangentialFree` | [YM/Boundary/Contour.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L96) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.OS.Chamber` | [YM/OS/Dynamics.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/OS/Dynamics.lean#L57) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Small` | [YM/Fields/Tall.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L19) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Small.Lamp` | [YM/Fields/Tall.lean:96](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Tall.lean#L96) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Surface.Aurora` | [YM/Shift/Sol.lean:109](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L109) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.NearPair.Panes` | [YM/Shift/Exchange.lean:33](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Exchange.lean#L33) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
+| `YM.Boundary.Surface.Persists` | [YM/Fields/Stems.lean:38](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/Stems.lean#L38) | [The boundary isometry is onto](../roadmap/phases/every-phase/boundary-isometry-surjective.md) |
 
 ### SurjectiveHelpers
 
@@ -1159,7 +1159,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.eucl_partial` | lemma | [224](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Tensor.lean#L224) |  |
 | `YM.EveryPhase.Stress.tensor_conserved` | theorem | [227](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Tensor.lean#L227) |  |
 
-Covered by [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) (`YM.EveryPhase.Stress.eta`, `YM.EveryPhase.Stress.zeta`, `YM.EveryPhase.Stress.M`, `YM.EveryPhase.Stress.fieldM`, `YM.EveryPhase.Stress.partialProbe`).
+Covered by [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) (`YM.EveryPhase.Stress.eta`, `YM.EveryPhase.Stress.zeta`, `YM.EveryPhase.Stress.M`, `YM.EveryPhase.Stress.fieldM`, `YM.EveryPhase.Stress.partialProbe`).
 
 Lean-side notes:
 
@@ -1171,11 +1171,11 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) |
-| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) |
-| `YM.Table.Union` | [YM/Euclid/Union.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L24) | [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) |
-| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) |
-| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Minkowski stress labels and the stress field](../roadmap/every-phase/stress-current/minkowski-stress-field.md) |
+| `YM.Table.Stress` | [YM/Euclid/Stress.lean:57](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L57) | [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) |
+| `YM.Table.pin` | [YM/Euclid/Union.lean:26](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L26) | [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) |
+| `YM.Table.Union` | [YM/Euclid/Union.lean:24](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Union.lean#L24) | [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) |
+| `YM.Boundary.Wightman` | [YM/Fields/System.lean:117](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L117) | [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) |
+| `YM.Boundary.Fields` | [YM/Fields/System.lean:22](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L22) | [Minkowski stress labels and the stress field](../roadmap/phases/every-phase/stress-current/minkowski-stress-field.md) |
 
 ### Through
 
@@ -1189,7 +1189,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.Stress.core_jump` | lemma | [41](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Through.lean#L41) |  |
 | `YM.EveryPhase.Stress.through_jump` | theorem | [129](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Through.lean#L129) | simultaneous limit, to simplify uniformity on test supports. |
 
-Covered by [Continued value of the current jump](../roadmap/every-phase/stress-current/continued-jump-value.md) (`YM.EveryPhase.Stress.taskC`); and [Joint limit of the current jump](../roadmap/every-phase/stress-current/joint-current-jump-limit.md) (`YM.EveryPhase.Stress.through_jump`).
+Covered by [Continued value of the current jump](../roadmap/phases/every-phase/stress-current/continued-jump-value.md) (`YM.EveryPhase.Stress.taskC`); and [Joint limit of the current jump](../roadmap/phases/every-phase/stress-current/joint-current-jump-limit.md) (`YM.EveryPhase.Stress.through_jump`).
 
 Lean-side notes:
 
@@ -1201,12 +1201,12 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [Continued value of the current jump](../roadmap/every-phase/stress-current/continued-jump-value.md), [Joint limit of the current jump](../roadmap/every-phase/stress-current/joint-current-jump-limit.md) |
-| `YM.Boundary.Surface.Aurora.emit` | [YM/Shift/Sol.lean:116](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L116) | [Continued value of the current jump](../roadmap/every-phase/stress-current/continued-jump-value.md) |
-| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Continued value of the current jump](../roadmap/every-phase/stress-current/continued-jump-value.md) |
-| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Continued value of the current jump](../roadmap/every-phase/stress-current/continued-jump-value.md) |
-| `YM.Boundary.strict` | [YM/Boundary/Contour.lean:28](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L28) | [Joint limit of the current jump](../roadmap/every-phase/stress-current/joint-current-jump-limit.md) |
-| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Joint limit of the current jump](../roadmap/every-phase/stress-current/joint-current-jump-limit.md) |
+| `YM.Bid.ink` | [YM/Bid/Corners.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Bid/Corners.lean#L90) | [Continued value of the current jump](../roadmap/phases/every-phase/stress-current/continued-jump-value.md), [Joint limit of the current jump](../roadmap/phases/every-phase/stress-current/joint-current-jump-limit.md) |
+| `YM.Boundary.Surface.Aurora.emit` | [YM/Shift/Sol.lean:116](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Shift/Sol.lean#L116) | [Continued value of the current jump](../roadmap/phases/every-phase/stress-current/continued-jump-value.md) |
+| `YM.Next.BOUNDARY.Descent.rankAction` | [YM/Next/BOUNDARY/Derived.lean:114](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Next/BOUNDARY/Derived.lean#L114) | [Continued value of the current jump](../roadmap/phases/every-phase/stress-current/continued-jump-value.md) |
+| `YM.DiffPlan` | [YM/Euclid/Differential.lean:20](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Differential.lean#L20) | [Continued value of the current jump](../roadmap/phases/every-phase/stress-current/continued-jump-value.md) |
+| `YM.Boundary.strict` | [YM/Boundary/Contour.lean:28](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Boundary/Contour.lean#L28) | [Joint limit of the current jump](../roadmap/phases/every-phase/stress-current/joint-current-jump-limit.md) |
+| `YM.Table.StressLaws` | [YM/Euclid/Stress.lean:90](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Euclid/Stress.lean#L90) | [Joint limit of the current jump](../roadmap/phases/every-phase/stress-current/joint-current-jump-limit.md) |
 
 ### Vacuum
 
@@ -1224,7 +1224,7 @@ Unmapped prerequisites that these articles describe in words:
 | `YM.EveryPhase.boundary_realizes` | lemma | [155](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Vacuum.lean#L155) |  |
 | `YM.EveryPhase.boundary_zero_energy` | lemma | [158](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/EveryPhase/Vacuum.lean#L158) |  |
 
-Covered by [No exceptional phase: zero energy is the vacuum](../roadmap/every-phase/zero-energy-projection-vacuum.md) (`YM.EveryPhase.all_plant`).
+Covered by [No exceptional phase: zero energy is the vacuum](../roadmap/phases/every-phase/zero-energy-projection-vacuum.md) (`YM.EveryPhase.all_plant`).
 
 Lean-side notes:
 
@@ -1236,8 +1236,8 @@ Unmapped prerequisites that these articles describe in words:
 
 | Lean name | Location | Named in |
 | --- | --- | --- |
-| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [No exceptional phase: zero energy is the vacuum](../roadmap/every-phase/zero-energy-projection-vacuum.md) |
-| `YM.Boundary.Fields.vacuum` | [YM/Fields/System.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L39) | [No exceptional phase: zero energy is the vacuum](../roadmap/every-phase/zero-energy-projection-vacuum.md) |
+| `YM.Spectral.PVM` | [YM/Spectral/Projection.lean:19](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Spectral/Projection.lean#L19) | [No exceptional phase: zero energy is the vacuum](../roadmap/phases/every-phase/zero-energy-projection-vacuum.md) |
+| `YM.Boundary.Fields.vacuum` | [YM/Fields/System.lean:39](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Fields/System.lean#L39) | [No exceptional phase: zero energy is the vacuum](../roadmap/phases/every-phase/zero-energy-projection-vacuum.md) |
 
 ### Vitali
 

@@ -1,1 +1,0 @@
-{"subject": [{"type": "generic", "uri": "../../../roadmap/every-phase/irreducibility.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.irreducible"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_8b430bd29358ffd45c004b1f", "extensions": {"org.autoform": {"origin": "cited"}}}

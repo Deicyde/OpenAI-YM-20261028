@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../../roadmap/phases/every-phase/stress-current/joint-current-jump-limit.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.through_jump"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_2e4c96671d96afe630513154", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/phases/every-phase/low-energy-bound.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.light_bound"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_059e39138f34e8140e9f3f63", "extensions": {"org.autoform": {"origin": "cited"}}}

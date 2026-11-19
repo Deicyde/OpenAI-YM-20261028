@@ -1,1 +1,0 @@
-{"subject": [{"type": "generic", "uri": "../../../../roadmap/every-phase/stress-charges/stress-charge-commutator.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.local_action"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_907ae5a5df072e261431e5da", "extensions": {"org.autoform": {"origin": "cited"}}}

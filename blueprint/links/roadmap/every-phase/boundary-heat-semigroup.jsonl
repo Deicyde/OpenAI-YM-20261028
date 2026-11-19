@@ -1,1 +1,0 @@
-{"subject": [{"type": "generic", "uri": "../../../roadmap/every-phase/boundary-heat-semigroup.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.bHeat"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_b23d6d6debf0fa4ed110ec68", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../../roadmap/phases/every-phase/stress-charges/admissible-time-profile.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.Season"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_33a907396d6cb3766eac832f", "extensions": {"org.autoform": {"origin": "cited"}}}

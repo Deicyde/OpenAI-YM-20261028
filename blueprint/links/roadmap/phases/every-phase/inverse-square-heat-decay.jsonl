@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/phases/every-phase/inverse-square-heat-decay.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.inverse_square"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_241d52b198ab8c6b522caa9a", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/phases/every-phase/completed-reconstruction.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Completed"}, "role": "states"}], "status": "formalized", "kind": "structure", "id": "af_5026c08f8c387e319bea8967", "extensions": {"org.autoform": {"origin": "cited"}}}

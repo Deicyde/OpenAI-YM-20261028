@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../../roadmap/phases/every-phase/ward-identities/minkowski-jump-identity.md"}], "object": [{"location": {"declaration": "YM.EveryPhase.Stress.verdict"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_7a9524816bb6f46768da2292", "extensions": {"org.autoform": {"origin": "cited"}}}
