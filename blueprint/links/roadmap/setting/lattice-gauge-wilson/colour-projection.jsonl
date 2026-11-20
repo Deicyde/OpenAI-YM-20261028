@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/colour-projection.md"}], "object": [{"location": {"declaration": "YM.Gauge.projectColor"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_617824e57752babe78ebd0b5", "extensions": {"org.autoform": {"origin": "cited"}}}

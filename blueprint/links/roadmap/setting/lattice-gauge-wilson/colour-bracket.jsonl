@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/colour-bracket.md"}], "object": [{"location": {"declaration": "YM.Gauge.ad"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_e3b28e970768b40794c6d01c", "extensions": {"org.autoform": {"origin": "cited"}}}

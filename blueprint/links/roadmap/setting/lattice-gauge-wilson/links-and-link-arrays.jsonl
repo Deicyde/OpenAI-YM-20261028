@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/links-and-link-arrays.md"}], "object": [{"location": {"declaration": "YM.Lattice.Links"}, "role": "states"}, {"location": {"declaration": "YM.Lattice.Edge"}}], "status": "formalized", "kind": "abbrev", "id": "af_3e5567ba5038756eb8078f1c", "extensions": {"org.autoform": {"origin": "cited"}}}

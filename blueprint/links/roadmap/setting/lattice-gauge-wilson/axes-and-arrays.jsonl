@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/axes-and-arrays.md"}], "object": [{"location": {"declaration": "YM.Axis"}, "role": "states"}, {"location": {"declaration": "YM.Four"}}], "status": "formalized", "kind": "abbrev", "id": "af_ca40c72f7379478bf8de0d27", "extensions": {"org.autoform": {"origin": "cited"}}}

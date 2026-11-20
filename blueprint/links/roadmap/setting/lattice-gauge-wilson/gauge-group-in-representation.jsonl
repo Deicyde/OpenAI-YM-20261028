@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/gauge-group-in-representation.md"}], "object": [{"location": {"declaration": "YM.Gauge"}, "role": "states"}, {"location": {"declaration": "YM.GaugeU"}}], "status": "formalized", "kind": "structure", "id": "af_e34c7c09eacebbc24634892f", "extensions": {"org.autoform": {"origin": "cited"}}}

@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/torus-separation.md"}], "object": [{"location": {"declaration": "YM.Lattice.separation"}, "role": "states"}, {"location": {"declaration": "YM.Lattice.pdist"}}], "status": "formalized", "kind": "def", "id": "af_c9872a70f7428b1f265f18de", "extensions": {"org.autoform": {"origin": "cited"}}}

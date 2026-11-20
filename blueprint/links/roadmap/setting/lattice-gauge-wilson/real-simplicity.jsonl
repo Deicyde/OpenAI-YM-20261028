@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/real-simplicity.md"}], "object": [{"location": {"declaration": "YM.Gauge.Simple"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_a8b71b3e411fd42463680b8a", "extensions": {"org.autoform": {"origin": "cited"}}}

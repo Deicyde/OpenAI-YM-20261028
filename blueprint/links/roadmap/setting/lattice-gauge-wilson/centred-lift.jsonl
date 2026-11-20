@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/centred-lift.md"}], "object": [{"location": {"declaration": "YM.Lattice.lift"}, "role": "states"}, {"location": {"declaration": "YM.Lattice.Cover"}}], "status": "formalized", "kind": "def", "id": "af_024443252675872aafaf2678", "extensions": {"org.autoform": {"origin": "cited"}}}

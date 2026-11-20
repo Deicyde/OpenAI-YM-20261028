@@ -25,6 +25,175 @@ definition by definition. The chapters from the gauge groups to
 from the Lean directly; they were written from the Lean before this source
 was consulted.
 
+## Unit I.1: lattice, symmetries, gauge groups and the Wilson measure
+
+Armstrong's unit I.1, "Lattice, symmetries, gauge groups and the Wilson
+measure", is the source of the chapter
+[Lattice, symmetries, gauge groups and the Wilson measure](../roadmap/setting/lattice-gauge-wilson/README.md).
+Its outline is
+<https://github.com/scottnarmstrong/yang-mills-informalization/blob/1a47ac9/outline/units/I-1.md>
+and its detailed notes are
+<https://github.com/scottnarmstrong/yang-mills-informalization/blob/1a47ac9/outline/notes/I-1.md>.
+The chapter takes from them the order of the material (the periodic lattice
+and its separation, the gauge group and its Lie algebra, colours and invariant
+forms, the chord and the Haar measure, links and configurations), the choice
+of declarations that get articles (his six key statements and the definitions
+they use), the conventions of his notes (axis $3$ is time, a link joins $x$ to
+$x + e_i$, a configuration assigns an element of $G$ to each link), and the
+readings of the code's names in his glossary. Each article states the cited
+Lean declaration itself. His key-statement summaries are, in his words,
+automatically drafted summaries that the outline status does not certify.
+The K-numbers, the proposition numbers and his symbols are his notation, not
+Lean names: his side $\ell$ and lattice $\Lambda_\ell$ are the book's $M$ and
+$\Lambda_M$, his $N$ is the book's $n + 1$, his centred lift $r_\ell(x)$ is the
+book's $\tilde x$, and his Haar measure $\mu_G$ is the book's $h_G$.
+
+| Armstrong | Articles |
+| --- | --- |
+| K-I.1.1; Proposition I.1.1 (the torus) | [Sites of the periodic lattice](../roadmap/setting/lattice-gauge-wilson/torus-sites.md) |
+| K-I.1.2; Proposition I.1.1 (the separation) | [Separation of two sites](../roadmap/setting/lattice-gauge-wilson/torus-separation.md) |
+| K-I.1.3; notes, conventions and Proposition I.1.5 | [Gauge group in a unitary representation](../roadmap/setting/lattice-gauge-wilson/gauge-group-in-representation.md) |
+| K-I.1.4; notes, Proposition I.1.6(d) | [Invariant symmetric forms on the colour space are multiples of the standard inner product](../roadmap/setting/lattice-gauge-wilson/invariant-forms-are-scalar.md) |
+| K-I.1.5; Proposition I.1.7 | [Haar mass of small chord balls](../roadmap/setting/lattice-gauge-wilson/haar-mass-small-balls.md) |
+| K-I.1.6; notes, conventions | [Lattice gauge configurations](../roadmap/setting/lattice-gauge-wilson/lattice-gauge-configurations.md) |
+| Notes, conventions: axes, links and link variables | [Axes and four-component arrays](../roadmap/setting/lattice-gauge-wilson/axes-and-arrays.md), [Links and link arrays](../roadmap/setting/lattice-gauge-wilson/links-and-link-arrays.md), [Elements and matrices of a gauge group](../roadmap/setting/lattice-gauge-wilson/group-elements-and-matrices.md) |
+| Proposition I.1.1: the centred lift | [Centred lift of a site](../roadmap/setting/lattice-gauge-wilson/centred-lift.md) |
+| Proposition I.1.5: the chord and the Haar measure | [Normalized chord and chord balls](../roadmap/setting/lattice-gauge-wilson/chord-and-chord-balls.md), [Haar probability measure of a gauge group](../roadmap/setting/lattice-gauge-wilson/haar-probability.md) |
+| Proposition I.1.6(a) and notes, I.1.6(c): the Lie algebra and simplicity | [Lie algebra of a gauge group](../roadmap/setting/lattice-gauge-wilson/gauge-lie-algebra.md), [Real simplicity of a gauge group](../roadmap/setting/lattice-gauge-wilson/real-simplicity.md) |
+| Notes, Proposition I.1.6(b): colours | [Real Frobenius inner product](../roadmap/setting/lattice-gauge-wilson/frobenius-inner-product.md), [Colour coordinates on the Lie algebra](../roadmap/setting/lattice-gauge-wilson/colour-frame.md), [Projection of matrices onto colours](../roadmap/setting/lattice-gauge-wilson/colour-projection.md), [Bracket in colour coordinates](../roadmap/setting/lattice-gauge-wilson/colour-bracket.md) |
+
+Propositions I.1.2 to I.1.4 and I.1.8 to I.1.12, the plaquette cost of
+Proposition I.1.5, the adjoint representation and the exponential map of
+Proposition I.1.6(b), and parts (e) and (f) of Proposition I.1.6 (the
+Casimir and slope constants) have no articles; the declarations of the unit's
+files are on the [ledger](lattice-gauge-wilson.md).
+
+### Where the outline and the Lean differ
+
+Each difference names his file and section ("outline" is
+`outline/units/I-1.md`, "notes" is `outline/notes/I-1.md`, "glossary" is
+`glossary.md`) and the Lean declaration at commit 3456e5e. The articles
+follow the Lean.
+
+- **K-I.1.3 summary: compactness of the gauge group.** Outline, key
+  statements, K-I.1.3, calls the gauge group "a closed compact matrix group
+  together with a fixed faithful unitary representation", as the docstring of
+  the Lean structure does. The Lean structure has three
+  fields, the size, the subgroup and its closedness, and no compactness field,
+  [`YM.Gauge`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/MatrixGroup.lean#L23);
+  compactness and second countability are unnamed instances proved from
+  closedness,
+  [compactness](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/MatrixGroup.lean#L80)
+  and
+  [second countability](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/MatrixGroup.lean#L84),
+  using
+  [`YM.Gauge.compactGaugeU`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/MatrixGroup.lean#L61).
+  Notes §1, Proposition I.1.5, states compactness and second countability as
+  properties of $G$, which agrees with the Lean. The gauge-group article states
+  closedness only.
+- **Colour basis.** Notes §1, Proposition I.1.6(b), takes the
+  $\mathrm{Ad}(G)$-invariant inner product $-\frac1N \operatorname{tr}(XY)$ on
+  $\mathfrak g$ and fixes an orthonormal basis for it; outline §1,
+  Proposition I.1.6, identifies $\mathfrak g$ with the colours through the
+  same inner product. The unit's files define no such inner product. The Lean
+  takes
+  Mathlib's orthonormal basis of $\mathfrak g$ for the real Frobenius inner
+  product, one fixed basis chosen by the axiom of choice, and multiplies it by
+  $\sqrt{n+1}$,
+  [`YM.Gauge.colorIso`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L52)
+  with
+  [`YM.Gauge.frobInner`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L26).
+  That the colours are orthonormal for
+  $-\frac1{n+1} \operatorname{Re} \operatorname{tr}(XY)$ is a theorem,
+  [`YM.Gauge.trace_color`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L71),
+  and the trace is real by
+  [`YM.Gauge.trace_color_real`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L77).
+  The articles speak of one fixed basis, not an arbitrary one.
+- **The projection onto colours.** Notes §1, Proposition I.1.6(b), defines
+  $\Pi$ implicitly by $X_{\Pi A} = P_{\mathfrak g} A$. The Lean defines it
+  explicitly, as the orthogonal projection onto $\mathfrak g$ for the
+  Frobenius inner product followed by the inverse of the colour frame,
+  [`YM.Gauge.projectColor`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L96);
+  the implicit characterization is a theorem,
+  [`YM.Gauge.colorMat_project`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Colors.lean#L99).
+  The two agree.
+- **K-I.1.4 summary.** Outline, key statements, K-I.1.4, says that on a
+  simple compact Lie algebra every symmetric ad-invariant bilinear form is a
+  scalar multiple of "the Killing/inner product". The theorem is about forms
+  on the colour space $\mathbb R^d$, states invariance with the colour
+  bracket, gives a multiple of the standard inner product of $\mathbb R^d$,
+  not of the Killing form, and assumes the internal simplicity condition,
+  [`YM.Gauge.invariant_scalar`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Casimir.lean#L99)
+  with
+  [`YM.Gauge.Simple`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Lie.lean#L179).
+  His notes (§1, Proposition I.1.6(d)) state it as the Lean does; his scalar
+  $c$ is the book's $\lambda$, since the book writes $c$ for a colour.
+- **K-I.1.5 summary.** Outline, key statements, K-I.1.5, bounds the Haar
+  measure of "a shell of radius r in a compact group" below by $(r/4)$ to the
+  dimension of the Lie algebra. The theorem's set is the closed chord ball
+  $\{\chi \le r\}$ around $1$, its hypothesis is $0 < r \le 1$, its measure is
+  the gauge group's Haar probability measure, and its exponent is the real
+  dimension $2(n+1)^2$ of $M_{n+1}(\mathbb C)$, not $\dim \mathfrak g$,
+  [`YM.Gauge.shell_ge`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Size.lean#L80)
+  with
+  [`YM.Gauge.shell`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Gauge/Size.lean#L28).
+  His Proposition I.1.7 (outline §1, exponent $2N^2$; notes §1, "not
+  $\dim G$") agrees with the Lean.
+- **K-I.1.2 summary.** Outline, key statements, K-I.1.2, describes the
+  separation as the max-distance "computed via canonical lifts to the cover",
+  and the glossary reads it as the sup-norm distance on the torus. The Lean
+  separation of $x$ and $y$ is the torus modulus of $x - y$, the largest
+  absolute coordinate of the centred lift of the difference, a natural number,
+  [`YM.Lattice.separation`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L81)
+  with
+  [`YM.Lattice.pdist`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L78);
+  it does not lift $x$ and $y$ separately. His Proposition I.1.1 (outline §1,
+  $|x - y|_\ell = \max_i |r_\ell(x - y)_i|$) agrees with the Lean.
+- **The separation as a metric.** Notes §1, Proposition I.1.1, says that the
+  separation is a metric, symmetric and zero exactly when $x = y$; outline §1
+  calls it "the metric". The unit's files prove $|x - x|_M = 0$, symmetry and
+  the triangle inequality,
+  [`YM.Lattice.separation_self`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L83),
+  [`YM.Lattice.separation_comm`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L93)
+  and
+  [`YM.Lattice.separation_triangle`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L103),
+  and no declaration in YM/Lattice, YM/Corona, YM/Space, YM/Gauge, YM/Mink or
+  YM/Wilson states that $|x - y|_M = 0$ implies $x = y$. The articles call it
+  the separation and state only its definition.
+- **The centred lift and Proposition I.1.1.** Notes §1, Proposition I.1.1,
+  defines $r_\ell(x)$ as the representative with coordinates in
+  $(-\ell/2, \ell/2]$ and states with it the uniqueness of that
+  representative and $|\Lambda_\ell| = \ell^4$. The Lean defines the lift
+  coordinatewise by Mathlib's residue of least absolute value: a residue $v$
+  is kept if $v \le \lfloor M/2 \rfloor$ and replaced by $v - M$ otherwise,
+  [`YM.Lattice.lift`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L51).
+  The interval, the uniqueness and the count are separate theorems,
+  [`YM.Lattice.lift_centers`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L56),
+  [`YM.Lattice.lift_eq_iff`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L61)
+  and
+  [`YM.Lattice.site_card`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L32).
+- **Reduction and distances.** Outline §1 and notes §1, Proposition I.1.1,
+  state that reduction does not increase distances,
+  $|[y]_\ell|_\ell \le \max_i |y_i|$ for $y \in \mathbb Z^4$. The Lean states
+  it coordinatewise: each coordinate of the centred lift of the reduction of
+  $v \in \mathbb Z^4$ has absolute value at most $|v_i|$,
+  [`YM.Lattice.Corona.lap`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Corona/Fill.lean#L32);
+  the bound on the maximum follows.
+- **Glossary readings of edges and residues.** The glossary reads
+  `YM.Lattice.Edge` as "a link: site together with a positive direction" and
+  `YM.Lattice.Per` as "Z/nZ, one periodic axis of the lattice". The Lean edge
+  is a pair of a point of an arbitrary set and an axis,
+  [`YM.Lattice.Edge`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L21),
+  and is a link of the lattice only inside link arrays, where the set is the
+  four-component arrays,
+  [`YM.Lattice.Links`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Path.lean#L21).
+  The Lean residues are the ring of integers modulo the side, with no
+  reference to axes,
+  [`YM.Lattice.Per`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L18),
+  and are the coordinates of each axis only in the sites,
+  [`YM.Lattice.Site`](https://github.com/yang-mills-group/OpenAI-YM-20261028/blob/3456e5e75cf8d4cd558955a5c7638fba2d68f464/YM/Lattice/Site.lean#L19).
+  The articles follow the Lean.
+
 ## Unit V.3: reconstruction for every phase
 
 Armstrong's unit V.3, "Reconstruction for every phase and the reconstructed

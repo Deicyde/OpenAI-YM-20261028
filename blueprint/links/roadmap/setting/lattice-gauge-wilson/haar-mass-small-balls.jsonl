@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/haar-mass-small-balls.md"}], "object": [{"location": {"declaration": "YM.Gauge.shell_ge"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_1adbe4662829299236436bf3", "extensions": {"org.autoform": {"origin": "cited"}}}

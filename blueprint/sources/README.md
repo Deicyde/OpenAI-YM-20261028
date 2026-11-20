@@ -58,6 +58,11 @@ source, as the [Solution.lean ledger](solution.md#verification) records.
   conditions, and the joint existence statement.
 - [Solution.lean declaration ledger](solution.md): the main theorem, the
   declarations its proof uses, and how it was checked.
+- [Ledger of the setting: lattice, symmetries, gauge groups and the Wilson measure](lattice-gauge-wilson.md): the lattice, the
+  symmetries of space and spacetime, the gauge groups and the Wilson measure
+  (Armstrong's unit I.1), with the articles that cover them.
+- [YM/EveryPhase declaration ledger](every-phase.md): reconstruction for every
+  phase (Armstrong's unit V.3), with the articles that cover it.
 - [Armstrong's informalization](armstrong.md): the informal source, how this
   book uses it, and where its outline and the Lean differ.
 - [Upstream description of the public challenge](upstream-readme.md): the

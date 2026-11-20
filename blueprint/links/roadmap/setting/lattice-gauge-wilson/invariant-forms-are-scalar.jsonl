@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/invariant-forms-are-scalar.md"}], "object": [{"location": {"declaration": "YM.Gauge.invariant_scalar"}, "role": "states"}], "status": "formalized", "kind": "theorem", "id": "af_54ae16f293acf6c1a310b895", "extensions": {"org.autoform": {"origin": "cited"}}}

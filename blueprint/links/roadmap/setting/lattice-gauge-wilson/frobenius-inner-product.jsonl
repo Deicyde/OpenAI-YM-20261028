@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/frobenius-inner-product.md"}], "object": [{"location": {"declaration": "YM.Gauge.frobInner"}, "role": "states"}], "status": "formalized", "kind": "def", "id": "af_8cd6592a0f7f2e4bff6c96e6", "extensions": {"org.autoform": {"origin": "cited"}}}

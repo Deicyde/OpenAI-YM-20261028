@@ -1,0 +1,1 @@
+{"subject": [{"type": "generic", "uri": "../../../../roadmap/setting/lattice-gauge-wilson/chord-and-chord-balls.md"}], "object": [{"location": {"declaration": "YM.Gauge.chord"}, "role": "states"}, {"location": {"declaration": "YM.Gauge.shell"}}], "status": "formalized", "kind": "def", "id": "af_121211ba9b28229465f92bf3", "extensions": {"org.autoform": {"origin": "cited"}}}

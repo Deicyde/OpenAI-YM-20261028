@@ -33,6 +33,7 @@ maps one unit, reconstruction for every phase, as the
 - [All-orders separated operator product expansion](operator-product-expansion/README.md)
 - [Non-freeness test](non-freeness/README.md)
 - [The main theorem](challenge/README.md)
+- [Setting](setting/README.md)
 - [Phases and reconstruction](phases/README.md)
 
 <!-- AUTHORING NOTES — these comments are not published.
